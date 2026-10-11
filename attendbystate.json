@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "School attendance rate by state",
+    "subtitle": "All students, Years 1-10, all sectors"
+  },
+  "width": 600,
+  "height": 500,
+
+  "params": [
+    {
+      "name": "year_select",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025],
+        "name": "Year: "
+      }
+    }
+  ],
+
+  "data": {
+    "url": "attendance_full.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"year": "number", "rate": "number", "level": "number"}
+    }
+  },
+
+  "projection": {"type": "mercator"},
+
+  "transform": [
+    {
+      "filter": "datum.sector === 'All' && datum.sex === 'All' && datum.geo === 'All' && datum.indigenous === 'All' && datum.year_level === 'Years 1-10' && datum.is_quarter_row === 'False' && datum.state !== 'Australia'"
+    },
+    {"filter": "datum.year === year_select"},
+    {
+      "lookup": "state",
+      "from": {
+        "data": {
+          "url": "australian_states.geojson",
+          "format": {"type": "json", "property": "features"}
+        },
+        "key": "properties.STATE_NAME"
+      },
+      "as": "geo"
+    }
+  ],
+
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
+
+  "encoding": {
+    "shape": {"field": "geo", "type": "geojson"},
+    "color": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "Attendance rate (%)",
+      "scale": {"scheme": "blues", "domain": [75, 95]}
+    },
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
+      {"field": "level", "type": "quantitative", "title": "Attending 90%+ of days (%)", "format": ".1f"}
+    ]
+  }
+}
