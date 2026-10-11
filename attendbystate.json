@@ -1,7 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "School attendance rate by state",
+    "text": {
+      "expr": "'School attendance rate by state, ' + year_select + (year_select === 2020 ? ' (no data collected)' : '')"
+    },
     "subtitle": "All students, Years 1-10, all sectors"
   },
   "width": 600,
@@ -12,8 +14,10 @@
       "name": "year_select",
       "value": 2025,
       "bind": {
-        "input": "select",
-        "options": [2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025],
+        "input": "range",
+        "min": 2014,
+        "max": 2025,
+        "step": 1,
         "name": "Year: "
       }
     }
@@ -55,7 +59,7 @@
       "field": "rate",
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"scheme": "blues", "domain": [75, 95]}
+      "scale": {"scheme": "blues", "domain": [85, 95]}
     },
     "tooltip": [
       {"field": "state", "type": "nominal", "title": "State"},
