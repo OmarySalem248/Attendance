@@ -6,11 +6,18 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  <style>
+    .charts { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+  </style>
 </head>
 <body>
-  <div id="map"></div>
+  <div class="charts">
+    <div id="map"></div>
+    <div id="sector"></div>
+  </div>
   <script>
     vegaEmbed("#map", "attendbystate.json");
+    vegaEmbed("#sector", "sector_graph.json");
   </script>
 </body>
 </html>

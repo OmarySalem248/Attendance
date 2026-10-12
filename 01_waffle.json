@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "symbolSize": 110
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
+  "description": "Pictogram of 100 students: 62 attend on 90 percent or more of school days, 38 attend on fewer.",
+  "width": 300,
+  "height": 300,
+  "data": {
+    "sequence": {
+      "start": 0,
+      "stop": 100,
+      "as": "i"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.i % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.i / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.i < 62 ? 'Attends on 90% of days or more' : 'Attends on fewer than 90% of days'",
+      "as": "group"
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "size": 520,
+    "stroke": "#fcfcfb",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Attends on 90% of days or more",
+          "Attends on fewer than 90% of days"
+        ],
+        "range": [
+          "#2a78d6",
+          "#eb6834"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "direction": "vertical",
+        "labelLimit": 300
+      }
+    },
+    "tooltip": [
+      {
+        "field": "group",
+        "type": "nominal",
+        "title": "Student group"
+      }
+    ]
+  }
+}
