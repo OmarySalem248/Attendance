@@ -1,0 +1,1090 @@
+year,state,year_level,rate
+2025,New South Wales,Years 1-10,89.5
+2025,New South Wales,Year 1,91.8
+2025,New South Wales,Year 2,91.8
+2025,New South Wales,Year 3,91.8
+2025,New South Wales,Year 4,91.5
+2025,New South Wales,Year 5,91.3
+2025,New South Wales,Year 6,90.6
+2025,New South Wales,Year 7,90.1
+2025,New South Wales,Year 8,87.1
+2025,New South Wales,Year 9,85.6
+2025,New South Wales,Year 10,84.2
+2025,Victoria,Years 1-10,88.8
+2025,Victoria,Year 1,90.3
+2025,Victoria,Year 2,90.4
+2025,Victoria,Year 3,90.6
+2025,Victoria,Year 4,90.4
+2025,Victoria,Year 5,90.2
+2025,Victoria,Year 6,89.7
+2025,Victoria,Year 7,89.8
+2025,Victoria,Year 8,86.9
+2025,Victoria,Year 9,85.6
+2025,Victoria,Year 10,85.3
+2025,Queensland,Years 1-10,88.6
+2025,Queensland,Year 1,90.2
+2025,Queensland,Year 2,90.3
+2025,Queensland,Year 3,90.5
+2025,Queensland,Year 4,90.2
+2025,Queensland,Year 5,90.1
+2025,Queensland,Year 6,89.5
+2025,Queensland,Year 7,89.2
+2025,Queensland,Year 8,86.5
+2025,Queensland,Year 9,84.9
+2025,Queensland,Year 10,84.5
+2025,South Australia,Years 1-10,89.1
+2025,South Australia,Year 1,90.2
+2025,South Australia,Year 2,90.3
+2025,South Australia,Year 3,90.6
+2025,South Australia,Year 4,90.4
+2025,South Australia,Year 5,90.0
+2025,South Australia,Year 6,89.8
+2025,South Australia,Year 7,90.2
+2025,South Australia,Year 8,87.8
+2025,South Australia,Year 9,86.7
+2025,South Australia,Year 10,86.7
+2025,Western Australia,Years 1-10,88.3
+2025,Western Australia,Year 1,89.8
+2025,Western Australia,Year 2,90.0
+2025,Western Australia,Year 3,90.3
+2025,Western Australia,Year 4,90.2
+2025,Western Australia,Year 5,89.9
+2025,Western Australia,Year 6,89.6
+2025,Western Australia,Year 7,89.3
+2025,Western Australia,Year 8,86.2
+2025,Western Australia,Year 9,84.5
+2025,Western Australia,Year 10,83.1
+2025,Tasmania,Years 1-10,87.3
+2025,Tasmania,Year 1,90.0
+2025,Tasmania,Year 2,90.2
+2025,Tasmania,Year 3,90.2
+2025,Tasmania,Year 4,89.8
+2025,Tasmania,Year 5,89.4
+2025,Tasmania,Year 6,88.6
+2025,Tasmania,Year 7,87.1
+2025,Tasmania,Year 8,84.3
+2025,Tasmania,Year 9,82.6
+2025,Tasmania,Year 10,81.6
+2025,Northern Territory,Years 1-10,76.9
+2025,Northern Territory,Year 1,78.8
+2025,Northern Territory,Year 2,79.3
+2025,Northern Territory,Year 3,79.4
+2025,Northern Territory,Year 4,79.3
+2025,Northern Territory,Year 5,78.7
+2025,Northern Territory,Year 6,79.2
+2025,Northern Territory,Year 7,77.3
+2025,Northern Territory,Year 8,73.8
+2025,Northern Territory,Year 9,71.2
+2025,Northern Territory,Year 10,69.8
+2025,Australian Capital Territory,Years 1-10,89.4
+2025,Australian Capital Territory,Year 1,91.0
+2025,Australian Capital Territory,Year 2,91.1
+2025,Australian Capital Territory,Year 3,91.3
+2025,Australian Capital Territory,Year 4,91.2
+2025,Australian Capital Territory,Year 5,90.3
+2025,Australian Capital Territory,Year 6,90.2
+2025,Australian Capital Territory,Year 7,89.7
+2025,Australian Capital Territory,Year 8,87.4
+2025,Australian Capital Territory,Year 9,86.1
+2025,Australian Capital Territory,Year 10,85.9
+2025,Australia,Years 1-10,88.8
+2025,Australia,Year 1,90.6
+2025,Australia,Year 2,90.6
+2025,Australia,Year 3,90.8
+2025,Australia,Year 4,90.5
+2025,Australia,Year 5,90.3
+2025,Australia,Year 6,89.8
+2025,Australia,Year 7,89.5
+2025,Australia,Year 8,86.7
+2025,Australia,Year 9,85.2
+2025,Australia,Year 10,84.5
+2024,New South Wales,Years 1-10,88.6
+2024,New South Wales,Year 1,90.7
+2024,New South Wales,Year 2,90.8
+2024,New South Wales,Year 3,90.8
+2024,New South Wales,Year 4,90.5
+2024,New South Wales,Year 5,90.2
+2024,New South Wales,Year 6,89.7
+2024,New South Wales,Year 7,89.1
+2024,New South Wales,Year 8,86.4
+2024,New South Wales,Year 9,85.1
+2024,New South Wales,Year 10,83.7
+2024,Victoria,Years 1-10,88.6
+2024,Victoria,Year 1,90.1
+2024,Victoria,Year 2,90.3
+2024,Victoria,Year 3,90.5
+2024,Victoria,Year 4,90.3
+2024,Victoria,Year 5,89.9
+2024,Victoria,Year 6,89.5
+2024,Victoria,Year 7,89.2
+2024,Victoria,Year 8,86.3
+2024,Victoria,Year 9,85.4
+2024,Victoria,Year 10,85.2
+2024,Queensland,Years 1-10,88.1
+2024,Queensland,Year 1,89.7
+2024,Queensland,Year 2,90.0
+2024,Queensland,Year 3,90.0
+2024,Queensland,Year 4,89.8
+2024,Queensland,Year 5,89.4
+2024,Queensland,Year 6,89.1
+2024,Queensland,Year 7,88.6
+2024,Queensland,Year 8,85.9
+2024,Queensland,Year 9,84.4
+2024,Queensland,Year 10,84.1
+2024,South Australia,Years 1-10,88.4
+2024,South Australia,Year 1,90.0
+2024,South Australia,Year 2,90.3
+2024,South Australia,Year 3,90.4
+2024,South Australia,Year 4,90.2
+2024,South Australia,Year 5,89.8
+2024,South Australia,Year 6,89.4
+2024,South Australia,Year 7,88.9
+2024,South Australia,Year 8,86.5
+2024,South Australia,Year 9,85.4
+2024,South Australia,Year 10,84.8
+2024,Western Australia,Years 1-10,88.4
+2024,Western Australia,Year 1,89.8
+2024,Western Australia,Year 2,90.4
+2024,Western Australia,Year 3,90.5
+2024,Western Australia,Year 4,90.3
+2024,Western Australia,Year 5,90.2
+2024,Western Australia,Year 6,89.9
+2024,Western Australia,Year 7,89.2
+2024,Western Australia,Year 8,86.1
+2024,Western Australia,Year 9,84.3
+2024,Western Australia,Year 10,82.9
+2024,Tasmania,Years 1-10,86.8
+2024,Tasmania,Year 1,89.9
+2024,Tasmania,Year 2,89.9
+2024,Tasmania,Year 3,89.9
+2024,Tasmania,Year 4,89.5
+2024,Tasmania,Year 5,88.8
+2024,Tasmania,Year 6,88.0
+2024,Tasmania,Year 7,86.4
+2024,Tasmania,Year 8,83.5
+2024,Tasmania,Year 9,81.7
+2024,Tasmania,Year 10,80.9
+2024,Northern Territory,Years 1-10,76.7
+2024,Northern Territory,Year 1,78.8
+2024,Northern Territory,Year 2,79.1
+2024,Northern Territory,Year 3,79.0
+2024,Northern Territory,Year 4,78.4
+2024,Northern Territory,Year 5,79.6
+2024,Northern Territory,Year 6,78.5
+2024,Northern Territory,Year 7,76.3
+2024,Northern Territory,Year 8,72.9
+2024,Northern Territory,Year 9,71.1
+2024,Northern Territory,Year 10,71.2
+2024,Australian Capital Territory,Years 1-10,88.6
+2024,Australian Capital Territory,Year 1,90.5
+2024,Australian Capital Territory,Year 2,90.6
+2024,Australian Capital Territory,Year 3,90.8
+2024,Australian Capital Territory,Year 4,90.2
+2024,Australian Capital Territory,Year 5,90.0
+2024,Australian Capital Territory,Year 6,89.1
+2024,Australian Capital Territory,Year 7,88.8
+2024,Australian Capital Territory,Year 8,85.9
+2024,Australian Capital Territory,Year 9,85.2
+2024,Australian Capital Territory,Year 10,84.4
+2024,Australia,Years 1-10,88.3
+2024,Australia,Year 1,90.1
+2024,Australia,Year 2,90.3
+2024,Australia,Year 3,90.3
+2024,Australia,Year 4,90.1
+2024,Australia,Year 5,89.8
+2024,Australia,Year 6,89.4
+2024,Australia,Year 7,88.8
+2024,Australia,Year 8,86.1
+2024,Australia,Year 9,84.8
+2024,Australia,Year 10,84.0
+2023,New South Wales,Years 1-10,89.2
+2023,New South Wales,Year 1,91.0
+2023,New South Wales,Year 2,91.1
+2023,New South Wales,Year 3,91.3
+2023,New South Wales,Year 4,91.0
+2023,New South Wales,Year 5,90.9
+2023,New South Wales,Year 6,90.4
+2023,New South Wales,Year 7,89.7
+2023,New South Wales,Year 8,87.0
+2023,New South Wales,Year 9,85.6
+2023,New South Wales,Year 10,84.2
+2023,Victoria,Years 1-10,89.3
+2023,Victoria,Year 1,90.4
+2023,Victoria,Year 2,90.7
+2023,Victoria,Year 3,91.0
+2023,Victoria,Year 4,90.7
+2023,Victoria,Year 5,90.6
+2023,Victoria,Year 6,90.3
+2023,Victoria,Year 7,90.1
+2023,Victoria,Year 8,87.5
+2023,Victoria,Year 9,86.6
+2023,Victoria,Year 10,86.3
+2023,Queensland,Years 1-10,88.3
+2023,Queensland,Year 1,89.9
+2023,Queensland,Year 2,90.1
+2023,Queensland,Year 3,90.3
+2023,Queensland,Year 4,89.9
+2023,Queensland,Year 5,89.8
+2023,Queensland,Year 6,89.4
+2023,Queensland,Year 7,88.9
+2023,Queensland,Year 8,86.1
+2023,Queensland,Year 9,84.7
+2023,Queensland,Year 10,84.4
+2023,South Australia,Years 1-10,88.0
+2023,South Australia,Year 1,89.3
+2023,South Australia,Year 2,89.8
+2023,South Australia,Year 3,89.8
+2023,South Australia,Year 4,89.7
+2023,South Australia,Year 5,89.5
+2023,South Australia,Year 6,89.1
+2023,South Australia,Year 7,88.7
+2023,South Australia,Year 8,86.3
+2023,South Australia,Year 9,84.7
+2023,South Australia,Year 10,84.8
+2023,Western Australia,Years 1-10,88.0
+2023,Western Australia,Year 1,89.2
+2023,Western Australia,Year 2,89.6
+2023,Western Australia,Year 3,89.8
+2023,Western Australia,Year 4,89.8
+2023,Western Australia,Year 5,89.9
+2023,Western Australia,Year 6,89.5
+2023,Western Australia,Year 7,88.9
+2023,Western Australia,Year 8,85.9
+2023,Western Australia,Year 9,83.9
+2023,Western Australia,Year 10,83.1
+2023,Tasmania,Years 1-10,86.4
+2023,Tasmania,Year 1,88.8
+2023,Tasmania,Year 2,89.0
+2023,Tasmania,Year 3,89.2
+2023,Tasmania,Year 4,88.9
+2023,Tasmania,Year 5,88.5
+2023,Tasmania,Year 6,88.0
+2023,Tasmania,Year 7,86.2
+2023,Tasmania,Year 8,83.1
+2023,Tasmania,Year 9,81.8
+2023,Tasmania,Year 10,81.0
+2023,Northern Territory,Years 1-10,77.2
+2023,Northern Territory,Year 1,79.0
+2023,Northern Territory,Year 2,78.5
+2023,Northern Territory,Year 3,79.1
+2023,Northern Territory,Year 4,80.1
+2023,Northern Territory,Year 5,79.3
+2023,Northern Territory,Year 6,78.9
+2023,Northern Territory,Year 7,76.5
+2023,Northern Territory,Year 8,73.2
+2023,Northern Territory,Year 9,71.9
+2023,Northern Territory,Year 10,72.7
+2023,Australian Capital Territory,Years 1-10,88.8
+2023,Australian Capital Territory,Year 1,90.5
+2023,Australian Capital Territory,Year 2,90.6
+2023,Australian Capital Territory,Year 3,90.4
+2023,Australian Capital Territory,Year 4,90.3
+2023,Australian Capital Territory,Year 5,90.0
+2023,Australian Capital Territory,Year 6,89.7
+2023,Australian Capital Territory,Year 7,88.9
+2023,Australian Capital Territory,Year 8,86.5
+2023,Australian Capital Territory,Year 9,85.1
+2023,Australian Capital Territory,Year 10,85.0
+2023,Australia,Years 1-10,88.6
+2023,Australia,Year 1,90.1
+2023,Australia,Year 2,90.3
+2023,Australia,Year 3,90.6
+2023,Australia,Year 4,90.3
+2023,Australia,Year 5,90.2
+2023,Australia,Year 6,89.8
+2023,Australia,Year 7,89.2
+2023,Australia,Year 8,86.5
+2023,Australia,Year 9,85.2
+2023,Australia,Year 10,84.5
+2022,New South Wales,Years 1-10,86.4
+2022,New South Wales,Year 1,87.9
+2022,New South Wales,Year 2,88.2
+2022,New South Wales,Year 3,88.2
+2022,New South Wales,Year 4,88.0
+2022,New South Wales,Year 5,87.9
+2022,New South Wales,Year 6,87.1
+2022,New South Wales,Year 7,87.3
+2022,New South Wales,Year 8,84.4
+2022,New South Wales,Year 9,83.1
+2022,New South Wales,Year 10,81.8
+2022,Victoria,Years 1-10,87.7
+2022,Victoria,Year 1,88.3
+2022,Victoria,Year 2,88.7
+2022,Victoria,Year 3,88.9
+2022,Victoria,Year 4,88.7
+2022,Victoria,Year 5,88.6
+2022,Victoria,Year 6,88.3
+2022,Victoria,Year 7,88.5
+2022,Victoria,Year 8,86.5
+2022,Victoria,Year 9,85.8
+2022,Victoria,Year 10,85.7
+2022,Queensland,Years 1-10,86.7
+2022,Queensland,Year 1,88.0
+2022,Queensland,Year 2,88.3
+2022,Queensland,Year 3,88.2
+2022,Queensland,Year 4,88.0
+2022,Queensland,Year 5,87.8
+2022,Queensland,Year 6,87.4
+2022,Queensland,Year 7,87.4
+2022,Queensland,Year 8,84.8
+2022,Queensland,Year 9,83.5
+2022,Queensland,Year 10,83.2
+2022,South Australia,Years 1-10,85.6
+2022,South Australia,Year 1,86.7
+2022,South Australia,Year 2,87.1
+2022,South Australia,Year 3,87.4
+2022,South Australia,Year 4,87.1
+2022,South Australia,Year 5,86.8
+2022,South Australia,Year 6,86.5
+2022,South Australia,Year 7,86.3
+2022,South Australia,Year 8,84.4
+2022,South Australia,Year 9,82.8
+2022,South Australia,Year 10,82.4
+2022,Western Australia,Years 1-10,86.1
+2022,Western Australia,Year 1,87.4
+2022,Western Australia,Year 2,87.6
+2022,Western Australia,Year 3,87.9
+2022,Western Australia,Year 4,87.7
+2022,Western Australia,Year 5,87.6
+2022,Western Australia,Year 6,87.1
+2022,Western Australia,Year 7,87.1
+2022,Western Australia,Year 8,83.9
+2022,Western Australia,Year 9,82.4
+2022,Western Australia,Year 10,81.6
+2022,Tasmania,Years 1-10,85.1
+2022,Tasmania,Year 1,87.0
+2022,Tasmania,Year 2,87.2
+2022,Tasmania,Year 3,87.4
+2022,Tasmania,Year 4,87.1
+2022,Tasmania,Year 5,86.9
+2022,Tasmania,Year 6,86.3
+2022,Tasmania,Year 7,85.3
+2022,Tasmania,Year 8,82.4
+2022,Tasmania,Year 9,80.9
+2022,Tasmania,Year 10,80.4
+2022,Northern Territory,Years 1-10,76.0
+2022,Northern Territory,Year 1,77.7
+2022,Northern Territory,Year 2,77.4
+2022,Northern Territory,Year 3,79.2
+2022,Northern Territory,Year 4,78.3
+2022,Northern Territory,Year 5,78.3
+2022,Northern Territory,Year 6,77.0
+2022,Northern Territory,Year 7,75.6
+2022,Northern Territory,Year 8,72.5
+2022,Northern Territory,Year 9,71.9
+2022,Northern Territory,Year 10,69.8
+2022,Australian Capital Territory,Years 1-10,85.9
+2022,Australian Capital Territory,Year 1,86.9
+2022,Australian Capital Territory,Year 2,87.0
+2022,Australian Capital Territory,Year 3,87.0
+2022,Australian Capital Territory,Year 4,86.9
+2022,Australian Capital Territory,Year 5,86.7
+2022,Australian Capital Territory,Year 6,86.1
+2022,Australian Capital Territory,Year 7,86.8
+2022,Australian Capital Territory,Year 8,84.7
+2022,Australian Capital Territory,Year 9,83.6
+2022,Australian Capital Territory,Year 10,83.1
+2022,Australia,Years 1-10,86.5
+2022,Australia,Year 1,87.7
+2022,Australia,Year 2,88.1
+2022,Australia,Year 3,88.2
+2022,Australia,Year 4,87.9
+2022,Australia,Year 5,87.8
+2022,Australia,Year 6,87.3
+2022,Australia,Year 7,87.3
+2022,Australia,Year 8,84.8
+2022,Australia,Year 9,83.6
+2022,Australia,Year 10,82.9
+2021,New South Wales,Years 1-10,91.0
+2021,New South Wales,Year 1,93.0
+2021,New South Wales,Year 2,92.9
+2021,New South Wales,Year 3,93.1
+2021,New South Wales,Year 4,92.8
+2021,New South Wales,Year 5,92.5
+2021,New South Wales,Year 6,92.0
+2021,New South Wales,Year 7,91.3
+2021,New South Wales,Year 8,88.8
+2021,New South Wales,Year 9,87.3
+2021,New South Wales,Year 10,86.0
+2021,Victoria,Years 1-10,92.4
+2021,Victoria,Year 1,93.3
+2021,Victoria,Year 2,93.4
+2021,Victoria,Year 3,93.7
+2021,Victoria,Year 4,93.5
+2021,Victoria,Year 5,93.5
+2021,Victoria,Year 6,93.1
+2021,Victoria,Year 7,93.1
+2021,Victoria,Year 8,91.1
+2021,Victoria,Year 9,90.2
+2021,Victoria,Year 10,89.8
+2021,Queensland,Years 1-10,90.1
+2021,Queensland,Year 1,91.2
+2021,Queensland,Year 2,91.4
+2021,Queensland,Year 3,91.6
+2021,Queensland,Year 4,91.5
+2021,Queensland,Year 5,91.2
+2021,Queensland,Year 6,91.0
+2021,Queensland,Year 7,90.5
+2021,Queensland,Year 8,88.3
+2021,Queensland,Year 9,87.0
+2021,Queensland,Year 10,86.8
+2021,South Australia,Years 1-10,90.5
+2021,South Australia,Year 1,91.8
+2021,South Australia,Year 2,92.1
+2021,South Australia,Year 3,92.4
+2021,South Australia,Year 4,92.0
+2021,South Australia,Year 5,91.8
+2021,South Australia,Year 6,91.4
+2021,South Australia,Year 7,90.5
+2021,South Australia,Year 8,89.4
+2021,South Australia,Year 9,87.3
+2021,South Australia,Year 10,87.1
+2021,Western Australia,Years 1-10,89.9
+2021,Western Australia,Year 1,91.5
+2021,Western Australia,Year 2,91.7
+2021,Western Australia,Year 3,92.0
+2021,Western Australia,Year 4,91.8
+2021,Western Australia,Year 5,91.6
+2021,Western Australia,Year 6,91.2
+2021,Western Australia,Year 7,89.9
+2021,Western Australia,Year 8,87.4
+2021,Western Australia,Year 9,86.0
+2021,Western Australia,Year 10,85.0
+2021,Tasmania,Years 1-10,89.3
+2021,Tasmania,Year 1,90.4
+2021,Tasmania,Year 2,91.2
+2021,Tasmania,Year 3,91.5
+2021,Tasmania,Year 4,91.6
+2021,Tasmania,Year 5,91.3
+2021,Tasmania,Year 6,90.7
+2021,Tasmania,Year 7,89.3
+2021,Tasmania,Year 8,87.0
+2021,Tasmania,Year 9,85.6
+2021,Tasmania,Year 10,84.7
+2021,Northern Territory,Years 1-10,79.7
+2021,Northern Territory,Year 1,80.5
+2021,Northern Territory,Year 2,82.3
+2021,Northern Territory,Year 3,81.8
+2021,Northern Territory,Year 4,82.1
+2021,Northern Territory,Year 5,80.8
+2021,Northern Territory,Year 6,81.0
+2021,Northern Territory,Year 7,79.3
+2021,Northern Territory,Year 8,77.4
+2021,Northern Territory,Year 9,75.3
+2021,Northern Territory,Year 10,74.7
+2021,Australian Capital Territory,Years 1-10,91.6
+2021,Australian Capital Territory,Year 1,93.0
+2021,Australian Capital Territory,Year 2,93.1
+2021,Australian Capital Territory,Year 3,93.0
+2021,Australian Capital Territory,Year 4,92.9
+2021,Australian Capital Territory,Year 5,92.6
+2021,Australian Capital Territory,Year 6,91.8
+2021,Australian Capital Territory,Year 7,92.1
+2021,Australian Capital Territory,Year 8,90.0
+2021,Australian Capital Territory,Year 9,88.7
+2021,Australian Capital Territory,Year 10,88.4
+2021,Australia,Years 1-10,90.9
+2021,Australia,Year 1,92.3
+2021,Australia,Year 2,92.4
+2021,Australia,Year 3,92.6
+2021,Australia,Year 4,92.4
+2021,Australia,Year 5,92.2
+2021,Australia,Year 6,91.8
+2021,Australia,Year 7,91.2
+2021,Australia,Year 8,89.0
+2021,Australia,Year 9,87.7
+2021,Australia,Year 10,87.0
+2019,New South Wales,Years 1-10,91.7
+2019,New South Wales,Year 1,92.9
+2019,New South Wales,Year 2,93.2
+2019,New South Wales,Year 3,93.3
+2019,New South Wales,Year 4,93.2
+2019,New South Wales,Year 5,93.1
+2019,New South Wales,Year 6,92.5
+2019,New South Wales,Year 7,92.3
+2019,New South Wales,Year 8,90.2
+2019,New South Wales,Year 9,89.1
+2019,New South Wales,Year 10,87.7
+2019,Victoria,Years 1-10,92.0
+2019,Victoria,Year 1,92.4
+2019,Victoria,Year 2,92.6
+2019,Victoria,Year 3,93.0
+2019,Victoria,Year 4,92.8
+2019,Victoria,Year 5,92.8
+2019,Victoria,Year 6,92.5
+2019,Victoria,Year 7,92.9
+2019,Victoria,Year 8,91.0
+2019,Victoria,Year 9,90.3
+2019,Victoria,Year 10,90.2
+2019,Queensland,Years 1-10,91.1
+2019,Queensland,Year 1,91.8
+2019,Queensland,Year 2,92.1
+2019,Queensland,Year 3,92.2
+2019,Queensland,Year 4,92.2
+2019,Queensland,Year 5,92.2
+2019,Queensland,Year 6,91.9
+2019,Queensland,Year 7,91.7
+2019,Queensland,Year 8,89.8
+2019,Queensland,Year 9,88.6
+2019,Queensland,Year 10,88.5
+2019,South Australia,Years 1-10,91.2
+2019,South Australia,Year 1,91.9
+2019,South Australia,Year 2,92.2
+2019,South Australia,Year 3,92.5
+2019,South Australia,Year 4,92.3
+2019,South Australia,Year 5,92.2
+2019,South Australia,Year 6,92.0
+2019,South Australia,Year 7,91.5
+2019,South Australia,Year 8,90.6
+2019,South Australia,Year 9,89.2
+2019,South Australia,Year 10,88.8
+2019,Western Australia,Years 1-10,90.9
+2019,Western Australia,Year 1,91.5
+2019,Western Australia,Year 2,92.0
+2019,Western Australia,Year 3,92.3
+2019,Western Australia,Year 4,92.4
+2019,Western Australia,Year 5,92.2
+2019,Western Australia,Year 6,92.2
+2019,Western Australia,Year 7,91.3
+2019,Western Australia,Year 8,89.2
+2019,Western Australia,Year 9,87.8
+2019,Western Australia,Year 10,87.5
+2019,Tasmania,Years 1-10,90.8
+2019,Tasmania,Year 1,92.2
+2019,Tasmania,Year 2,92.6
+2019,Tasmania,Year 3,92.7
+2019,Tasmania,Year 4,92.5
+2019,Tasmania,Year 5,92.1
+2019,Tasmania,Year 6,92.1
+2019,Tasmania,Year 7,90.8
+2019,Tasmania,Year 8,88.5
+2019,Tasmania,Year 9,87.3
+2019,Tasmania,Year 10,86.1
+2019,Northern Territory,Years 1-10,79.7
+2019,Northern Territory,Year 1,80.8
+2019,Northern Territory,Year 2,82.1
+2019,Northern Territory,Year 3,81.4
+2019,Northern Territory,Year 4,81.6
+2019,Northern Territory,Year 5,82.1
+2019,Northern Territory,Year 6,82.1
+2019,Northern Territory,Year 7,78.8
+2019,Northern Territory,Year 8,76.5
+2019,Northern Territory,Year 9,74.6
+2019,Northern Territory,Year 10,73.5
+2019,Australian Capital Territory,Years 1-10,91.1
+2019,Australian Capital Territory,Year 1,92.1
+2019,Australian Capital Territory,Year 2,92.4
+2019,Australian Capital Territory,Year 3,92.7
+2019,Australian Capital Territory,Year 4,92.5
+2019,Australian Capital Territory,Year 5,92.5
+2019,Australian Capital Territory,Year 6,92.0
+2019,Australian Capital Territory,Year 7,91.2
+2019,Australian Capital Territory,Year 8,89.5
+2019,Australian Capital Territory,Year 9,87.9
+2019,Australian Capital Territory,Year 10,87.4
+2019,Australia,Years 1-10,91.4
+2019,Australia,Year 1,92.2
+2019,Australia,Year 2,92.5
+2019,Australia,Year 3,92.7
+2019,Australia,Year 4,92.6
+2019,Australia,Year 5,92.5
+2019,Australia,Year 6,92.2
+2019,Australia,Year 7,91.9
+2019,Australia,Year 8,90.0
+2019,Australia,Year 9,88.9
+2019,Australia,Year 10,88.4
+2018,New South Wales,Years 1-10,92.2
+2018,New South Wales,Year 1,93.6
+2018,New South Wales,Year 2,93.7
+2018,New South Wales,Year 3,93.8
+2018,New South Wales,Year 4,93.6
+2018,New South Wales,Year 5,93.5
+2018,New South Wales,Year 6,92.9
+2018,New South Wales,Year 7,92.8
+2018,New South Wales,Year 8,90.7
+2018,New South Wales,Year 9,89.5
+2018,New South Wales,Year 10,88.1
+2018,Victoria,Years 1-10,92.7
+2018,Victoria,Year 1,93.2
+2018,Victoria,Year 2,93.5
+2018,Victoria,Year 3,93.6
+2018,Victoria,Year 4,93.5
+2018,Victoria,Year 5,93.4
+2018,Victoria,Year 6,93.2
+2018,Victoria,Year 7,93.5
+2018,Victoria,Year 8,91.8
+2018,Victoria,Year 9,91.1
+2018,Victoria,Year 10,90.9
+2018,Queensland,Years 1-10,91.5
+2018,Queensland,Year 1,92.2
+2018,Queensland,Year 2,92.5
+2018,Queensland,Year 3,92.7
+2018,Queensland,Year 4,92.5
+2018,Queensland,Year 5,92.5
+2018,Queensland,Year 6,92.3
+2018,Queensland,Year 7,91.9
+2018,Queensland,Year 8,90.0
+2018,Queensland,Year 9,89.0
+2018,Queensland,Year 10,88.6
+2018,South Australia,Years 1-10,91.6
+2018,South Australia,Year 1,92.2
+2018,South Australia,Year 2,92.7
+2018,South Australia,Year 3,92.8
+2018,South Australia,Year 4,92.6
+2018,South Australia,Year 5,92.6
+2018,South Australia,Year 6,92.0
+2018,South Australia,Year 7,91.7
+2018,South Australia,Year 8,91.3
+2018,South Australia,Year 9,89.6
+2018,South Australia,Year 10,89.0
+2018,Western Australia,Years 1-10,91.8
+2018,Western Australia,Year 1,92.6
+2018,Western Australia,Year 2,93.0
+2018,Western Australia,Year 3,93.3
+2018,Western Australia,Year 4,93.2
+2018,Western Australia,Year 5,93.2
+2018,Western Australia,Year 6,93.1
+2018,Western Australia,Year 7,92.1
+2018,Western Australia,Year 8,89.8
+2018,Western Australia,Year 9,89.1
+2018,Western Australia,Year 10,88.0
+2018,Tasmania,Years 1-10,91.3
+2018,Tasmania,Year 1,93.0
+2018,Tasmania,Year 2,93.2
+2018,Tasmania,Year 3,93.1
+2018,Tasmania,Year 4,93.0
+2018,Tasmania,Year 5,92.8
+2018,Tasmania,Year 6,92.7
+2018,Tasmania,Year 7,91.4
+2018,Tasmania,Year 8,89.4
+2018,Tasmania,Year 9,87.8
+2018,Tasmania,Year 10,85.9
+2018,Northern Territory,Years 1-10,80.8
+2018,Northern Territory,Year 1,82.2
+2018,Northern Territory,Year 2,83.2
+2018,Northern Territory,Year 3,83.8
+2018,Northern Territory,Year 4,83.9
+2018,Northern Territory,Year 5,83.9
+2018,Northern Territory,Year 6,83.0
+2018,Northern Territory,Year 7,80.3
+2018,Northern Territory,Year 8,76.7
+2018,Northern Territory,Year 9,75.0
+2018,Northern Territory,Year 10,73.0
+2018,Australian Capital Territory,Years 1-10,91.6
+2018,Australian Capital Territory,Year 1,92.8
+2018,Australian Capital Territory,Year 2,92.9
+2018,Australian Capital Territory,Year 3,93.0
+2018,Australian Capital Territory,Year 4,93.0
+2018,Australian Capital Territory,Year 5,92.8
+2018,Australian Capital Territory,Year 6,92.3
+2018,Australian Capital Territory,Year 7,91.9
+2018,Australian Capital Territory,Year 8,90.0
+2018,Australian Capital Territory,Year 9,88.9
+2018,Australian Capital Territory,Year 10,88.1
+2018,Australia,Years 1-10,91.9
+2018,Australia,Year 1,92.8
+2018,Australia,Year 2,93.1
+2018,Australia,Year 3,93.2
+2018,Australia,Year 4,93.1
+2018,Australia,Year 5,93.0
+2018,Australia,Year 6,92.7
+2018,Australia,Year 7,92.5
+2018,Australia,Year 8,90.5
+2018,Australia,Year 9,89.5
+2018,Australia,Year 10,88.8
+2017,New South Wales,Years 1-10,92.8
+2017,New South Wales,Year 1,94.0
+2017,New South Wales,Year 2,94.1
+2017,New South Wales,Year 3,94.2
+2017,New South Wales,Year 4,94.0
+2017,New South Wales,Year 5,93.9
+2017,New South Wales,Year 6,93.5
+2017,New South Wales,Year 7,93.5
+2017,New South Wales,Year 8,91.5
+2017,New South Wales,Year 9,90.4
+2017,New South Wales,Year 10,88.9
+2017,Victoria,Years 1-10,92.9
+2017,Victoria,Year 1,93.3
+2017,Victoria,Year 2,93.6
+2017,Victoria,Year 3,93.8
+2017,Victoria,Year 4,93.7
+2017,Victoria,Year 5,93.7
+2017,Victoria,Year 6,93.5
+2017,Victoria,Year 7,93.9
+2017,Victoria,Year 8,92.2
+2017,Victoria,Year 9,91.3
+2017,Victoria,Year 10,91.3
+2017,Queensland,Years 1-10,92.4
+2017,Queensland,Year 1,92.9
+2017,Queensland,Year 2,93.2
+2017,Queensland,Year 3,93.3
+2017,Queensland,Year 4,93.2
+2017,Queensland,Year 5,93.1
+2017,Queensland,Year 6,93.0
+2017,Queensland,Year 7,92.8
+2017,Queensland,Year 8,91.1
+2017,Queensland,Year 9,90.1
+2017,Queensland,Year 10,89.8
+2017,South Australia,Years 1-10,91.7
+2017,South Australia,Year 1,92.4
+2017,South Australia,Year 2,92.6
+2017,South Australia,Year 3,92.7
+2017,South Australia,Year 4,92.7
+2017,South Australia,Year 5,92.5
+2017,South Australia,Year 6,92.3
+2017,South Australia,Year 7,92.0
+2017,South Australia,Year 8,91.5
+2017,South Australia,Year 9,89.6
+2017,South Australia,Year 10,89.1
+2017,Western Australia,Years 1-10,92.0
+2017,Western Australia,Year 1,92.8
+2017,Western Australia,Year 2,93.1
+2017,Western Australia,Year 3,93.2
+2017,Western Australia,Year 4,93.3
+2017,Western Australia,Year 5,93.3
+2017,Western Australia,Year 6,93.2
+2017,Western Australia,Year 7,92.4
+2017,Western Australia,Year 8,90.6
+2017,Western Australia,Year 9,89.1
+2017,Western Australia,Year 10,88.1
+2017,Tasmania,Years 1-10,91.8
+2017,Tasmania,Year 1,93.3
+2017,Tasmania,Year 2,93.4
+2017,Tasmania,Year 3,93.4
+2017,Tasmania,Year 4,93.4
+2017,Tasmania,Year 5,93.4
+2017,Tasmania,Year 6,93.1
+2017,Tasmania,Year 7,91.9
+2017,Tasmania,Year 8,90.2
+2017,Tasmania,Year 9,88.1
+2017,Tasmania,Year 10,87.3
+2017,Northern Territory,Years 1-10,81.2
+2017,Northern Territory,Year 1,82.9
+2017,Northern Territory,Year 2,83.1
+2017,Northern Territory,Year 3,84.3
+2017,Northern Territory,Year 4,84.4
+2017,Northern Territory,Year 5,84.2
+2017,Northern Territory,Year 6,83.4
+2017,Northern Territory,Year 7,79.7
+2017,Northern Territory,Year 8,77.2
+2017,Northern Territory,Year 9,75.3
+2017,Northern Territory,Year 10,73.8
+2017,Australian Capital Territory,Years 1-10,92.2
+2017,Australian Capital Territory,Year 1,93.4
+2017,Australian Capital Territory,Year 2,93.6
+2017,Australian Capital Territory,Year 3,93.8
+2017,Australian Capital Territory,Year 4,93.6
+2017,Australian Capital Territory,Year 5,93.5
+2017,Australian Capital Territory,Year 6,92.7
+2017,Australian Capital Territory,Year 7,92.4
+2017,Australian Capital Territory,Year 8,90.5
+2017,Australian Capital Territory,Year 9,89.1
+2017,Australian Capital Territory,Year 10,88.5
+2017,Australia,Years 1-10,92.4
+2017,Australia,Year 1,93.2
+2017,Australia,Year 2,93.4
+2017,Australia,Year 3,93.6
+2017,Australia,Year 4,93.5
+2017,Australia,Year 5,93.4
+2017,Australia,Year 6,93.1
+2017,Australia,Year 7,93.0
+2017,Australia,Year 8,91.3
+2017,Australia,Year 9,90.1
+2017,Australia,Year 10,89.4
+2016,New South Wales,Years 1-10,92.8
+2016,New South Wales,Year 1,94.0
+2016,New South Wales,Year 2,94.2
+2016,New South Wales,Year 3,94.3
+2016,New South Wales,Year 4,94.1
+2016,New South Wales,Year 5,94.1
+2016,New South Wales,Year 6,93.6
+2016,New South Wales,Year 7,93.5
+2016,New South Wales,Year 8,91.6
+2016,New South Wales,Year 9,90.4
+2016,New South Wales,Year 10,89.0
+2016,Victoria,Years 1-10,93.2
+2016,Victoria,Year 1,93.7
+2016,Victoria,Year 2,93.9
+2016,Victoria,Year 3,94.1
+2016,Victoria,Year 4,94.0
+2016,Victoria,Year 5,94.0
+2016,Victoria,Year 6,93.8
+2016,Victoria,Year 7,94.1
+2016,Victoria,Year 8,92.3
+2016,Victoria,Year 9,91.6
+2016,Victoria,Year 10,91.6
+2016,Queensland,Years 1-10,92.4
+2016,Queensland,Year 1,93.0
+2016,Queensland,Year 2,93.2
+2016,Queensland,Year 3,93.4
+2016,Queensland,Year 4,93.3
+2016,Queensland,Year 5,93.3
+2016,Queensland,Year 6,93.1
+2016,Queensland,Year 7,92.8
+2016,Queensland,Year 8,91.1
+2016,Queensland,Year 9,90.4
+2016,Queensland,Year 10,89.8
+2016,South Australia,Years 1-10,91.8
+2016,South Australia,Year 1,92.5
+2016,South Australia,Year 2,92.5
+2016,South Australia,Year 3,92.9
+2016,South Australia,Year 4,92.7
+2016,South Australia,Year 5,92.6
+2016,South Australia,Year 6,92.5
+2016,South Australia,Year 7,92.3
+2016,South Australia,Year 8,91.6
+2016,South Australia,Year 9,89.8
+2016,South Australia,Year 10,89.5
+2016,Western Australia,Years 1-10,91.8
+2016,Western Australia,Year 1,92.5
+2016,Western Australia,Year 2,92.9
+2016,Western Australia,Year 3,93.2
+2016,Western Australia,Year 4,93.1
+2016,Western Australia,Year 5,93.2
+2016,Western Australia,Year 6,93.0
+2016,Western Australia,Year 7,92.4
+2016,Western Australia,Year 8,90.1
+2016,Western Australia,Year 9,89.0
+2016,Western Australia,Year 10,88.1
+2016,Tasmania,Years 1-10,91.8
+2016,Tasmania,Year 1,93.2
+2016,Tasmania,Year 2,93.5
+2016,Tasmania,Year 3,93.8
+2016,Tasmania,Year 4,93.5
+2016,Tasmania,Year 5,93.5
+2016,Tasmania,Year 6,93.1
+2016,Tasmania,Year 7,91.7
+2016,Tasmania,Year 8,89.6
+2016,Tasmania,Year 9,88.4
+2016,Tasmania,Year 10,87.1
+2016,Northern Territory,Years 1-10,82.2
+2016,Northern Territory,Year 1,82.9
+2016,Northern Territory,Year 2,84.6
+2016,Northern Territory,Year 3,85.5
+2016,Northern Territory,Year 4,84.8
+2016,Northern Territory,Year 5,84.6
+2016,Northern Territory,Year 6,83.7
+2016,Northern Territory,Year 7,81.2
+2016,Northern Territory,Year 8,78.5
+2016,Northern Territory,Year 9,76.8
+2016,Northern Territory,Year 10,76.4
+2016,Australian Capital Territory,Years 1-10,92.4
+2016,Australian Capital Territory,Year 1,93.4
+2016,Australian Capital Territory,Year 2,93.7
+2016,Australian Capital Territory,Year 3,93.9
+2016,Australian Capital Territory,Year 4,93.7
+2016,Australian Capital Territory,Year 5,93.7
+2016,Australian Capital Territory,Year 6,93.2
+2016,Australian Capital Territory,Year 7,92.6
+2016,Australian Capital Territory,Year 8,90.8
+2016,Australian Capital Territory,Year 9,90.0
+2016,Australian Capital Territory,Year 10,88.8
+2016,Australia,Years 1-10,92.5
+2016,Australia,Year 1,93.3
+2016,Australia,Year 2,93.5
+2016,Australia,Year 3,93.7
+2016,Australia,Year 4,93.6
+2016,Australia,Year 5,93.6
+2016,Australia,Year 6,93.3
+2016,Australia,Year 7,93.1
+2016,Australia,Year 8,91.3
+2016,Australia,Year 9,90.3
+2016,Australia,Year 10,89.6
+2015,New South Wales,Years 1-10,92.8
+2015,New South Wales,Year 1,93.8
+2015,New South Wales,Year 2,94.1
+2015,New South Wales,Year 3,94.2
+2015,New South Wales,Year 4,94.1
+2015,New South Wales,Year 5,94.1
+2015,New South Wales,Year 6,93.7
+2015,New South Wales,Year 7,93.4
+2015,New South Wales,Year 8,91.6
+2015,New South Wales,Year 9,90.5
+2015,New South Wales,Year 10,89.2
+2015,Victoria,Years 1-10,93.4
+2015,Victoria,Year 1,93.8
+2015,Victoria,Year 2,94.1
+2015,Victoria,Year 3,94.2
+2015,Victoria,Year 4,94.1
+2015,Victoria,Year 5,94.2
+2015,Victoria,Year 6,94.0
+2015,Victoria,Year 7,94.2
+2015,Victoria,Year 8,92.5
+2015,Victoria,Year 9,91.9
+2015,Victoria,Year 10,91.8
+2015,Queensland,Years 1-10,92.3
+2015,Queensland,Year 1,92.7
+2015,Queensland,Year 2,93.0
+2015,Queensland,Year 3,93.1
+2015,Queensland,Year 4,93.2
+2015,Queensland,Year 5,93.1
+2015,Queensland,Year 6,93.1
+2015,Queensland,Year 7,92.7
+2015,Queensland,Year 8,92.0
+2015,Queensland,Year 9,90.5
+2015,Queensland,Year 10,89.4
+2015,South Australia,Years 1-10,91.9
+2015,South Australia,Year 1,92.3
+2015,South Australia,Year 2,92.7
+2015,South Australia,Year 3,92.9
+2015,South Australia,Year 4,92.7
+2015,South Australia,Year 5,92.8
+2015,South Australia,Year 6,92.6
+2015,South Australia,Year 7,92.2
+2015,South Australia,Year 8,91.6
+2015,South Australia,Year 9,90.0
+2015,South Australia,Year 10,89.5
+2015,Western Australia,Years 1-10,92.0
+2015,Western Australia,Year 1,92.6
+2015,Western Australia,Year 2,93.0
+2015,Western Australia,Year 3,93.3
+2015,Western Australia,Year 4,93.3
+2015,Western Australia,Year 5,93.2
+2015,Western Australia,Year 6,93.3
+2015,Western Australia,Year 7,92.2
+2015,Western Australia,Year 8,91.0
+2015,Western Australia,Year 9,89.2
+2015,Western Australia,Year 10,87.8
+2015,Tasmania,Years 1-10,91.8
+2015,Tasmania,Year 1,92.9
+2015,Tasmania,Year 2,93.5
+2015,Tasmania,Year 3,93.8
+2015,Tasmania,Year 4,93.7
+2015,Tasmania,Year 5,93.6
+2015,Tasmania,Year 6,93.3
+2015,Tasmania,Year 7,91.9
+2015,Tasmania,Year 8,89.9
+2015,Tasmania,Year 9,88.2
+2015,Tasmania,Year 10,87.2
+2015,Northern Territory,Years 1-10,83.5
+2015,Northern Territory,Year 1,84.0
+2015,Northern Territory,Year 2,85.6
+2015,Northern Territory,Year 3,85.5
+2015,Northern Territory,Year 4,85.1
+2015,Northern Territory,Year 5,84.4
+2015,Northern Territory,Year 6,84.4
+2015,Northern Territory,Year 7,83.6
+2015,Northern Territory,Year 8,81.4
+2015,Northern Territory,Year 9,80.0
+2015,Northern Territory,Year 10,78.9
+2015,Australian Capital Territory,Years 1-10,92.7
+2015,Australian Capital Territory,Year 1,93.7
+2015,Australian Capital Territory,Year 2,93.8
+2015,Australian Capital Territory,Year 3,94.1
+2015,Australian Capital Territory,Year 4,94.0
+2015,Australian Capital Territory,Year 5,93.9
+2015,Australian Capital Territory,Year 6,93.3
+2015,Australian Capital Territory,Year 7,92.8
+2015,Australian Capital Territory,Year 8,91.8
+2015,Australian Capital Territory,Year 9,89.9
+2015,Australian Capital Territory,Year 10,89.7
+2015,Australia,Years 1-10,92.6
+2015,Australia,Year 1,93.2
+2015,Australia,Year 2,93.5
+2015,Australia,Year 3,93.7
+2015,Australia,Year 4,93.6
+2015,Australia,Year 5,93.6
+2015,Australia,Year 6,93.4
+2015,Australia,Year 7,93.1
+2015,Australia,Year 8,91.7
+2015,Australia,Year 9,90.5
+2015,Australia,Year 10,89.6
+2014,New South Wales,Years 1-10,93.6
+2014,New South Wales,Year 1,94.8
+2014,New South Wales,Year 2,95.0
+2014,New South Wales,Year 3,95.1
+2014,New South Wales,Year 4,95.0
+2014,New South Wales,Year 5,94.9
+2014,New South Wales,Year 6,94.4
+2014,New South Wales,Year 7,94.1
+2014,New South Wales,Year 8,92.2
+2014,New South Wales,Year 9,91.2
+2014,New South Wales,Year 10,89.8
+2014,Victoria,Years 1-10,93.0
+2014,Victoria,Year 1,93.4
+2014,Victoria,Year 2,93.7
+2014,Victoria,Year 3,93.8
+2014,Victoria,Year 4,93.8
+2014,Victoria,Year 5,93.7
+2014,Victoria,Year 6,93.6
+2014,Victoria,Year 7,93.7
+2014,Victoria,Year 8,92.4
+2014,Victoria,Year 9,91.4
+2014,Victoria,Year 10,91.2
+2014,Queensland,Years 1-10,92.2
+2014,Queensland,Year 1,92.7
+2014,Queensland,Year 2,93.0
+2014,Queensland,Year 3,93.2
+2014,Queensland,Year 4,93.2
+2014,Queensland,Year 5,93.2
+2014,Queensland,Year 6,92.9
+2014,Queensland,Year 7,92.6
+2014,Queensland,Year 8,92.2
+2014,Queensland,Year 9,90.3
+2014,Queensland,Year 10,89.1
+2014,South Australia,Years 1-10,92.1
+2014,South Australia,Year 1,92.6
+2014,South Australia,Year 2,93.0
+2014,South Australia,Year 3,93.0
+2014,South Australia,Year 4,93.2
+2014,South Australia,Year 5,93.1
+2014,South Australia,Year 6,92.8
+2014,South Australia,Year 7,92.4
+2014,South Australia,Year 8,91.7
+2014,South Australia,Year 9,90.0
+2014,South Australia,Year 10,89.3
+2014,Western Australia,Years 1-10,91.7
+2014,Western Australia,Year 1,92.3
+2014,Western Australia,Year 2,92.7
+2014,Western Australia,Year 3,92.9
+2014,Western Australia,Year 4,92.9
+2014,Western Australia,Year 5,93.0
+2014,Western Australia,Year 6,92.8
+2014,Western Australia,Year 7,92.3
+2014,Western Australia,Year 8,90.9
+2014,Western Australia,Year 9,88.9
+2014,Western Australia,Year 10,87.7
+2014,Tasmania,Years 1-10,92.1
+2014,Tasmania,Year 1,93.6
+2014,Tasmania,Year 2,93.9
+2014,Tasmania,Year 3,94.0
+2014,Tasmania,Year 4,93.9
+2014,Tasmania,Year 5,93.9
+2014,Tasmania,Year 6,93.4
+2014,Tasmania,Year 7,92.3
+2014,Tasmania,Year 8,90.1
+2014,Tasmania,Year 9,88.7
+2014,Tasmania,Year 10,87.5
+2014,Northern Territory,Years 1-10,82.3
+2014,Northern Territory,Year 1,83.2
+2014,Northern Territory,Year 2,83.4
+2014,Northern Territory,Year 3,84.1
+2014,Northern Territory,Year 4,83.7
+2014,Northern Territory,Year 5,83.9
+2014,Northern Territory,Year 6,83.4
+2014,Northern Territory,Year 7,82.4
+2014,Northern Territory,Year 8,80.5
+2014,Northern Territory,Year 9,79.3
+2014,Northern Territory,Year 10,77.3
+2014,Australian Capital Territory,Years 1-10,92.3
+2014,Australian Capital Territory,Year 1,93.6
+2014,Australian Capital Territory,Year 2,93.6
+2014,Australian Capital Territory,Year 3,93.9
+2014,Australian Capital Territory,Year 4,93.7
+2014,Australian Capital Territory,Year 5,93.5
+2014,Australian Capital Territory,Year 6,93.1
+2014,Australian Capital Territory,Year 7,92.7
+2014,Australian Capital Territory,Year 8,91.0
+2014,Australian Capital Territory,Year 9,89.6
+2014,Australian Capital Territory,Year 10,88.3
+2014,Australia,Years 1-10,92.7
+2014,Australia,Year 1,93.4
+2014,Australia,Year 2,93.7
+2014,Australia,Year 3,93.8
+2014,Australia,Year 4,93.8
+2014,Australia,Year 5,93.7
+2014,Australia,Year 6,93.4
+2014,Australia,Year 7,93.2
+2014,Australia,Year 8,91.8
+2014,Australia,Year 9,90.5
+2014,Australia,Year 10,89.5
