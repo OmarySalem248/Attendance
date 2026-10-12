@@ -1,0 +1,180 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "symbolSize": 110
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
+  "description": "Proportional symbol map: circle area shows the share of students in each state who attend on fewer than 90 percent of school days.",
+  "title": {
+    "text": {"expr": "'Students attending fewer than 90% of school days, ' + year_select"},
+    "subtitle": "Share of all students, Years 1-10, all sectors",
+    "anchor": "start"
+  },
+  "width": 600,
+  "height": 480,
+  "params": [
+    {
+      "name": "year_select",
+      "value": 2025,
+      "bind": {"input": "range", "min": 2015, "max": 2025, "step": 1, "name": "Year: "}
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [-18, -36],
+    "rotate": [-134, 0]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "australian_states.geojson",
+        "format": {"type": "json", "property": "features"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8e7e1",
+        "stroke": "#fcfcfb",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "data": {
+        "url": "attendance_full.csv",
+        "format": {"type": "csv", "parse": {"year": "number", "rate": "number", "level": "number"}}
+      },
+      "transform": [
+        {
+          "filter": "datum.sector === 'All' && datum.sex === 'All' && datum.geo === 'All' && datum.indigenous === 'All' && datum.year_level === 'Years 1-10' && datum.is_quarter_row === 'False' && datum.state !== 'Australia'"
+        },
+        {"filter": "datum.year === year_select && isValid(datum.level)"},
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "values": [
+                {"state": "New South Wales", "abbr": "NSW", "lon": 146.9, "lat": -32.2},
+                {"state": "Victoria", "abbr": "VIC", "lon": 144.3, "lat": -36.9},
+                {"state": "Queensland", "abbr": "QLD", "lon": 144.5, "lat": -22.5},
+                {"state": "South Australia", "abbr": "SA", "lon": 135.5, "lat": -30.0},
+                {"state": "Western Australia", "abbr": "WA", "lon": 122.0, "lat": -26.0},
+                {"state": "Tasmania", "abbr": "TAS", "lon": 146.6, "lat": -42.0},
+                {"state": "Northern Territory", "abbr": "NT", "lon": 133.4, "lat": -19.5},
+                {"state": "Australian Capital Territory", "abbr": "ACT", "lon": 149.1, "lat": -35.5}
+              ]
+            },
+            "key": "state",
+            "fields": ["abbr", "lon", "lat"]
+          }
+        },
+        {"calculate": "100 - datum.level", "as": "below90_share"}
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "color": "#eb6834",
+            "opacity": 0.82,
+            "stroke": "#fcfcfb",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "size": {
+              "field": "below90_share",
+              "type": "quantitative",
+              "scale": {"type": "linear", "domain": [0, 65], "range": [0, 4000]},
+              "legend": {
+                "title": "Share of students below 90% (%)",
+                "orient": "bottom-left",
+                "values": [20, 40, 60],
+                "symbolFillColor": "#eb6834"
+              }
+            },
+            "tooltip": [
+              {"field": "state", "type": "nominal", "title": "State"},
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {"field": "below90_share", "type": "quantitative", "title": "Attending <90% of days (%)", "format": ".1f"},
+              {"field": "level", "type": "quantitative", "title": "Attending 90%+ of days (%)", "format": ".1f"},
+              {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"}
+            ]
+          }
+        },
+        {
+          "transform": [
+            {"filter": "datum.abbr != 'ACT' && datum.abbr != 'TAS'"},
+            {"calculate": "datum.abbr + '\\n' + format(datum.below90_share, '.0f') + '%'", "as": "lab"}
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#0b0b0b",
+            "lineBreak": "\n",
+            "lineHeight": 14
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "text": {"field": "lab"}
+          }
+        },
+        {
+          "transform": [
+            {"filter": "datum.abbr == 'ACT' || datum.abbr == 'TAS'"},
+            {"calculate": "datum.abbr + ' ' + format(datum.below90_share, '.0f') + '%'", "as": "lab"},
+            {"calculate": "datum.lon + (datum.abbr == 'ACT' ? 1.6 : 1.8)", "as": "lon2"},
+            {"calculate": "datum.lat + (datum.abbr == 'ACT' ? -0.5 : -0.8)", "as": "lat2"}
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#0b0b0b",
+            "align": "left"
+          },
+          "encoding": {
+            "longitude": {"field": "lon2", "type": "quantitative"},
+            "latitude": {"field": "lat2", "type": "quantitative"},
+            "text": {"field": "lab"}
+          }
+        }
+      ]
+    }
+  ]
+}
