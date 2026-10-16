@@ -23,6 +23,7 @@ args = sys.argv[2:]
 # Read everything as text so "2025" or "False" in a filter matches exactly what is in the file.
 df = pd.read_csv("attendance_full.csv", dtype=str, keep_default_na=False)
 print("Read", len(df), "rows")
+full = df  # spelling checks look at the whole file, not what's left after earlier filters
 
 cols = None
 i = 0
@@ -43,12 +44,13 @@ while i < len(args):
 
     if col not in df.columns:
         sys.exit(f"Unknown column '{col}'. Columns are: {', '.join(df.columns)}")
-    vals = vals.split(",")
-    unknown = [v for v in vals if v not in set(df[col])]
+    # Case-insensitive, so sex=male matches "Male".
+    vals = [v.lower() for v in vals.split(",")]
+    unknown = [v for v in vals if v not in set(full[col].str.lower())]
     if unknown:
         print(f"Warning: {col} has no rows equal to {unknown} (check spelling in data_dictionary.md)")
 
-    match = df[col].isin(vals)
+    match = df[col].str.lower().isin(vals)
     df = df[match] if keep else df[~match]
     print(f"  {arg}: {len(df)} rows left")
     i += 1

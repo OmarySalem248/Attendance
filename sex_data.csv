@@ -1,0 +1,595 @@
+year,sector,state,sex,rate,level
+2025,Government,New South Wales,Male,88.1,59.6
+2025,Government,New South Wales,Female,88.4,61.1
+2025,Catholic,New South Wales,Male,91.4,69.5
+2025,Catholic,New South Wales,Female,91.4,70.0
+2025,Independent,New South Wales,Male,91.8,71.4
+2025,Independent,New South Wales,Female,91.7,71.5
+2025,Government,Victoria,Male,87.7,55.6
+2025,Government,Victoria,Female,87.9,56.3
+2025,Catholic,Victoria,Male,89.9,63.7
+2025,Catholic,Victoria,Female,89.8,63.5
+2025,Independent,Victoria,Male,92.0,72.9
+2025,Independent,Victoria,Female,91.8,72.8
+2025,Government,Queensland,Male,87.0,56.8
+2025,Government,Queensland,Female,87.6,58.9
+2025,Catholic,Queensland,Male,90.9,67.5
+2025,Catholic,Queensland,Female,90.6,66.4
+2025,Independent,Queensland,Male,91.0,69.4
+2025,Independent,Queensland,Female,91.1,69.6
+2025,Government,South Australia,Male,88.0,61.1
+2025,Government,South Australia,Female,88.3,62.0
+2025,Catholic,South Australia,Male,90.2,65.4
+2025,Catholic,South Australia,Female,90.1,65.0
+2025,Independent,South Australia,Male,91.3,69.7
+2025,Independent,South Australia,Female,91.0,68.8
+2025,Government,Western Australia,Male,86.8,59.2
+2025,Government,Western Australia,Female,87.0,60.1
+2025,Catholic,Western Australia,Male,91.0,69.1
+2025,Catholic,Western Australia,Female,90.9,68.8
+2025,Independent,Western Australia,Male,91.7,72.2
+2025,Independent,Western Australia,Female,91.4,71.7
+2025,Government,Tasmania,Male,85.9,54.6
+2025,Government,Tasmania,Female,85.8,54.8
+2025,Catholic,Tasmania,Male,89.6,63.0
+2025,Catholic,Tasmania,Female,89.0,60.7
+2025,Independent,Tasmania,Male,91.3,70.4
+2025,Independent,Tasmania,Female,91.0,69.2
+2025,Government,Northern Territory,Male,74.1,41.4
+2025,Government,Northern Territory,Female,74.7,42.2
+2025,Catholic,Northern Territory,Male,81.1,46.5
+2025,Catholic,Northern Territory,Female,80.5,47.2
+2025,Independent,Northern Territory,Male,85.5,58.6
+2025,Independent,Northern Territory,Female,85.9,58.5
+2025,Government,Australian Capital Territory,Male,88.8,61.5
+2025,Government,Australian Capital Territory,Female,88.7,61.9
+2025,Catholic,Australian Capital Territory,Male,90.2,64.4
+2025,Catholic,Australian Capital Territory,Female,88.9,59.1
+2025,Independent,Australian Capital Territory,Male,91.3,69.0
+2025,Independent,Australian Capital Territory,Female,90.8,68.1
+2025,Government,Australia,Male,87.4,57.7
+2025,Government,Australia,Female,87.7,59.0
+2025,Catholic,Australia,Male,90.6,66.8
+2025,Catholic,Australia,Female,90.5,66.4
+2025,Independent,Australia,Male,91.5,71.1
+2025,Independent,Australia,Female,91.4,71.0
+2024,Government,New South Wales,Male,87.3,55.0
+2024,Government,New South Wales,Female,87.7,56.7
+2024,Catholic,New South Wales,Male,90.3,63.6
+2024,Catholic,New South Wales,Female,90.3,64.0
+2024,Independent,New South Wales,Male,91.0,67.8
+2024,Independent,New South Wales,Female,90.9,67.8
+2024,Government,Victoria,Male,87.5,56.1
+2024,Government,Victoria,Female,87.6,56.8
+2024,Catholic,Victoria,Male,89.9,62.7
+2024,Catholic,Victoria,Female,89.8,62.5
+2024,Independent,Victoria,Male,91.6,70.5
+2024,Independent,Victoria,Female,91.4,70.2
+2024,Government,Queensland,Male,86.6,54.6
+2024,Government,Queensland,Female,87.1,56.7
+2024,Catholic,Queensland,Male,90.4,65.3
+2024,Catholic,Queensland,Female,90.2,64.3
+2024,Independent,Queensland,Male,90.6,67.0
+2024,Independent,Queensland,Female,90.6,67.5
+2024,Government,South Australia,Male,87.1,58.0
+2024,Government,South Australia,Female,87.3,58.8
+2024,Catholic,South Australia,Male,90.2,64.2
+2024,Catholic,South Australia,Female,90.1,63.4
+2024,Independent,South Australia,Male,91.3,69.7
+2024,Independent,South Australia,Female,90.9,68.0
+2024,Government,Western Australia,Male,87.0,59.4
+2024,Government,Western Australia,Female,87.2,59.9
+2024,Catholic,Western Australia,Male,90.9,69.3
+2024,Catholic,Western Australia,Female,90.7,68.8
+2024,Independent,Western Australia,Male,91.9,73.0
+2024,Independent,Western Australia,Female,91.3,70.6
+2024,Government,Tasmania,Male,85.3,54.0
+2024,Government,Tasmania,Female,85.3,53.5
+2024,Catholic,Tasmania,Male,89.2,61.6
+2024,Catholic,Tasmania,Female,88.8,59.2
+2024,Independent,Tasmania,Male,90.6,68.2
+2024,Independent,Tasmania,Female,90.5,66.9
+2024,Government,Northern Territory,Male,74.2,40.9
+2024,Government,Northern Territory,Female,74.9,41.7
+2024,Catholic,Northern Territory,Male,81.5,46.0
+2024,Catholic,Northern Territory,Female,80.1,43.6
+2024,Independent,Northern Territory,Male,83.8,54.4
+2024,Independent,Northern Territory,Female,84.5,57.3
+2024,Government,Australian Capital Territory,Male,87.8,56.9
+2024,Government,Australian Capital Territory,Female,87.9,56.8
+2024,Catholic,Australian Capital Territory,Male,89.6,61.4
+2024,Catholic,Australian Capital Territory,Female,88.4,56.2
+2024,Independent,Australian Capital Territory,Male,90.4,64.7
+2024,Independent,Australian Capital Territory,Female,90.8,66.2
+2024,Government,Australia,Male,87.0,55.7
+2024,Government,Australia,Female,87.3,57.0
+2024,Catholic,Australia,Male,90.2,64.1
+2024,Catholic,Australia,Female,90.0,63.6
+2024,Independent,Australia,Male,91.1,68.8
+2024,Independent,Australia,Female,90.9,68.5
+2023,Government,New South Wales,Male,88.0,59.3
+2023,Government,New South Wales,Female,88.3,60.5
+2023,Catholic,New South Wales,Male,90.6,65.8
+2023,Catholic,New South Wales,Female,90.7,66.1
+2023,Independent,New South Wales,Male,91.6,71.1
+2023,Independent,New South Wales,Female,91.5,70.7
+2023,Government,Victoria,Male,88.6,61.9
+2023,Government,Victoria,Female,88.6,62.4
+2023,Catholic,Victoria,Male,90.2,65.6
+2023,Catholic,Victoria,Female,90.1,64.5
+2023,Independent,Victoria,Male,91.6,70.7
+2023,Independent,Victoria,Female,91.5,70.6
+2023,Government,Queensland,Male,86.9,55.1
+2023,Government,Queensland,Female,87.4,57.2
+2023,Catholic,Queensland,Male,90.6,66.2
+2023,Catholic,Queensland,Female,90.5,66.0
+2023,Independent,Queensland,Male,91.0,68.7
+2023,Independent,Queensland,Female,91.1,69.2
+2023,Government,South Australia,Male,86.5,55.8
+2023,Government,South Australia,Female,86.8,56.8
+2023,Catholic,South Australia,Male,90.2,64.2
+2023,Catholic,South Australia,Female,90.0,62.7
+2023,Independent,South Australia,Male,91.0,68.1
+2023,Independent,South Australia,Female,90.8,67.7
+2023,Government,Western Australia,Male,86.7,56.9
+2023,Government,Western Australia,Female,86.8,57.5
+2023,Catholic,Western Australia,Male,90.3,66.6
+2023,Catholic,Western Australia,Female,90.1,66.3
+2023,Independent,Western Australia,Male,91.1,69.6
+2023,Independent,Western Australia,Female,90.6,68.0
+2023,Government,Tasmania,Male,84.9,50.1
+2023,Government,Tasmania,Female,85.0,51.2
+2023,Catholic,Tasmania,Male,88.7,59.4
+2023,Catholic,Tasmania,Female,88.3,57.3
+2023,Independent,Tasmania,Male,90.2,64.1
+2023,Independent,Tasmania,Female,90.2,64.1
+2023,Government,Northern Territory,Male,74.8,40.9
+2023,Government,Northern Territory,Female,75.7,42.4
+2023,Catholic,Northern Territory,Male,79.2,44.0
+2023,Catholic,Northern Territory,Female,78.8,45.5
+2023,Independent,Northern Territory,Male,84.8,55.5
+2023,Independent,Northern Territory,Female,85.7,57.8
+2023,Government,Australian Capital Territory,Male,87.8,56.5
+2023,Government,Australian Capital Territory,Female,87.8,56.9
+2023,Catholic,Australian Capital Territory,Male,89.9,62.5
+2023,Catholic,Australian Capital Territory,Female,89.0,58.5
+2023,Independent,Australian Capital Territory,Male,91.3,68.2
+2023,Independent,Australian Capital Territory,Female,91.0,68.1
+2023,Government,Australia,Male,87.4,58.1
+2023,Government,Australia,Female,87.7,59.2
+2023,Catholic,Australia,Male,90.3,65.4
+2023,Catholic,Australia,Female,90.2,64.9
+2023,Independent,Australia,Male,91.3,69.8
+2023,Independent,Australia,Female,91.2,69.6
+2022,Government,New South Wales,Male,85.0,43.2
+2022,Government,New South Wales,Female,85.5,45.5
+2022,Catholic,New South Wales,Male,88.0,50.2
+2022,Catholic,New South Wales,Female,88.2,51.8
+2022,Independent,New South Wales,Male,88.6,53.5
+2022,Independent,New South Wales,Female,88.8,55.2
+2022,Government,Victoria,Male,87.2,53.8
+2022,Government,Victoria,Female,87.5,55.1
+2022,Catholic,Victoria,Male,87.6,48.3
+2022,Catholic,Victoria,Female,88.0,50.9
+2022,Independent,Victoria,Male,89.0,55.9
+2022,Independent,Victoria,Female,89.2,58.6
+2022,Government,Queensland,Male,85.3,48.2
+2022,Government,Queensland,Female,85.9,50.9
+2022,Catholic,Queensland,Male,88.2,51.4
+2022,Catholic,Queensland,Female,88.0,50.7
+2022,Independent,Queensland,Male,89.2,57.9
+2022,Independent,Queensland,Female,89.9,62.0
+2022,Government,South Australia,Male,84.5,45.8
+2022,Government,South Australia,Female,85.0,47.7
+2022,Catholic,South Australia,Male,86.9,44.4
+2022,Catholic,South Australia,Female,87.0,44.7
+2022,Independent,South Australia,Male,87.6,47.7
+2022,Independent,South Australia,Female,87.5,47.5
+2022,Government,Western Australia,Male,84.7,47.4
+2022,Government,Western Australia,Female,84.8,47.7
+2022,Catholic,Western Australia,Male,89.3,60.4
+2022,Catholic,Western Australia,Female,89.1,59.5
+2022,Independent,Western Australia,Male,88.7,56.6
+2022,Independent,Western Australia,Female,88.5,56.9
+2022,Government,Tasmania,Male,83.9,43.6
+2022,Government,Tasmania,Female,84.0,44.7
+2022,Catholic,Tasmania,Male,86.7,46.4
+2022,Catholic,Tasmania,Female,87.0,48.4
+2022,Independent,Tasmania,Male,87.7,49.2
+2022,Independent,Tasmania,Female,88.1,53.0
+2022,Government,Northern Territory,Male,74.0,35.5
+2022,Government,Northern Territory,Female,74.5,37.5
+2022,Catholic,Northern Territory,Male,76.6,34.8
+2022,Catholic,Northern Territory,Female,76.4,36.1
+2022,Independent,Northern Territory,Male,85.2,49.8
+2022,Independent,Northern Territory,Female,85.5,50.0
+2022,Government,Australian Capital Territory,Male,85.3,41.1
+2022,Government,Australian Capital Territory,Female,85.4,41.7
+2022,Catholic,Australian Capital Territory,Male,85.6,34.2
+2022,Catholic,Australian Capital Territory,Female,85.1,33.5
+2022,Independent,Australian Capital Territory,Male,88.4,50.1
+2022,Independent,Australian Capital Territory,Female,89.2,53.0
+2022,Government,Australia,Male,85.4,47.4
+2022,Government,Australia,Female,85.8,49.2
+2022,Catholic,Australia,Male,87.8,50.1
+2022,Catholic,Australia,Female,88.0,50.9
+2022,Independent,Australia,Male,88.7,54.5
+2022,Independent,Australia,Female,88.9,56.8
+2021,Government,New South Wales,Male,89.9,67.3
+2021,Government,New South Wales,Female,90.3,68.5
+2021,Catholic,New South Wales,Male,92.3,76.0
+2021,Catholic,New South Wales,Female,92.2,76.1
+2021,Independent,New South Wales,Male,93.0,78.4
+2021,Independent,New South Wales,Female,93.1,79.0
+2021,Government,Victoria,Male,91.8,74.5
+2021,Government,Victoria,Female,92.0,75.5
+2021,Catholic,Victoria,Male,92.8,78.1
+2021,Catholic,Victoria,Female,92.9,78.5
+2021,Independent,Victoria,Male,94.2,84.7
+2021,Independent,Victoria,Female,94.2,84.6
+2021,Government,Queensland,Male,88.7,62.6
+2021,Government,Queensland,Female,89.2,64.7
+2021,Catholic,Queensland,Male,92.4,75.3
+2021,Catholic,Queensland,Female,92.3,74.6
+2021,Independent,Queensland,Male,92.4,76.2
+2021,Independent,Queensland,Female,92.5,77.0
+2021,Government,South Australia,Male,89.1,65.3
+2021,Government,South Australia,Female,89.5,66.4
+2021,Catholic,South Australia,Male,92.5,76.3
+2021,Catholic,South Australia,Female,92.4,76.4
+2021,Independent,South Australia,Male,93.1,78.7
+2021,Independent,South Australia,Female,93.0,78.3
+2021,Government,Western Australia,Male,88.8,65.2
+2021,Government,Western Australia,Female,88.9,65.4
+2021,Catholic,Western Australia,Male,92.1,74.6
+2021,Catholic,Western Australia,Female,92.1,74.6
+2021,Independent,Western Australia,Male,92.3,76.2
+2021,Independent,Western Australia,Female,92.1,75.4
+2021,Government,Tasmania,Male,88.2,62.6
+2021,Government,Tasmania,Female,88.3,62.4
+2021,Catholic,Tasmania,Male,91.0,70.7
+2021,Catholic,Tasmania,Female,91.0,70.5
+2021,Independent,Tasmania,Male,92.9,77.9
+2021,Independent,Tasmania,Female,92.5,76.3
+2021,Government,Northern Territory,Male,78.1,49.4
+2021,Government,Northern Territory,Female,78.1,49.2
+2021,Catholic,Northern Territory,Male,80.8,52.0
+2021,Catholic,Northern Territory,Female,81.5,54.8
+2021,Independent,Northern Territory,Male,87.4,66.3
+2021,Independent,Northern Territory,Female,87.9,67.1
+2021,Government,Australian Capital Territory,Male,91.0,70.9
+2021,Government,Australian Capital Territory,Female,91.1,70.9
+2021,Catholic,Australian Capital Territory,Male,92.1,73.5
+2021,Catholic,Australian Capital Territory,Female,92.2,73.8
+2021,Independent,Australian Capital Territory,Male,93.3,78.8
+2021,Independent,Australian Capital Territory,Female,93.0,77.2
+2021,Government,Australia,Male,89.8,67.5
+2021,Government,Australia,Female,90.1,68.6
+2021,Catholic,Australia,Male,92.3,76.0
+2021,Catholic,Australia,Female,92.3,76.0
+2021,Independent,Australia,Male,93.0,79.1
+2021,Independent,Australia,Female,93.1,79.3
+2019,Government,New South Wales,Male,90.8,72.1
+2019,Government,New South Wales,Female,91.4,74.1
+2019,Catholic,New South Wales,Male,92.7,76.6
+2019,Catholic,New South Wales,Female,92.9,77.6
+2019,Independent,New South Wales,Male,93.2,79.1
+2019,Independent,New South Wales,Female,93.4,80.4
+2019,Government,Victoria,Male,91.3,72.0
+2019,Government,Victoria,Female,91.6,73.1
+2019,Catholic,Victoria,Male,92.5,75.9
+2019,Catholic,Victoria,Female,92.7,76.9
+2019,Independent,Victoria,Male,93.4,80.4
+2019,Independent,Victoria,Female,93.4,80.1
+2019,Government,Queensland,Male,90.2,67.9
+2019,Government,Queensland,Female,91.0,70.9
+2019,Catholic,Queensland,Male,92.0,73.2
+2019,Catholic,Queensland,Female,91.9,73.0
+2019,Independent,Queensland,Male,93.0,78.5
+2019,Independent,Queensland,Female,93.1,79.0
+2019,Government,South Australia,Male,90.2,69.3
+2019,Government,South Australia,Female,90.7,70.9
+2019,Catholic,South Australia,Male,92.5,75.9
+2019,Catholic,South Australia,Female,92.8,77.6
+2019,Independent,South Australia,Male,93.1,78.1
+2019,Independent,South Australia,Female,93.0,77.6
+2019,Government,Western Australia,Male,90.0,69.1
+2019,Government,Western Australia,Female,90.3,69.9
+2019,Catholic,Western Australia,Male,92.3,76.9
+2019,Catholic,Western Australia,Female,92.3,76.8
+2019,Independent,Western Australia,Male,92.8,78.5
+2019,Independent,Western Australia,Female,93.0,79.1
+2019,Government,Tasmania,Male,89.8,68.8
+2019,Government,Tasmania,Female,90.2,70.2
+2019,Catholic,Tasmania,Male,91.6,72.5
+2019,Catholic,Tasmania,Female,92.0,73.5
+2019,Independent,Tasmania,Male,93.4,79.5
+2019,Independent,Tasmania,Female,93.6,80.0
+2019,Government,Northern Territory,Male,78.8,47.0
+2019,Government,Northern Territory,Female,79.0,48.2
+2019,Catholic,Northern Territory,Male,77.1,46.6
+2019,Catholic,Northern Territory,Female,78.4,50.1
+2019,Independent,Northern Territory,Male,85.7,64.3
+2019,Independent,Northern Territory,Female,85.8,64.5
+2019,Government,Australian Capital Territory,Male,90.0,66.6
+2019,Government,Australian Capital Territory,Female,90.4,67.7
+2019,Catholic,Australian Capital Territory,Male,92.9,77.0
+2019,Catholic,Australian Capital Territory,Female,91.7,68.9
+2019,Independent,Australian Capital Territory,Male,92.9,79.5
+2019,Independent,Australian Capital Territory,Female,93.2,79.0
+2019,Government,Australia,Male,90.5,70.2
+2019,Government,Australia,Female,91.0,72.0
+2019,Catholic,Australia,Male,92.3,75.4
+2019,Catholic,Australia,Female,92.4,75.9
+2019,Independent,Australia,Male,93.1,79.0
+2019,Independent,Australia,Female,93.2,79.5
+2018,Government,New South Wales,Male,91.4,73.2
+2018,Government,New South Wales,Female,91.9,74.8
+2018,Catholic,New South Wales,Male,93.2,78.1
+2018,Catholic,New South Wales,Female,93.3,78.7
+2018,Independent,New South Wales,Male,93.5,80.5
+2018,Independent,New South Wales,Female,93.4,81.0
+2018,Government,Victoria,Male,92.1,75.2
+2018,Government,Victoria,Female,92.4,76.2
+2018,Catholic,Victoria,Male,93.2,79.9
+2018,Catholic,Victoria,Female,93.4,80.1
+2018,Independent,Victoria,Male,93.8,82.7
+2018,Independent,Victoria,Female,93.9,82.5
+2018,Government,Queensland,Male,90.6,69.7
+2018,Government,Queensland,Female,91.4,72.6
+2018,Catholic,Queensland,Male,92.3,74.4
+2018,Catholic,Queensland,Female,92.1,73.5
+2018,Independent,Queensland,Male,93.2,79.7
+2018,Independent,Queensland,Female,93.3,79.7
+2018,Government,South Australia,Male,90.5,71.0
+2018,Government,South Australia,Female,91.0,72.5
+2018,Catholic,South Australia,Male,92.8,77.3
+2018,Catholic,South Australia,Female,93.0,78.0
+2018,Independent,South Australia,Male,93.3,80.0
+2018,Independent,South Australia,Female,93.5,80.2
+2018,Government,Western Australia,Male,91.0,73.4
+2018,Government,Western Australia,Female,91.2,74.0
+2018,Catholic,Western Australia,Male,93.3,81.0
+2018,Catholic,Western Australia,Female,93.1,80.6
+2018,Independent,Western Australia,Male,93.7,82.7
+2018,Independent,Western Australia,Female,93.8,82.8
+2018,Government,Tasmania,Male,90.4,72.3
+2018,Government,Tasmania,Female,90.9,73.4
+2018,Catholic,Tasmania,Male,92.5,77.1
+2018,Catholic,Tasmania,Female,92.4,75.8
+2018,Independent,Tasmania,Male,93.4,80.0
+2018,Independent,Tasmania,Female,93.3,79.2
+2018,Government,Northern Territory,Male,79.4,47.8
+2018,Government,Northern Territory,Female,79.8,49.1
+2018,Catholic,Northern Territory,Male,79.9,50.4
+2018,Catholic,Northern Territory,Female,80.1,50.0
+2018,Independent,Northern Territory,Male,88.3,69.0
+2018,Independent,Northern Territory,Female,88.1,68.3
+2018,Government,Australian Capital Territory,Male,90.6,68.9
+2018,Government,Australian Capital Territory,Female,90.6,68.7
+2018,Catholic,Australian Capital Territory,Male,93.1,78.4
+2018,Catholic,Australian Capital Territory,Female,92.2,72.7
+2018,Independent,Australian Capital Territory,Male,93.9,83.4
+2018,Independent,Australian Capital Territory,Female,93.9,82.6
+2018,Government,Australia,Male,91.1,72.4
+2018,Government,Australia,Female,91.6,74.0
+2018,Catholic,Australia,Male,92.9,77.8
+2018,Catholic,Australia,Female,92.9,77.7
+2018,Independent,Australia,Male,93.5,81.0
+2018,Independent,Australia,Female,93.5,81.1
+2017,Government,New South Wales,Male,92.2,
+2017,Government,New South Wales,Female,92.5,
+2017,Catholic,New South Wales,Male,93.5,79.9
+2017,Catholic,New South Wales,Female,93.5,80.1
+2017,Independent,New South Wales,Male,93.6,81.4
+2017,Independent,New South Wales,Female,93.7,81.7
+2017,Government,Victoria,Male,92.4,76.4
+2017,Government,Victoria,Female,92.6,76.7
+2017,Catholic,Victoria,Male,93.6,81.3
+2017,Catholic,Victoria,Female,93.6,81.2
+2017,Independent,Victoria,Male,94.3,84.1
+2017,Independent,Victoria,Female,94.0,83.0
+2017,Government,Queensland,Male,91.3,72.0
+2017,Government,Queensland,Female,92.0,74.3
+2017,Catholic,Queensland,Male,94.0,83.2
+2017,Catholic,Queensland,Female,94.0,83.2
+2017,Independent,Queensland,Male,93.8,82.5
+2017,Independent,Queensland,Female,93.9,82.6
+2017,Government,South Australia,Male,90.6,70.9
+2017,Government,South Australia,Female,91.1,72.5
+2017,Catholic,South Australia,Male,92.7,77.0
+2017,Catholic,South Australia,Female,92.8,77.7
+2017,Independent,South Australia,Male,93.8,81.2
+2017,Independent,South Australia,Female,93.8,81.5
+2017,Government,Western Australia,Male,91.2,73.6
+2017,Government,Western Australia,Female,91.3,73.9
+2017,Catholic,Western Australia,Male,93.4,81.8
+2017,Catholic,Western Australia,Female,93.1,80.5
+2017,Independent,Western Australia,Male,94.0,83.7
+2017,Independent,Western Australia,Female,93.8,83.2
+2017,Government,Tasmania,Male,90.9,73.1
+2017,Government,Tasmania,Female,91.3,74.2
+2017,Catholic,Tasmania,Male,93.3,80.1
+2017,Catholic,Tasmania,Female,93.1,78.4
+2017,Independent,Tasmania,Male,93.9,81.5
+2017,Independent,Tasmania,Female,93.6,80.3
+2017,Government,Northern Territory,Male,79.8,48.5
+2017,Government,Northern Territory,Female,80.5,50.9
+2017,Catholic,Northern Territory,Male,80.2,53.3
+2017,Catholic,Northern Territory,Female,81.1,55.3
+2017,Independent,Northern Territory,Male,86.6,66.6
+2017,Independent,Northern Territory,Female,86.2,64.4
+2017,Government,Australian Capital Territory,Male,91.6,73.2
+2017,Government,Australian Capital Territory,Female,91.5,72.7
+2017,Catholic,Australian Capital Territory,Male,93.2,79.1
+2017,Catholic,Australian Capital Territory,Female,92.8,76.9
+2017,Independent,Australian Capital Territory,Male,93.3,79.8
+2017,Independent,Australian Capital Territory,Female,93.2,79.5
+2017,Government,Australia,Male,91.6,73.3
+2017,Government,Australia,Female,92.0,74.4
+2017,Catholic,Australia,Male,93.5,80.7
+2017,Catholic,Australia,Female,93.4,80.7
+2017,Independent,Australia,Male,93.7,82.2
+2017,Independent,Australia,Female,93.7,82.1
+2016,Government,New South Wales,Male,92.3,
+2016,Government,New South Wales,Female,92.6,
+2016,Catholic,New South Wales,Male,93.7,80.7
+2016,Catholic,New South Wales,Female,93.6,80.4
+2016,Independent,New South Wales,Male,93.8,82.6
+2016,Independent,New South Wales,Female,93.6,82.0
+2016,Government,Victoria,Male,92.7,78.0
+2016,Government,Victoria,Female,92.9,78.4
+2016,Catholic,Victoria,Male,93.9,82.7
+2016,Catholic,Victoria,Female,93.9,82.7
+2016,Independent,Victoria,Male,94.3,84.8
+2016,Independent,Victoria,Female,94.2,83.9
+2016,Government,Queensland,Male,91.4,72.9
+2016,Government,Queensland,Female,92.0,75.2
+2016,Catholic,Queensland,Male,94.1,83.2
+2016,Catholic,Queensland,Female,94.1,83.7
+2016,Independent,Queensland,Male,93.9,82.6
+2016,Independent,Queensland,Female,93.9,83.1
+2016,Government,South Australia,Male,90.8,72.0
+2016,Government,South Australia,Female,91.2,73.3
+2016,Catholic,South Australia,Male,93.1,78.2
+2016,Catholic,South Australia,Female,93.0,77.9
+2016,Independent,South Australia,Male,93.8,81.1
+2016,Independent,South Australia,Female,93.7,80.7
+2016,Government,Western Australia,Male,91.1,73.4
+2016,Government,Western Australia,Female,91.1,73.4
+2016,Catholic,Western Australia,Male,93.0,79.9
+2016,Catholic,Western Australia,Female,92.8,79.2
+2016,Independent,Western Australia,Male,93.9,82.9
+2016,Independent,Western Australia,Female,93.7,82.2
+2016,Government,Tasmania,Male,91.0,73.5
+2016,Government,Tasmania,Female,91.2,74.6
+2016,Catholic,Tasmania,Male,93.4,78.7
+2016,Catholic,Tasmania,Female,93.1,77.5
+2016,Independent,Tasmania,Male,94.3,83.3
+2016,Independent,Tasmania,Female,93.9,81.5
+2016,Government,Northern Territory,Male,80.7,47.2
+2016,Government,Northern Territory,Female,81.6,50.0
+2016,Catholic,Northern Territory,Male,82.4,54.5
+2016,Catholic,Northern Territory,Female,83.6,56.3
+2016,Independent,Northern Territory,Male,87.4,68.3
+2016,Independent,Northern Territory,Female,86.8,67.2
+2016,Government,Australian Capital Territory,Male,91.8,74.1
+2016,Government,Australian Capital Territory,Female,91.7,73.8
+2016,Catholic,Australian Capital Territory,Male,93.1,78.2
+2016,Catholic,Australian Capital Territory,Female,92.8,77.1
+2016,Independent,Australian Capital Territory,Male,94.0,82.2
+2016,Independent,Australian Capital Territory,Female,94.0,83.5
+2016,Government,Australia,Male,91.8,74.3
+2016,Government,Australia,Female,92.1,75.3
+2016,Catholic,Australia,Male,93.6,81.2
+2016,Catholic,Australia,Female,93.6,81.1
+2016,Independent,Australia,Male,93.9,82.8
+2016,Independent,Australia,Female,93.7,82.4
+2015,Government,New South Wales,Male,92.3,
+2015,Government,New South Wales,Female,92.6,
+2015,Catholic,New South Wales,Male,93.5,80.2
+2015,Catholic,New South Wales,Female,93.6,80.0
+2015,Independent,New South Wales,Male,93.8,81.7
+2015,Independent,New South Wales,Female,93.6,80.4
+2015,Government,Victoria,Male,93.0,79.2
+2015,Government,Victoria,Female,93.0,79.4
+2015,Catholic,Victoria,Male,94.1,82.8
+2015,Catholic,Victoria,Female,94.1,83.0
+2015,Independent,Victoria,Male,94.6,85.2
+2015,Independent,Victoria,Female,94.3,84.9
+2015,Government,Queensland,Male,91.3,71.9
+2015,Government,Queensland,Female,91.9,74.2
+2015,Catholic,Queensland,Male,93.8,82.0
+2015,Catholic,Queensland,Female,93.9,82.1
+2015,Independent,Queensland,Male,93.8,82.0
+2015,Independent,Queensland,Female,93.9,82.5
+2015,Government,South Australia,Male,90.9,72.1
+2015,Government,South Australia,Female,91.1,73.2
+2015,Catholic,South Australia,Male,93.2,78.1
+2015,Catholic,South Australia,Female,93.1,78.1
+2015,Independent,South Australia,Male,93.9,81.8
+2015,Independent,South Australia,Female,93.8,81.4
+2015,Government,Western Australia,Male,91.2,73.8
+2015,Government,Western Australia,Female,91.3,73.9
+2015,Catholic,Western Australia,Male,93.1,79.5
+2015,Catholic,Western Australia,Female,92.9,78.6
+2015,Independent,Western Australia,Male,93.9,82.9
+2015,Independent,Western Australia,Female,93.9,82.6
+2015,Government,Tasmania,Male,91.1,73.6
+2015,Government,Tasmania,Female,91.2,74.6
+2015,Catholic,Tasmania,Male,93.2,79.5
+2015,Catholic,Tasmania,Female,93.4,80.2
+2015,Independent,Tasmania,Male,93.8,79.3
+2015,Independent,Tasmania,Female,94.0,80.6
+2015,Government,Northern Territory,Male,81.2,50.0
+2015,Government,Northern Territory,Female,82.0,51.8
+2015,Catholic,Northern Territory,Male,85.5,56.7
+2015,Catholic,Northern Territory,Female,85.5,55.1
+2015,Independent,Northern Territory,Male,90.9,70.2
+2015,Independent,Northern Territory,Female,90.9,70.5
+2015,Government,Australian Capital Territory,Male,92.0,75.4
+2015,Government,Australian Capital Territory,Female,91.8,75.1
+2015,Catholic,Australian Capital Territory,Male,93.8,80.4
+2015,Catholic,Australian Capital Territory,Female,93.4,79.1
+2015,Independent,Australian Capital Territory,Male,94.0,81.9
+2015,Independent,Australian Capital Territory,Female,93.6,80.8
+2015,Government,Australia,Male,91.9,74.6
+2015,Government,Australia,Female,92.1,75.5
+2015,Catholic,Australia,Male,93.6,80.9
+2015,Catholic,Australia,Female,93.6,80.8
+2015,Independent,Australia,Male,94.0,82.5
+2015,Independent,Australia,Female,93.8,82.1
+2014,Government,New South Wales,Male,93.0,
+2014,Government,New South Wales,Female,93.3,
+2014,Catholic,New South Wales,Male,94.4,
+2014,Catholic,New South Wales,Female,94.5,
+2014,Independent,New South Wales,Male,94.6,
+2014,Independent,New South Wales,Female,94.3,
+2014,Government,Victoria,Male,92.2,
+2014,Government,Victoria,Female,92.3,
+2014,Catholic,Victoria,Male,94.2,
+2014,Catholic,Victoria,Female,94.3,
+2014,Independent,Victoria,Male,94.5,
+2014,Independent,Victoria,Female,94.3,
+2014,Government,Queensland,Male,91.1,
+2014,Government,Queensland,Female,91.7,
+2014,Catholic,Queensland,Male,93.8,
+2014,Catholic,Queensland,Female,93.7,
+2014,Independent,Queensland,Male,94.4,
+2014,Independent,Queensland,Female,94.4,
+2014,Government,South Australia,Male,91.1,
+2014,Government,South Australia,Female,91.3,
+2014,Catholic,South Australia,Male,93.3,
+2014,Catholic,South Australia,Female,93.4,
+2014,Independent,South Australia,Male,94.2,
+2014,Independent,South Australia,Female,94.0,
+2014,Government,Western Australia,Male,90.9,
+2014,Government,Western Australia,Female,90.9,
+2014,Catholic,Western Australia,Male,93.1,
+2014,Catholic,Western Australia,Female,92.7,
+2014,Independent,Western Australia,Male,93.9,
+2014,Independent,Western Australia,Female,93.8,
+2014,Government,Tasmania,Male,91.2,
+2014,Government,Tasmania,Female,91.2,
+2014,Catholic,Tasmania,Male,93.8,
+2014,Catholic,Tasmania,Female,93.7,
+2014,Independent,Tasmania,Male,94.9,
+2014,Independent,Tasmania,Female,94.9,
+2014,Government,Northern Territory,Male,79.9,
+2014,Government,Northern Territory,Female,80.8,
+2014,Catholic,Northern Territory,Male,83.6,
+2014,Catholic,Northern Territory,Female,84.4,
+2014,Independent,Northern Territory,Male,90.9,
+2014,Independent,Northern Territory,Female,90.7,
+2014,Government,Australian Capital Territory,Male,91.6,
+2014,Government,Australian Capital Territory,Female,91.3,
+2014,Catholic,Australian Capital Territory,Male,94.0,
+2014,Catholic,Australian Capital Territory,Female,93.4,
+2014,Independent,Australian Capital Territory,Male,93.5,
+2014,Independent,Australian Capital Territory,Female,93.2,
+2014,Government,Australia,Male,91.8,
+2014,Government,Australia,Female,92.0,
+2014,Catholic,Australia,Male,93.9,
+2014,Catholic,Australia,Female,93.9,
+2014,Independent,Australia,Male,94.4,
+2014,Independent,Australia,Female,94.2,
