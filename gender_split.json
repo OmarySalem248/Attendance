@@ -42,7 +42,7 @@
     "x": {
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"zero": false, "padding": 20}
+      "scale": {"domain": [85, 100]}
     }
   },
 
