@@ -1,0 +1,786 @@
+year,state,geo,indigenous,rate,level
+2025,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,81.9,42.4
+2025,New South Wales,Major Cities,Non-Indigenous,90.8,68.3
+2025,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,80.1,40.3
+2025,New South Wales,Inner Regional,Non-Indigenous,88.3,58.7
+2025,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,78.4,37.2
+2025,New South Wales,Outer Regional,Non-Indigenous,87.9,57.0
+2025,New South Wales,Remote,Aboriginal and Torres Strait Islander,75.0,30.8
+2025,New South Wales,Remote,Non-Indigenous,86.9,53.7
+2025,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,67.6,23.6
+2025,New South Wales,Very Remote,Non-Indigenous,88.2,56.6
+2025,Victoria,Major Cities,Aboriginal and Torres Strait Islander,80.6,38.7
+2025,Victoria,Major Cities,Non-Indigenous,89.4,61.9
+2025,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,79.8,38.5
+2025,Victoria,Inner Regional,Non-Indigenous,87.5,55.4
+2025,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,76.6,33.0
+2025,Victoria,Outer Regional,Non-Indigenous,88.0,55.5
+2025,Victoria,Remote,Aboriginal and Torres Strait Islander,82.3,52.5
+2025,Victoria,Remote,Non-Indigenous,88.5,60.1
+2025,Queensland,Major Cities,Aboriginal and Torres Strait Islander,81.6,41.9
+2025,Queensland,Major Cities,Non-Indigenous,90.0,65.6
+2025,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,81.3,41.0
+2025,Queensland,Inner Regional,Non-Indigenous,88.6,60.0
+2025,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,77.3,35.8
+2025,Queensland,Outer Regional,Non-Indigenous,89.0,61.8
+2025,Queensland,Remote,Aboriginal and Torres Strait Islander,70.4,25.6
+2025,Queensland,Remote,Non-Indigenous,88.0,55.4
+2025,Queensland,Very Remote,Aboriginal and Torres Strait Islander,64.3,18.8
+2025,Queensland,Very Remote,Non-Indigenous,87.4,52.1
+2025,South Australia,Major Cities,Aboriginal and Torres Strait Islander,79.2,38.5
+2025,South Australia,Major Cities,Non-Indigenous,90.2,66.9
+2025,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,82.5,45.6
+2025,South Australia,Inner Regional,Non-Indigenous,88.8,59.8
+2025,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,75.5,32.0
+2025,South Australia,Outer Regional,Non-Indigenous,88.0,59.3
+2025,South Australia,Remote,Aboriginal and Torres Strait Islander,82.1,42.4
+2025,South Australia,Remote,Non-Indigenous,90.5,65.6
+2025,South Australia,Very Remote,Aboriginal and Torres Strait Islander,53.2,10.3
+2025,South Australia,Very Remote,Non-Indigenous,86.9,50.6
+2025,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,74.6,36.1
+2025,Western Australia,Major Cities,Non-Indigenous,90.4,68.2
+2025,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,74.5,33.1
+2025,Western Australia,Inner Regional,Non-Indigenous,87.9,57.2
+2025,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,68.0,23.9
+2025,Western Australia,Outer Regional,Non-Indigenous,87.8,57.2
+2025,Western Australia,Remote,Aboriginal and Torres Strait Islander,65.9,23.3
+2025,Western Australia,Remote,Non-Indigenous,88.5,58.1
+2025,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,53.7,11.0
+2025,Western Australia,Very Remote,Non-Indigenous,86.5,50.7
+2025,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,81.5,42.6
+2025,Tasmania,Inner Regional,Non-Indigenous,88.3,61.7
+2025,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,83.9,47.2
+2025,Tasmania,Outer Regional,Non-Indigenous,87.2,56.9
+2025,Tasmania,Remote,Aboriginal and Torres Strait Islander,79.4,39.8
+2025,Tasmania,Remote,Non-Indigenous,83.5,41.1
+2025,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,83.4,48.4
+2025,Tasmania,Very Remote,Non-Indigenous,87.5,55.4
+2025,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,77.1,37.7
+2025,Northern Territory,Outer Regional,Non-Indigenous,89.6,63.1
+2025,Northern Territory,Remote,Aboriginal and Torres Strait Islander,56.9,17.0
+2025,Northern Territory,Remote,Non-Indigenous,88.7,60.5
+2025,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,45.8,6.8
+2025,Northern Territory,Very Remote,Non-Indigenous,86.4,54.0
+2025,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,80.0,40.0
+2025,Australian Capital Territory,Major Cities,Non-Indigenous,89.7,63.9
+2025,Australia,Major Cities,Aboriginal and Torres Strait Islander,80.4,40.7
+2025,Australia,Major Cities,Non-Indigenous,90.1,65.8
+2025,Australia,Inner Regional,Aboriginal and Torres Strait Islander,80.3,40.3
+2025,Australia,Inner Regional,Non-Indigenous,88.1,58.2
+2025,Australia,Outer Regional,Aboriginal and Torres Strait Islander,77.0,35.5
+2025,Australia,Outer Regional,Non-Indigenous,88.4,59.3
+2025,Australia,Remote,Aboriginal and Torres Strait Islander,66.6,24.1
+2025,Australia,Remote,Non-Indigenous,88.7,58.9
+2025,Australia,Very Remote,Aboriginal and Torres Strait Islander,54.2,12.0
+2025,Australia,Very Remote,Non-Indigenous,86.9,51.7
+2024,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,81.1,38.9
+2024,New South Wales,Major Cities,Non-Indigenous,89.9,63.3
+2024,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,79.4,36.9
+2024,New South Wales,Inner Regional,Non-Indigenous,87.5,54.1
+2024,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,77.6,32.7
+2024,New South Wales,Outer Regional,Non-Indigenous,87.1,53.2
+2024,New South Wales,Remote,Aboriginal and Torres Strait Islander,73.5,25.5
+2024,New South Wales,Remote,Non-Indigenous,85.6,45.6
+2024,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,68.6,22.4
+2024,New South Wales,Very Remote,Non-Indigenous,85.2,44.4
+2024,Victoria,Major Cities,Aboriginal and Torres Strait Islander,80.6,39.8
+2024,Victoria,Major Cities,Non-Indigenous,89.2,61.5
+2024,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,79.1,38.4
+2024,Victoria,Inner Regional,Non-Indigenous,87.4,55.4
+2024,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,76.5,32.6
+2024,Victoria,Outer Regional,Non-Indigenous,87.7,55.7
+2024,Victoria,Remote,Aboriginal and Torres Strait Islander,77.5,20.5
+2024,Victoria,Remote,Non-Indigenous,89.5,61.0
+2024,Queensland,Major Cities,Aboriginal and Torres Strait Islander,81.1,40.0
+2024,Queensland,Major Cities,Non-Indigenous,89.4,62.5
+2024,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,81.3,40.2
+2024,Queensland,Inner Regional,Non-Indigenous,88.2,58.3
+2024,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,77.3,36.1
+2024,Queensland,Outer Regional,Non-Indigenous,88.9,61.3
+2024,Queensland,Remote,Aboriginal and Torres Strait Islander,71.5,26.4
+2024,Queensland,Remote,Non-Indigenous,88.0,54.6
+2024,Queensland,Very Remote,Aboriginal and Torres Strait Islander,64.9,19.1
+2024,Queensland,Very Remote,Non-Indigenous,87.3,51.3
+2024,South Australia,Major Cities,Aboriginal and Torres Strait Islander,77.9,36.5
+2024,South Australia,Major Cities,Non-Indigenous,89.7,64.9
+2024,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,79.5,38.4
+2024,South Australia,Inner Regional,Non-Indigenous,87.7,56.5
+2024,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,74.5,32.0
+2024,South Australia,Outer Regional,Non-Indigenous,86.9,55.0
+2024,South Australia,Remote,Aboriginal and Torres Strait Islander,78.8,33.3
+2024,South Australia,Remote,Non-Indigenous,88.6,58.7
+2024,South Australia,Very Remote,Aboriginal and Torres Strait Islander,55.9,12.4
+2024,South Australia,Very Remote,Non-Indigenous,86.1,51.7
+2024,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,74.9,35.6
+2024,Western Australia,Major Cities,Non-Indigenous,90.3,67.7
+2024,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,75.3,35.5
+2024,Western Australia,Inner Regional,Non-Indigenous,88.3,59.1
+2024,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,69.8,25.5
+2024,Western Australia,Outer Regional,Non-Indigenous,88.1,58.6
+2024,Western Australia,Remote,Aboriginal and Torres Strait Islander,66.5,23.8
+2024,Western Australia,Remote,Non-Indigenous,88.5,57.6
+2024,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,55.1,12.3
+2024,Western Australia,Very Remote,Non-Indigenous,87.0,51.5
+2024,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,80.1,41.4
+2024,Tasmania,Inner Regional,Non-Indigenous,87.7,59.6
+2024,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,83.7,48.3
+2024,Tasmania,Outer Regional,Non-Indigenous,86.9,56.4
+2024,Tasmania,Remote,Aboriginal and Torres Strait Islander,76.2,39.1
+2024,Tasmania,Remote,Non-Indigenous,85.8,51.7
+2024,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,81.2,42.7
+2024,Tasmania,Very Remote,Non-Indigenous,89.2,63.8
+2024,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,77.6,39.0
+2024,Northern Territory,Outer Regional,Non-Indigenous,89.5,62.1
+2024,Northern Territory,Remote,Aboriginal and Torres Strait Islander,56.8,15.0
+2024,Northern Territory,Remote,Non-Indigenous,88.1,57.0
+2024,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,45.6,6.2
+2024,Northern Territory,Very Remote,Non-Indigenous,86.7,53.8
+2024,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,79.1,35.5
+2024,Australian Capital Territory,Major Cities,Non-Indigenous,88.9,59.6
+2024,Australia,Major Cities,Aboriginal and Torres Strait Islander,79.9,38.6
+2024,Australia,Major Cities,Non-Indigenous,89.6,63.2
+2024,Australia,Inner Regional,Aboriginal and Torres Strait Islander,79.8,38.2
+2024,Australia,Inner Regional,Non-Indigenous,87.7,56.2
+2024,Australia,Outer Regional,Aboriginal and Torres Strait Islander,76.9,35.0
+2024,Australia,Outer Regional,Non-Indigenous,88.1,58.1
+2024,Australia,Remote,Aboriginal and Torres Strait Islander,66.6,22.8
+2024,Australia,Remote,Non-Indigenous,88.2,56.4
+2024,Australia,Very Remote,Aboriginal and Torres Strait Islander,54.9,12.4
+2024,Australia,Very Remote,Non-Indigenous,87.0,51.8
+2023,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,82.1,43.4
+2023,New South Wales,Major Cities,Non-Indigenous,90.4,66.9
+2023,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,80.3,39.6
+2023,New South Wales,Inner Regional,Non-Indigenous,88.0,57.2
+2023,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,78.6,35.4
+2023,New South Wales,Outer Regional,Non-Indigenous,87.3,54.4
+2023,New South Wales,Remote,Aboriginal and Torres Strait Islander,75.5,33.6
+2023,New South Wales,Remote,Non-Indigenous,86.0,52.2
+2023,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,67.2,20.1
+2023,New South Wales,Very Remote,Non-Indigenous,88.2,51.2
+2023,Victoria,Major Cities,Aboriginal and Torres Strait Islander,81.9,44.5
+2023,Victoria,Major Cities,Non-Indigenous,89.9,65.9
+2023,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,80.8,42.1
+2023,Victoria,Inner Regional,Non-Indigenous,88.1,58.8
+2023,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,78.6,39.0
+2023,Victoria,Outer Regional,Non-Indigenous,88.3,59.4
+2023,Victoria,Remote,Aboriginal and Torres Strait Islander,69.0,16.7
+2023,Victoria,Remote,Non-Indigenous,89.2,66.3
+2023,Queensland,Major Cities,Aboriginal and Torres Strait Islander,81.5,40.0
+2023,Queensland,Major Cities,Non-Indigenous,89.6,63.3
+2023,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,81.7,41.1
+2023,Queensland,Inner Regional,Non-Indigenous,88.4,59.1
+2023,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,77.8,36.1
+2023,Queensland,Outer Regional,Non-Indigenous,89.1,61.8
+2023,Queensland,Remote,Aboriginal and Torres Strait Islander,73.1,27.6
+2023,Queensland,Remote,Non-Indigenous,88.2,55.4
+2023,Queensland,Very Remote,Aboriginal and Torres Strait Islander,66.1,20.7
+2023,Queensland,Very Remote,Non-Indigenous,88.0,53.9
+2023,South Australia,Major Cities,Aboriginal and Torres Strait Islander,77.2,34.3
+2023,South Australia,Major Cities,Non-Indigenous,89.3,63.6
+2023,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,78.7,36.9
+2023,South Australia,Inner Regional,Non-Indigenous,87.4,55.2
+2023,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,73.6,29.4
+2023,South Australia,Outer Regional,Non-Indigenous,86.8,53.5
+2023,South Australia,Remote,Aboriginal and Torres Strait Islander,77.4,32.2
+2023,South Australia,Remote,Non-Indigenous,86.7,48.5
+2023,South Australia,Very Remote,Aboriginal and Torres Strait Islander,57.6,12.3
+2023,South Australia,Very Remote,Non-Indigenous,84.6,42.7
+2023,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,75.5,34.2
+2023,Western Australia,Major Cities,Non-Indigenous,89.8,65.2
+2023,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,75.0,29.7
+2023,Western Australia,Inner Regional,Non-Indigenous,87.6,53.9
+2023,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,69.6,25.2
+2023,Western Australia,Outer Regional,Non-Indigenous,87.7,55.9
+2023,Western Australia,Remote,Aboriginal and Torres Strait Islander,68.2,23.7
+2023,Western Australia,Remote,Non-Indigenous,88.1,56.5
+2023,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,54.0,10.5
+2023,Western Australia,Very Remote,Non-Indigenous,86.8,49.8
+2023,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,79.7,39.2
+2023,Tasmania,Inner Regional,Non-Indigenous,87.4,57.3
+2023,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,82.7,43.8
+2023,Tasmania,Outer Regional,Non-Indigenous,86.2,51.8
+2023,Tasmania,Remote,Aboriginal and Torres Strait Islander,74.8,24.3
+2023,Tasmania,Remote,Non-Indigenous,84.1,45.0
+2023,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,84.0,40.0
+2023,Tasmania,Very Remote,Non-Indigenous,87.9,51.2
+2023,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,78.2,38.1
+2023,Northern Territory,Outer Regional,Non-Indigenous,89.6,62.0
+2023,Northern Territory,Remote,Aboriginal and Torres Strait Islander,57.1,15.2
+2023,Northern Territory,Remote,Non-Indigenous,88.1,59.8
+2023,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,46.6,7.0
+2023,Northern Territory,Very Remote,Non-Indigenous,86.9,51.6
+2023,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,79.4,37.2
+2023,Australian Capital Territory,Major Cities,Non-Indigenous,89.1,60.3
+2023,Australia,Major Cities,Aboriginal and Torres Strait Islander,80.5,40.4
+2023,Australia,Major Cities,Non-Indigenous,89.9,65.3
+2023,Australia,Inner Regional,Aboriginal and Torres Strait Islander,80.5,39.9
+2023,Australia,Inner Regional,Non-Indigenous,88.0,57.8
+2023,Australia,Outer Regional,Aboriginal and Torres Strait Islander,77.4,35.4
+2023,Australia,Outer Regional,Non-Indigenous,88.1,58.2
+2023,Australia,Remote,Aboriginal and Torres Strait Islander,67.7,23.9
+2023,Australia,Remote,Non-Indigenous,87.6,54.7
+2023,Australia,Very Remote,Aboriginal and Torres Strait Islander,55.4,12.6
+2023,Australia,Very Remote,Non-Indigenous,87.0,50.5
+2022,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,78.3,27.8
+2022,New South Wales,Major Cities,Non-Indigenous,87.6,50.9
+2022,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,77.3,26.7
+2022,New South Wales,Inner Regional,Non-Indigenous,85.3,41.7
+2022,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,75.8,25.5
+2022,New South Wales,Outer Regional,Non-Indigenous,84.5,38.9
+2022,New South Wales,Remote,Aboriginal and Torres Strait Islander,69.1,19.5
+2022,New South Wales,Remote,Non-Indigenous,83.4,36.9
+2022,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,65.2,13.7
+2022,New South Wales,Very Remote,Non-Indigenous,86.1,42.1
+2022,Victoria,Major Cities,Aboriginal and Torres Strait Islander,80.4,35.8
+2022,Victoria,Major Cities,Non-Indigenous,88.3,56.4
+2022,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,80.1,35.7
+2022,Victoria,Inner Regional,Non-Indigenous,86.2,46.5
+2022,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,76.3,29.7
+2022,Victoria,Outer Regional,Non-Indigenous,86.3,47.6
+2022,Victoria,Remote,Non-Indigenous,86.5,47.7
+2022,Queensland,Major Cities,Aboriginal and Torres Strait Islander,79.2,32.5
+2022,Queensland,Major Cities,Non-Indigenous,88.0,54.7
+2022,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,79.3,32.5
+2022,Queensland,Inner Regional,Non-Indigenous,86.5,49.0
+2022,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,76.1,30.9
+2022,Queensland,Outer Regional,Non-Indigenous,87.7,55.0
+2022,Queensland,Remote,Aboriginal and Torres Strait Islander,69.9,21.0
+2022,Queensland,Remote,Non-Indigenous,86.3,45.8
+2022,Queensland,Very Remote,Aboriginal and Torres Strait Islander,62.7,15.9
+2022,Queensland,Very Remote,Non-Indigenous,85.6,41.8
+2022,South Australia,Major Cities,Aboriginal and Torres Strait Islander,74.4,24.8
+2022,South Australia,Major Cities,Non-Indigenous,86.9,49.7
+2022,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,76.9,26.5
+2022,South Australia,Inner Regional,Non-Indigenous,85.3,43.1
+2022,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,70.5,20.6
+2022,South Australia,Outer Regional,Non-Indigenous,84.6,42.7
+2022,South Australia,Remote,Aboriginal and Torres Strait Islander,75.4,22.5
+2022,South Australia,Remote,Non-Indigenous,84.6,37.4
+2022,South Australia,Very Remote,Aboriginal and Torres Strait Islander,55.0,7.2
+2022,South Australia,Very Remote,Non-Indigenous,82.0,35.3
+2022,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,72.3,24.5
+2022,Western Australia,Major Cities,Non-Indigenous,88.0,55.4
+2022,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,71.6,21.6
+2022,Western Australia,Inner Regional,Non-Indigenous,85.7,44.9
+2022,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,65.8,16.5
+2022,Western Australia,Outer Regional,Non-Indigenous,85.9,46.8
+2022,Western Australia,Remote,Aboriginal and Torres Strait Islander,62.7,14.5
+2022,Western Australia,Remote,Non-Indigenous,86.1,45.4
+2022,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,51.3,8.0
+2022,Western Australia,Very Remote,Non-Indigenous,85.9,43.8
+2022,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,79.0,32.8
+2022,Tasmania,Inner Regional,Non-Indigenous,85.9,48.0
+2022,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,81.3,35.4
+2022,Tasmania,Outer Regional,Non-Indigenous,84.9,44.8
+2022,Tasmania,Remote,Aboriginal and Torres Strait Islander,73.0,19.2
+2022,Tasmania,Remote,Non-Indigenous,83.1,36.3
+2022,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,76.8,22.6
+2022,Tasmania,Very Remote,Non-Indigenous,90.0,57.0
+2022,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,76.8,31.6
+2022,Northern Territory,Outer Regional,Non-Indigenous,88.3,54.9
+2022,Northern Territory,Remote,Aboriginal and Torres Strait Islander,59.3,14.6
+2022,Northern Territory,Remote,Non-Indigenous,86.7,49.1
+2022,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,44.8,4.4
+2022,Northern Territory,Very Remote,Non-Indigenous,84.6,40.5
+2022,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,77.2,24.2
+2022,Australian Capital Territory,Major Cities,Non-Indigenous,86.2,42.3
+2022,Australia,Major Cities,Aboriginal and Torres Strait Islander,77.4,28.8
+2022,Australia,Major Cities,Non-Indigenous,87.8,53.3
+2022,Australia,Inner Regional,Aboriginal and Torres Strait Islander,78.0,29.5
+2022,Australia,Inner Regional,Non-Indigenous,85.9,45.3
+2022,Australia,Outer Regional,Aboriginal and Torres Strait Islander,75.2,28.0
+2022,Australia,Outer Regional,Non-Indigenous,86.4,48.5
+2022,Australia,Remote,Aboriginal and Torres Strait Islander,65.2,17.2
+2022,Australia,Remote,Non-Indigenous,85.7,43.5
+2022,Australia,Very Remote,Aboriginal and Torres Strait Islander,52.2,8.7
+2022,Australia,Very Remote,Non-Indigenous,85.4,42.3
+2021,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,83.7,48.0
+2021,New South Wales,Major Cities,Non-Indigenous,92.2,75.8
+2021,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,81.9,43.4
+2021,New South Wales,Inner Regional,Non-Indigenous,89.6,64.2
+2021,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,80.2,39.1
+2021,New South Wales,Outer Regional,Non-Indigenous,88.6,59.4
+2021,New South Wales,Remote,Aboriginal and Torres Strait Islander,72.8,28.0
+2021,New South Wales,Remote,Non-Indigenous,87.5,55.5
+2021,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,73.1,31.7
+2021,New South Wales,Very Remote,Non-Indigenous,90.2,64.4
+2021,Victoria,Major Cities,Aboriginal and Torres Strait Islander,85.4,52.9
+2021,Victoria,Major Cities,Non-Indigenous,93.0,79.6
+2021,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,84.6,50.2
+2021,Victoria,Inner Regional,Non-Indigenous,90.9,70.3
+2021,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,81.3,43.3
+2021,Victoria,Outer Regional,Non-Indigenous,90.8,69.4
+2021,Victoria,Remote,Non-Indigenous,91.0,68.6
+2021,Queensland,Major Cities,Aboriginal and Torres Strait Islander,83.7,47.1
+2021,Queensland,Major Cities,Non-Indigenous,91.3,71.5
+2021,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,83.1,44.7
+2021,Queensland,Inner Regional,Non-Indigenous,89.8,65.1
+2021,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,80.4,41.6
+2021,Queensland,Outer Regional,Non-Indigenous,91.0,70.1
+2021,Queensland,Remote,Aboriginal and Torres Strait Islander,75.4,31.6
+2021,Queensland,Remote,Non-Indigenous,89.5,61.1
+2021,Queensland,Very Remote,Aboriginal and Torres Strait Islander,70.6,28.2
+2021,Queensland,Very Remote,Non-Indigenous,89.3,58.7
+2021,South Australia,Major Cities,Aboriginal and Torres Strait Islander,79.4,40.2
+2021,South Australia,Major Cities,Non-Indigenous,91.7,73.6
+2021,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,81.8,42.1
+2021,South Australia,Inner Regional,Non-Indigenous,90.2,67.1
+2021,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,77.0,35.0
+2021,South Australia,Outer Regional,Non-Indigenous,89.4,64.7
+2021,South Australia,Remote,Aboriginal and Torres Strait Islander,79.4,39.9
+2021,South Australia,Remote,Non-Indigenous,89.9,63.3
+2021,South Australia,Very Remote,Aboriginal and Torres Strait Islander,55.0,11.9
+2021,South Australia,Very Remote,Non-Indigenous,86.4,54.6
+2021,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,78.0,38.3
+2021,Western Australia,Major Cities,Non-Indigenous,91.5,72.4
+2021,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,78.6,39.1
+2021,Western Australia,Inner Regional,Non-Indigenous,90.0,66.1
+2021,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,74.2,33.3
+2021,Western Australia,Outer Regional,Non-Indigenous,90.3,68.1
+2021,Western Australia,Remote,Aboriginal and Torres Strait Islander,70.4,28.4
+2021,Western Australia,Remote,Non-Indigenous,90.6,67.5
+2021,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,58.1,15.5
+2021,Western Australia,Very Remote,Non-Indigenous,89.7,61.8
+2021,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,83.9,49.8
+2021,Tasmania,Inner Regional,Non-Indigenous,90.1,68.8
+2021,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,86.4,54.9
+2021,Tasmania,Outer Regional,Non-Indigenous,89.3,64.4
+2021,Tasmania,Remote,Aboriginal and Torres Strait Islander,81.0,37.5
+2021,Tasmania,Remote,Non-Indigenous,86.8,56.5
+2021,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,82.3,39.8
+2021,Tasmania,Very Remote,Non-Indigenous,91.3,67.3
+2021,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,80.8,44.6
+2021,Northern Territory,Outer Regional,Non-Indigenous,92.0,74.0
+2021,Northern Territory,Remote,Aboriginal and Torres Strait Islander,64.8,21.8
+2021,Northern Territory,Remote,Non-Indigenous,90.6,67.5
+2021,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,48.3,7.3
+2021,Northern Territory,Very Remote,Non-Indigenous,89.8,61.3
+2021,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,83.2,48.2
+2021,Australian Capital Territory,Major Cities,Non-Indigenous,91.9,73.5
+2021,Australia,Major Cities,Aboriginal and Torres Strait Islander,82.6,46.2
+2021,Australia,Major Cities,Non-Indigenous,92.2,75.5
+2021,Australia,Inner Regional,Aboriginal and Torres Strait Islander,82.5,44.8
+2021,Australia,Inner Regional,Non-Indigenous,90.1,66.8
+2021,Australia,Outer Regional,Aboriginal and Torres Strait Islander,80.1,41.1
+2021,Australia,Outer Regional,Non-Indigenous,90.3,67.4
+2021,Australia,Remote,Aboriginal and Torres Strait Islander,71.1,28.1
+2021,Australia,Remote,Non-Indigenous,90.0,64.4
+2021,Australia,Very Remote,Aboriginal and Torres Strait Islander,57.8,15.9
+2021,Australia,Very Remote,Non-Indigenous,89.3,60.4
+2019,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,85.7,54.8
+2019,New South Wales,Major Cities,Non-Indigenous,92.5,77.7
+2019,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,84.9,53.5
+2019,New South Wales,Inner Regional,Non-Indigenous,91.2,72.4
+2019,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,83.1,49.6
+2019,New South Wales,Outer Regional,Non-Indigenous,90.7,70.3
+2019,New South Wales,Remote,Aboriginal and Torres Strait Islander,80.5,40.4
+2019,New South Wales,Remote,Non-Indigenous,89.7,64.8
+2019,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,76.5,39.9
+2019,New South Wales,Very Remote,Non-Indigenous,92.5,76.0
+2019,Victoria,Major Cities,Aboriginal and Torres Strait Islander,85.6,54.4
+2019,Victoria,Major Cities,Non-Indigenous,92.3,75.7
+2019,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,85.7,54.5
+2019,Victoria,Inner Regional,Non-Indigenous,91.2,71.3
+2019,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,84.0,49.0
+2019,Victoria,Outer Regional,Non-Indigenous,91.5,72.5
+2019,Victoria,Remote,Non-Indigenous,92.4,74.4
+2019,Queensland,Major Cities,Aboriginal and Torres Strait Islander,85.5,51.7
+2019,Queensland,Major Cities,Non-Indigenous,92.1,74.3
+2019,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,85.8,53.1
+2019,Queensland,Inner Regional,Non-Indigenous,91.4,71.7
+2019,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,82.5,46.1
+2019,Queensland,Outer Regional,Non-Indigenous,91.6,72.5
+2019,Queensland,Remote,Aboriginal and Torres Strait Islander,78.3,38.2
+2019,Queensland,Remote,Non-Indigenous,91.1,68.8
+2019,Queensland,Very Remote,Aboriginal and Torres Strait Islander,73.6,35.1
+2019,Queensland,Very Remote,Non-Indigenous,90.7,66.4
+2019,South Australia,Major Cities,Aboriginal and Torres Strait Islander,81.4,45.6
+2019,South Australia,Major Cities,Non-Indigenous,92.1,75.2
+2019,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,85.1,50.2
+2019,South Australia,Inner Regional,Non-Indigenous,91.5,72.6
+2019,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,78.3,38.5
+2019,South Australia,Outer Regional,Non-Indigenous,90.6,69.4
+2019,South Australia,Remote,Aboriginal and Torres Strait Islander,82.1,42.0
+2019,South Australia,Remote,Non-Indigenous,90.7,67.5
+2019,South Australia,Very Remote,Aboriginal and Torres Strait Islander,63.7,17.4
+2019,South Australia,Very Remote,Non-Indigenous,87.6,62.9
+2019,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,80.3,44.2
+2019,Western Australia,Major Cities,Non-Indigenous,92.4,76.3
+2019,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,80.8,42.5
+2019,Western Australia,Inner Regional,Non-Indigenous,90.9,70.0
+2019,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,78.0,37.4
+2019,Western Australia,Outer Regional,Non-Indigenous,90.9,69.0
+2019,Western Australia,Remote,Aboriginal and Torres Strait Islander,73.3,32.3
+2019,Western Australia,Remote,Non-Indigenous,90.9,68.0
+2019,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,61.1,17.2
+2019,Western Australia,Very Remote,Non-Indigenous,90.7,65.5
+2019,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,86.0,56.3
+2019,Tasmania,Inner Regional,Non-Indigenous,91.3,73.2
+2019,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,88.4,64.0
+2019,Tasmania,Outer Regional,Non-Indigenous,90.8,71.2
+2019,Tasmania,Remote,Aboriginal and Torres Strait Islander,88.7,63.1
+2019,Tasmania,Remote,Non-Indigenous,90.0,66.2
+2019,Tasmania,Very Remote,Non-Indigenous,89.1,62.2
+2019,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,81.6,44.9
+2019,Northern Territory,Outer Regional,Non-Indigenous,91.5,69.7
+2019,Northern Territory,Remote,Aboriginal and Torres Strait Islander,67.2,26.0
+2019,Northern Territory,Remote,Non-Indigenous,88.4,66.2
+2019,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,51.9,8.8
+2019,Northern Territory,Very Remote,Non-Indigenous,86.5,58.6
+2019,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,82.9,45.6
+2019,Australian Capital Territory,Major Cities,Non-Indigenous,91.4,71.3
+2019,Australia,Major Cities,Aboriginal and Torres Strait Islander,84.4,51.4
+2019,Australia,Major Cities,Non-Indigenous,92.3,76.0
+2019,Australia,Inner Regional,Aboriginal and Torres Strait Islander,85.2,53.2
+2019,Australia,Inner Regional,Non-Indigenous,91.2,71.9
+2019,Australia,Outer Regional,Aboriginal and Torres Strait Islander,82.3,46.8
+2019,Australia,Outer Regional,Non-Indigenous,91.2,71.2
+2019,Australia,Remote,Aboriginal and Torres Strait Islander,74.3,33.7
+2019,Australia,Remote,Non-Indigenous,90.5,67.7
+2019,Australia,Very Remote,Aboriginal and Torres Strait Islander,61.1,19.0
+2019,Australia,Very Remote,Non-Indigenous,90.0,65.2
+2018,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,86.4,56.1
+2018,New South Wales,Major Cities,Non-Indigenous,93.0,78.7
+2018,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,85.3,53.6
+2018,New South Wales,Inner Regional,Non-Indigenous,91.5,72.9
+2018,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,83.8,50.7
+2018,New South Wales,Outer Regional,Non-Indigenous,91.0,71.0
+2018,New South Wales,Remote,Aboriginal and Torres Strait Islander,81.0,44.5
+2018,New South Wales,Remote,Non-Indigenous,90.2,66.4
+2018,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,78.5,44.5
+2018,New South Wales,Very Remote,Non-Indigenous,92.2,75.0
+2018,Victoria,Major Cities,Aboriginal and Torres Strait Islander,86.3,56.6
+2018,Victoria,Major Cities,Non-Indigenous,93.0,78.9
+2018,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,86.7,57.4
+2018,Victoria,Inner Regional,Non-Indigenous,91.9,74.5
+2018,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,85.2,52.5
+2018,Victoria,Outer Regional,Non-Indigenous,92.2,75.5
+2018,Victoria,Remote,Non-Indigenous,92.2,76.0
+2018,Queensland,Major Cities,Aboriginal and Torres Strait Islander,86.1,53.6
+2018,Queensland,Major Cities,Non-Indigenous,92.3,75.3
+2018,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,86.5,55.3
+2018,Queensland,Inner Regional,Non-Indigenous,91.8,73.4
+2018,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,83.4,49.1
+2018,Queensland,Outer Regional,Non-Indigenous,92.1,74.9
+2018,Queensland,Remote,Aboriginal and Torres Strait Islander,80.3,41.3
+2018,Queensland,Remote,Non-Indigenous,91.7,71.4
+2018,Queensland,Very Remote,Aboriginal and Torres Strait Islander,76.5,39.0
+2018,Queensland,Very Remote,Non-Indigenous,90.9,67.3
+2018,South Australia,Major Cities,Aboriginal and Torres Strait Islander,82.3,46.5
+2018,South Australia,Major Cities,Non-Indigenous,92.4,76.8
+2018,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,86.1,54.5
+2018,South Australia,Inner Regional,Non-Indigenous,91.9,74.7
+2018,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,78.0,38.8
+2018,South Australia,Outer Regional,Non-Indigenous,90.8,71.1
+2018,South Australia,Remote,Aboriginal and Torres Strait Islander,81.8,46.6
+2018,South Australia,Remote,Non-Indigenous,90.9,69.3
+2018,South Australia,Very Remote,Aboriginal and Torres Strait Islander,66.5,17.7
+2018,South Australia,Very Remote,Non-Indigenous,89.1,66.4
+2018,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,81.6,48.0
+2018,Western Australia,Major Cities,Non-Indigenous,93.2,80.3
+2018,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,81.9,47.2
+2018,Western Australia,Inner Regional,Non-Indigenous,92.0,75.0
+2018,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,79.2,42.6
+2018,Western Australia,Outer Regional,Non-Indigenous,91.9,73.9
+2018,Western Australia,Remote,Aboriginal and Torres Strait Islander,74.1,34.4
+2018,Western Australia,Remote,Non-Indigenous,92.0,73.6
+2018,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,62.5,19.5
+2018,Western Australia,Very Remote,Non-Indigenous,90.6,67.6
+2018,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,86.7,60.2
+2018,Tasmania,Inner Regional,Non-Indigenous,91.7,75.6
+2018,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,89.4,67.6
+2018,Tasmania,Outer Regional,Non-Indigenous,91.6,75.2
+2018,Tasmania,Remote,Aboriginal and Torres Strait Islander,85.7,62.5
+2018,Tasmania,Remote,Non-Indigenous,89.7,71.2
+2018,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,90.0,61.0
+2018,Tasmania,Very Remote,Non-Indigenous,90.8,64.6
+2018,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,83.2,46.0
+2018,Northern Territory,Outer Regional,Non-Indigenous,91.8,72.1
+2018,Northern Territory,Remote,Aboriginal and Torres Strait Islander,69.7,27.8
+2018,Northern Territory,Remote,Non-Indigenous,91.2,68.8
+2018,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,54.2,9.4
+2018,Northern Territory,Very Remote,Non-Indigenous,89.1,59.1
+2018,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,83.8,47.8
+2018,Australian Capital Territory,Major Cities,Non-Indigenous,91.9,73.7
+2018,Australia,Major Cities,Aboriginal and Torres Strait Islander,85.2,53.3
+2018,Australia,Major Cities,Non-Indigenous,92.8,78.0
+2018,Australia,Inner Regional,Aboriginal and Torres Strait Islander,85.8,54.8
+2018,Australia,Inner Regional,Non-Indigenous,91.7,73.8
+2018,Australia,Outer Regional,Aboriginal and Torres Strait Islander,83.2,49.2
+2018,Australia,Outer Regional,Non-Indigenous,91.7,73.7
+2018,Australia,Remote,Aboriginal and Torres Strait Islander,75.8,36.3
+2018,Australia,Remote,Non-Indigenous,91.4,71.1
+2018,Australia,Very Remote,Aboriginal and Torres Strait Islander,63.4,21.2
+2018,Australia,Very Remote,Non-Indigenous,90.5,66.8
+2017,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,87.6,62.8
+2017,New South Wales,Major Cities,Non-Indigenous,93.5,82.1
+2017,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,86.8,63.3
+2017,New South Wales,Inner Regional,Non-Indigenous,92.2,77.9
+2017,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,86.0,65.8
+2017,New South Wales,Outer Regional,Non-Indigenous,92.0,77.1
+2017,New South Wales,Remote,Aboriginal and Torres Strait Islander,83.9,62.8
+2017,New South Wales,Remote,Non-Indigenous,91.2,73.1
+2017,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,81.9,59.2
+2017,New South Wales,Very Remote,Non-Indigenous,92.2,65.0
+2017,Victoria,Major Cities,Aboriginal and Torres Strait Islander,86.5,57.5
+2017,Victoria,Major Cities,Non-Indigenous,93.3,79.7
+2017,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,87.8,59.6
+2017,Victoria,Inner Regional,Non-Indigenous,92.4,76.4
+2017,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,84.6,53.5
+2017,Victoria,Outer Regional,Non-Indigenous,92.4,76.2
+2017,Victoria,Remote,Non-Indigenous,91.7,69.8
+2017,Queensland,Major Cities,Aboriginal and Torres Strait Islander,87.6,58.6
+2017,Queensland,Major Cities,Non-Indigenous,93.2,79.1
+2017,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,87.4,58.1
+2017,Queensland,Inner Regional,Non-Indigenous,92.3,75.6
+2017,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,84.6,52.5
+2017,Queensland,Outer Regional,Non-Indigenous,93.0,78.6
+2017,Queensland,Remote,Aboriginal and Torres Strait Islander,80.3,43.1
+2017,Queensland,Remote,Non-Indigenous,92.1,73.6
+2017,Queensland,Very Remote,Aboriginal and Torres Strait Islander,78.0,41.6
+2017,Queensland,Very Remote,Non-Indigenous,91.7,72.0
+2017,South Australia,Major Cities,Aboriginal and Torres Strait Islander,82.4,45.6
+2017,South Australia,Major Cities,Non-Indigenous,92.5,77.0
+2017,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,83.8,50.8
+2017,South Australia,Inner Regional,Non-Indigenous,91.9,74.3
+2017,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,78.7,39.6
+2017,South Australia,Outer Regional,Non-Indigenous,91.3,72.3
+2017,South Australia,Remote,Aboriginal and Torres Strait Islander,81.9,46.8
+2017,South Australia,Remote,Non-Indigenous,90.9,69.1
+2017,South Australia,Very Remote,Aboriginal and Torres Strait Islander,68.3,23.2
+2017,South Australia,Very Remote,Non-Indigenous,89.5,65.3
+2017,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,82.3,49.7
+2017,Western Australia,Major Cities,Non-Indigenous,93.4,80.7
+2017,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,82.6,47.3
+2017,Western Australia,Inner Regional,Non-Indigenous,92.2,74.9
+2017,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,79.5,42.1
+2017,Western Australia,Outer Regional,Non-Indigenous,91.9,73.6
+2017,Western Australia,Remote,Aboriginal and Torres Strait Islander,72.5,31.5
+2017,Western Australia,Remote,Non-Indigenous,92.0,72.9
+2017,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,62.9,17.1
+2017,Western Australia,Very Remote,Non-Indigenous,90.7,66.5
+2017,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,87.2,62.2
+2017,Tasmania,Inner Regional,Non-Indigenous,92.2,77.1
+2017,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,89.7,68.1
+2017,Tasmania,Outer Regional,Non-Indigenous,92.0,75.7
+2017,Tasmania,Remote,Aboriginal and Torres Strait Islander,88.7,66.8
+2017,Tasmania,Remote,Non-Indigenous,91.4,72.5
+2017,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,89.1,51.4
+2017,Tasmania,Very Remote,Non-Indigenous,91.2,70.2
+2017,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,83.7,49.0
+2017,Northern Territory,Outer Regional,Non-Indigenous,92.0,72.7
+2017,Northern Territory,Remote,Aboriginal and Torres Strait Islander,70.6,30.6
+2017,Northern Territory,Remote,Non-Indigenous,91.6,73.1
+2017,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,55.8,10.7
+2017,Northern Territory,Very Remote,Non-Indigenous,89.6,61.9
+2017,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,85.4,52.7
+2017,Australian Capital Territory,Major Cities,Non-Indigenous,92.4,76.0
+2017,Australian Capital Territory,Inner Regional,Non-Indigenous,63.4,15.8
+2017,Australia,Major Cities,Aboriginal and Torres Strait Islander,86.2,55.0
+2017,Australia,Major Cities,Non-Indigenous,93.3,79.7
+2017,Australia,Inner Regional,Aboriginal and Torres Strait Islander,86.8,58.5
+2017,Australia,Inner Regional,Non-Indigenous,92.3,76.2
+2017,Australia,Outer Regional,Aboriginal and Torres Strait Islander,84.4,51.6
+2017,Australia,Outer Regional,Non-Indigenous,92.3,76.1
+2017,Australia,Remote,Aboriginal and Torres Strait Islander,75.4,35.4
+2017,Australia,Remote,Non-Indigenous,91.6,72.2
+2017,Australia,Very Remote,Aboriginal and Torres Strait Islander,64.6,21.2
+2017,Australia,Very Remote,Non-Indigenous,90.9,68.0
+2016,New South Wales,Major Cities,Aboriginal and Torres Strait Islander,87.7,62.9
+2016,New South Wales,Major Cities,Non-Indigenous,93.6,82.6
+2016,New South Wales,Inner Regional,Aboriginal and Torres Strait Islander,86.6,62.5
+2016,New South Wales,Inner Regional,Non-Indigenous,92.2,78.8
+2016,New South Wales,Outer Regional,Aboriginal and Torres Strait Islander,85.5,71.2
+2016,New South Wales,Outer Regional,Non-Indigenous,92.0,80.4
+2016,New South Wales,Remote,Aboriginal and Torres Strait Islander,83.3,59.0
+2016,New South Wales,Remote,Non-Indigenous,91.3,75.8
+2016,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,81.8,52.7
+2016,New South Wales,Very Remote,Non-Indigenous,92.2,76.4
+2016,Victoria,Major Cities,Aboriginal and Torres Strait Islander,87.4,59.3
+2016,Victoria,Major Cities,Non-Indigenous,93.5,81.2
+2016,Victoria,Inner Regional,Aboriginal and Torres Strait Islander,87.7,60.2
+2016,Victoria,Inner Regional,Non-Indigenous,92.6,77.3
+2016,Victoria,Outer Regional,Aboriginal and Torres Strait Islander,84.9,52.1
+2016,Victoria,Outer Regional,Non-Indigenous,92.7,77.8
+2016,Victoria,Remote,Non-Indigenous,91.6,73.6
+2016,Queensland,Major Cities,Aboriginal and Torres Strait Islander,87.7,59.3
+2016,Queensland,Major Cities,Non-Indigenous,93.2,79.6
+2016,Queensland,Inner Regional,Aboriginal and Torres Strait Islander,87.8,58.6
+2016,Queensland,Inner Regional,Non-Indigenous,92.6,76.8
+2016,Queensland,Outer Regional,Aboriginal and Torres Strait Islander,84.7,53.4
+2016,Queensland,Outer Regional,Non-Indigenous,93.0,79.0
+2016,Queensland,Remote,Aboriginal and Torres Strait Islander,80.7,42.7
+2016,Queensland,Remote,Non-Indigenous,92.2,73.3
+2016,Queensland,Very Remote,Aboriginal and Torres Strait Islander,78.5,41.9
+2016,Queensland,Very Remote,Non-Indigenous,91.6,70.2
+2016,South Australia,Major Cities,Aboriginal and Torres Strait Islander,83.0,46.7
+2016,South Australia,Major Cities,Non-Indigenous,92.6,77.3
+2016,South Australia,Inner Regional,Aboriginal and Torres Strait Islander,85.9,53.3
+2016,South Australia,Inner Regional,Non-Indigenous,92.1,76.1
+2016,South Australia,Outer Regional,Aboriginal and Torres Strait Islander,80.2,41.5
+2016,South Australia,Outer Regional,Non-Indigenous,91.6,73.4
+2016,South Australia,Remote,Aboriginal and Torres Strait Islander,79.9,47.5
+2016,South Australia,Remote,Non-Indigenous,91.4,72.0
+2016,South Australia,Very Remote,Aboriginal and Torres Strait Islander,66.2,17.3
+2016,South Australia,Very Remote,Non-Indigenous,90.3,70.6
+2016,Western Australia,Major Cities,Aboriginal and Torres Strait Islander,81.5,47.7
+2016,Western Australia,Major Cities,Non-Indigenous,93.2,79.9
+2016,Western Australia,Inner Regional,Aboriginal and Torres Strait Islander,83.9,50.3
+2016,Western Australia,Inner Regional,Non-Indigenous,92.0,74.4
+2016,Western Australia,Outer Regional,Aboriginal and Torres Strait Islander,78.9,40.0
+2016,Western Australia,Outer Regional,Non-Indigenous,91.7,73.7
+2016,Western Australia,Remote,Aboriginal and Torres Strait Islander,72.1,31.2
+2016,Western Australia,Remote,Non-Indigenous,92.3,74.2
+2016,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,63.9,19.1
+2016,Western Australia,Very Remote,Non-Indigenous,90.8,65.1
+2016,Tasmania,Inner Regional,Aboriginal and Torres Strait Islander,87.1,61.8
+2016,Tasmania,Inner Regional,Non-Indigenous,92.3,77.3
+2016,Tasmania,Outer Regional,Aboriginal and Torres Strait Islander,89.6,67.7
+2016,Tasmania,Outer Regional,Non-Indigenous,91.8,75.7
+2016,Tasmania,Remote,Aboriginal and Torres Strait Islander,87.2,57.5
+2016,Tasmania,Remote,Non-Indigenous,90.5,73.5
+2016,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,89.2,59.2
+2016,Tasmania,Very Remote,Non-Indigenous,93.0,86.9
+2016,Northern Territory,Outer Regional,Aboriginal and Torres Strait Islander,84.4,47.8
+2016,Northern Territory,Outer Regional,Non-Indigenous,91.8,71.2
+2016,Northern Territory,Remote,Aboriginal and Torres Strait Islander,72.8,31.6
+2016,Northern Territory,Remote,Non-Indigenous,91.7,71.5
+2016,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,59.5,12.1
+2016,Northern Territory,Very Remote,Non-Indigenous,90.9,65.8
+2016,Australian Capital Territory,Major Cities,Aboriginal and Torres Strait Islander,85.5,52.1
+2016,Australian Capital Territory,Major Cities,Non-Indigenous,92.7,77.2
+2016,Australian Capital Territory,Inner Regional,Non-Indigenous,59.0,5.1
+2016,Australia,Major Cities,Aboriginal and Torres Strait Islander,86.3,55.3
+2016,Australia,Major Cities,Non-Indigenous,93.4,80.4
+2016,Australia,Inner Regional,Aboriginal and Torres Strait Islander,86.9,59.0
+2016,Australia,Inner Regional,Non-Indigenous,92.4,77.1
+2016,Australia,Outer Regional,Aboriginal and Torres Strait Islander,84.3,51.8
+2016,Australia,Outer Regional,Non-Indigenous,92.3,76.7
+2016,Australia,Remote,Aboriginal and Torres Strait Islander,75.9,35.5
+2016,Australia,Remote,Non-Indigenous,91.9,73.2
+2016,Australia,Very Remote,Aboriginal and Torres Strait Islander,66.4,21.9
+2016,Australia,Very Remote,Non-Indigenous,91.1,68.3
+2015,New South Wales,Metropolitan,Aboriginal and Torres Strait Islander,87.8,61.0
+2015,New South Wales,Metropolitan,Non-Indigenous,93.4,81.3
+2015,New South Wales,Provincial,Aboriginal and Torres Strait Islander,86.4,62.8
+2015,New South Wales,Provincial,Non-Indigenous,92.4,79.9
+2015,New South Wales,Remote,Aboriginal and Torres Strait Islander,82.5,55.3
+2015,New South Wales,Remote,Non-Indigenous,91.7,73.7
+2015,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,82.6,43.4
+2015,New South Wales,Very Remote,Non-Indigenous,92.8,55.6
+2015,Victoria,Metropolitan,Aboriginal and Torres Strait Islander,88.9,65.1
+2015,Victoria,Metropolitan,Non-Indigenous,93.8,82.2
+2015,Victoria,Provincial,Aboriginal and Torres Strait Islander,86.9,58.7
+2015,Victoria,Provincial,Non-Indigenous,92.8,78.0
+2015,Victoria,Remote,Aboriginal and Torres Strait Islander,83.2,58.9
+2015,Victoria,Remote,Non-Indigenous,90.0,71.2
+2015,Queensland,Metropolitan,Aboriginal and Torres Strait Islander,86.8,56.1
+2015,Queensland,Metropolitan,Non-Indigenous,93.0,78.4
+2015,Queensland,Provincial,Aboriginal and Torres Strait Islander,86.6,55.0
+2015,Queensland,Provincial,Non-Indigenous,92.5,76.5
+2015,Queensland,Remote,Aboriginal and Torres Strait Islander,81.2,42.7
+2015,Queensland,Remote,Non-Indigenous,92.4,74.6
+2015,Queensland,Very Remote,Aboriginal and Torres Strait Islander,78.7,39.8
+2015,Queensland,Very Remote,Non-Indigenous,91.9,72.3
+2015,South Australia,Metropolitan,Aboriginal and Torres Strait Islander,82.9,47.0
+2015,South Australia,Metropolitan,Non-Indigenous,92.6,77.5
+2015,South Australia,Provincial,Aboriginal and Torres Strait Islander,82.2,46.4
+2015,South Australia,Provincial,Non-Indigenous,91.8,74.4
+2015,South Australia,Remote,Aboriginal and Torres Strait Islander,82.7,46.6
+2015,South Australia,Remote,Non-Indigenous,91.7,72.1
+2015,South Australia,Very Remote,Aboriginal and Torres Strait Islander,67.7,21.1
+2015,South Australia,Very Remote,Non-Indigenous,91.0,73.0
+2015,Western Australia,Metropolitan,Aboriginal and Torres Strait Islander,81.9,47.8
+2015,Western Australia,Metropolitan,Non-Indigenous,93.4,80.7
+2015,Western Australia,Provincial,Aboriginal and Torres Strait Islander,81.4,44.5
+2015,Western Australia,Provincial,Non-Indigenous,92.0,74.2
+2015,Western Australia,Remote,Aboriginal and Torres Strait Islander,74.8,33.9
+2015,Western Australia,Remote,Non-Indigenous,92.0,72.8
+2015,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,64.1,19.2
+2015,Western Australia,Very Remote,Non-Indigenous,91.2,67.7
+2015,Tasmania,Metropolitan,Aboriginal and Torres Strait Islander,87.4,61.9
+2015,Tasmania,Metropolitan,Non-Indigenous,91.8,75.0
+2015,Tasmania,Provincial,Aboriginal and Torres Strait Islander,89.1,67.9
+2015,Tasmania,Provincial,Non-Indigenous,92.4,78.2
+2015,Tasmania,Remote,Aboriginal and Torres Strait Islander,91.4,63.1
+2015,Tasmania,Remote,Non-Indigenous,91.4,73.1
+2015,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,88.6,63.1
+2015,Tasmania,Very Remote,Non-Indigenous,92.0,77.5
+2015,Northern Territory,Provincial,Aboriginal and Torres Strait Islander,85.5,50.8
+2015,Northern Territory,Provincial,Non-Indigenous,92.4,73.7
+2015,Northern Territory,Remote,Aboriginal and Torres Strait Islander,78.0,36.8
+2015,Northern Territory,Remote,Non-Indigenous,92.0,72.8
+2015,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,61.6,14.6
+2015,Northern Territory,Very Remote,Non-Indigenous,91.4,68.7
+2015,Australian Capital Territory,Metropolitan,Aboriginal and Torres Strait Islander,86.4,54.5
+2015,Australian Capital Territory,Metropolitan,Non-Indigenous,92.9,78.2
+2015,Australian Capital Territory,Provincial,Aboriginal and Torres Strait Islander,89.1,29.2
+2015,Australia,Metropolitan,Aboriginal and Torres Strait Islander,86.5,55.5
+2015,Australia,Metropolitan,Non-Indigenous,93.3,80.3
+2015,Australia,Provincial,Aboriginal and Torres Strait Islander,85.9,54.8
+2015,Australia,Provincial,Non-Indigenous,92.4,76.9
+2015,Australia,Remote,Aboriginal and Torres Strait Islander,78.6,38.4
+2015,Australia,Remote,Non-Indigenous,91.9,73.0
+2015,Australia,Very Remote,Aboriginal and Torres Strait Islander,67.4,22.8
+2015,Australia,Very Remote,Non-Indigenous,91.5,70.1
+2014,New South Wales,Metropolitan,Aboriginal and Torres Strait Islander,88.7,
+2014,New South Wales,Metropolitan,Non-Indigenous,94.3,
+2014,New South Wales,Provincial,Aboriginal and Torres Strait Islander,86.8,
+2014,New South Wales,Provincial,Non-Indigenous,92.7,
+2014,New South Wales,Remote,Aboriginal and Torres Strait Islander,83.5,
+2014,New South Wales,Remote,Non-Indigenous,92.4,
+2014,New South Wales,Very Remote,Aboriginal and Torres Strait Islander,81.8,
+2014,New South Wales,Very Remote,Non-Indigenous,92.5,
+2014,Victoria,Metropolitan,Aboriginal and Torres Strait Islander,87.3,
+2014,Victoria,Metropolitan,Non-Indigenous,93.4,
+2014,Victoria,Provincial,Aboriginal and Torres Strait Islander,86.4,
+2014,Victoria,Provincial,Non-Indigenous,92.4,
+2014,Victoria,Remote,Non-Indigenous,91.8,
+2014,Queensland,Metropolitan,Aboriginal and Torres Strait Islander,86.2,
+2014,Queensland,Metropolitan,Non-Indigenous,93.0,
+2014,Queensland,Provincial,Aboriginal and Torres Strait Islander,85.9,
+2014,Queensland,Provincial,Non-Indigenous,92.3,
+2014,Queensland,Remote,Aboriginal and Torres Strait Islander,81.3,
+2014,Queensland,Remote,Non-Indigenous,92.2,
+2014,Queensland,Very Remote,Aboriginal and Torres Strait Islander,79.1,
+2014,Queensland,Very Remote,Non-Indigenous,92.1,
+2014,South Australia,Metropolitan,Aboriginal and Torres Strait Islander,82.9,
+2014,South Australia,Metropolitan,Non-Indigenous,92.8,
+2014,South Australia,Provincial,Aboriginal and Torres Strait Islander,82.7,
+2014,South Australia,Provincial,Non-Indigenous,92.1,
+2014,South Australia,Remote,Aboriginal and Torres Strait Islander,80.2,
+2014,South Australia,Remote,Non-Indigenous,91.4,
+2014,South Australia,Very Remote,Aboriginal and Torres Strait Islander,65.1,
+2014,South Australia,Very Remote,Non-Indigenous,91.2,
+2014,Western Australia,Metropolitan,Aboriginal and Torres Strait Islander,82.0,
+2014,Western Australia,Metropolitan,Non-Indigenous,93.1,
+2014,Western Australia,Provincial,Aboriginal and Torres Strait Islander,81.0,
+2014,Western Australia,Provincial,Non-Indigenous,91.7,
+2014,Western Australia,Remote,Aboriginal and Torres Strait Islander,74.9,
+2014,Western Australia,Remote,Non-Indigenous,91.7,
+2014,Western Australia,Very Remote,Aboriginal and Torres Strait Islander,66.0,
+2014,Western Australia,Very Remote,Non-Indigenous,90.4,
+2014,Tasmania,Metropolitan,Aboriginal and Torres Strait Islander,87.9,
+2014,Tasmania,Metropolitan,Non-Indigenous,92.5,
+2014,Tasmania,Provincial,Aboriginal and Torres Strait Islander,88.9,
+2014,Tasmania,Provincial,Non-Indigenous,92.4,
+2014,Tasmania,Remote,Aboriginal and Torres Strait Islander,89.4,
+2014,Tasmania,Remote,Non-Indigenous,90.2,
+2014,Tasmania,Very Remote,Aboriginal and Torres Strait Islander,92.2,
+2014,Tasmania,Very Remote,Non-Indigenous,94.3,
+2014,Northern Territory,Provincial,Aboriginal and Torres Strait Islander,83.4,
+2014,Northern Territory,Provincial,Non-Indigenous,90.8,
+2014,Northern Territory,Remote,Aboriginal and Torres Strait Islander,77.7,
+2014,Northern Territory,Remote,Non-Indigenous,91.4,
+2014,Northern Territory,Very Remote,Aboriginal and Torres Strait Islander,62.1,
+2014,Northern Territory,Very Remote,Non-Indigenous,90.4,
+2014,Australian Capital Territory,Metropolitan,Aboriginal and Torres Strait Islander,85.0,
+2014,Australian Capital Territory,Metropolitan,Non-Indigenous,92.5,
+2014,Australia,Metropolitan,Aboriginal and Torres Strait Islander,86.5,
+2014,Australia,Metropolitan,Non-Indigenous,93.5,
+2014,Australia,Provincial,Aboriginal and Torres Strait Islander,85.7,
+2014,Australia,Provincial,Non-Indigenous,92.3,
+2014,Australia,Remote,Aboriginal and Torres Strait Islander,78.5,
+2014,Australia,Remote,Non-Indigenous,91.7,
+2014,Australia,Very Remote,Aboriginal and Torres Strait Islander,67.9,
+2014,Australia,Very Remote,Non-Indigenous,91.2,

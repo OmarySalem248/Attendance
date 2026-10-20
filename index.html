@@ -133,6 +133,17 @@
         </p>
       </div>
     </section>
+
+    <section>
+      <div class="chart" id="indigenous"></div>
+      <div class="text">
+        <p class="eyebrow">By Indigenous status</p>
+        <h2>Indigenous vs non-Indigenous attendance</h2>
+        <p class="annotation">
+          Students of Aboriginal and Torres Strait Islander descent have lower attendance rates than their non-Indigenous peers with a steep drop off in very remote areas.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -146,6 +157,7 @@
     vegaEmbed("#year", "year_level.json", opts);
     vegaEmbed("#bubble", "bubble.json", opts);
     vegaEmbed("#gender", "gender_split.json", opts);
+    vegaEmbed("#indigenous", "indigenous_graph.json", opts);
   </script>
 </body>
 </html>

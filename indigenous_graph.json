@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": {"expr": "'Indigenous vs non-Indigenous attendance by remoteness, Australia, ' + year_select"},
+    "subtitle": "All sectors, Years 1-10 (2014-15 use the older Metropolitan/Provincial/Remote areas; no data collected in 2020)",
+    "frame": "bounds"
+  },
+  "width": 550,
+  "height": 400,
+
+  "params": [
+    {
+      "name": "year_select",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014],
+        "name": "Year: "
+      }
+    }
+  ],
+
+  "data": {
+    "url": "ind_data.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"year": "number", "rate": "number", "level": "number"}
+    }
+  },
+
+  "transform": [
+    {"filter": "datum.year === year_select && datum.state === 'Australia'"}
+  ],
+
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "indigenous",
+      "type": "nominal",
+      "title": null,
+      "sort": ["Aboriginal and Torres Strait Islander", "Non-Indigenous"],
+      "axis": {"labelAngle": 0, "labelLimit": 300}
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "Attendance rate (%)",
+      "scale": {"domain": [0, 100]}
+    },
+    "xOffset": {
+      "field": "geo",
+      "sort": ["Metropolitan", "Major Cities", "Inner Regional", "Provincial", "Outer Regional", "Remote", "Very Remote"]
+    },
+    "color": {
+      "field": "geo",
+      "type": "nominal",
+      "title": "Remoteness",
+      "scale": {
+        "domain": ["Metropolitan", "Major Cities", "Inner Regional", "Provincial", "Outer Regional", "Remote", "Very Remote"],
+        "range": ["#CC79A7", "#0072B2", "#56B4E9", "#8C564B", "#009E73", "#E69F00", "#D55E00"]
+      },
+      "legend": {"orient": "bottom", "columns": 4}
+    },
+    "tooltip": [
+      {"field": "indigenous", "type": "nominal", "title": "Group"},
+      {"field": "geo", "type": "nominal", "title": "Remoteness"},
+      {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
+      {"field": "level", "type": "quantitative", "title": "Attending 90%+ of days (%)", "format": ".1f"}
+    ]
+  }
+}
