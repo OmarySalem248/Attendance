@@ -144,6 +144,17 @@
         </p>
       </div>
     </section>
+
+    <section>
+      <div class="chart" id="tilemap"></div>
+      <div class="text">
+        <p class="eyebrow">By remoteness</p>
+        <h2>Where attendance is highest within each state</h2>
+        <p class="annotation">
+           Metropolitan areas have the highest attendance rates, with some states making exceptions in certain years. The Northern Territory and Tasmania seem to be the only territories and states where attendance is consistently higher in remote areas than in metropolitan areas.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -158,6 +169,7 @@
     vegaEmbed("#bubble", "bubble.json", opts);
     vegaEmbed("#gender", "gender_split.json", opts);
     vegaEmbed("#indigenous", "indigenous_graph.json", opts);
+    vegaEmbed("#tilemap", "remoteness_map.json", opts);
   </script>
 </body>
 </html>

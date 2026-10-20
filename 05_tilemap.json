@@ -1,0 +1,414 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "symbolSize": 110
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
+  "description": "Map of Australian states and territories, each state showing a small line chart of the share of students attending 90 percent or more of days from 2018 to 2025.",
+  "title": {
+    "text": "Students attending 90% or more of school days, 2018-2025",
+    "subtitle": [
+      "All students, Years 1-10, all sectors (no data collected in 2020)",
+      "Big number is 2025; orange dot marks the 2022 low"
+    ],
+    "frame": "bounds"
+  },
+  "width": 560,
+  "height": 496,
+  "projection": {
+    "type": "mercator",
+    "fit": {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            112.9,
+            -10.4
+          ],
+          [
+            159.5,
+            -43.7
+          ]
+        ]
+      }
+    }
+  },
+  "data": {
+    "url": "state_data.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "rate": "number",
+        "level": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 2018"
+    },
+    {
+      "lookup": "state",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "state": "Western Australia",
+              "abbr": "WA",
+              "alon": 121.5,
+              "alat": -25.5
+            },
+            {
+              "state": "Northern Territory",
+              "abbr": "NT",
+              "alon": 133.5,
+              "alat": -19.5
+            },
+            {
+              "state": "South Australia",
+              "abbr": "SA",
+              "alon": 135.5,
+              "alat": -30.0
+            },
+            {
+              "state": "Queensland",
+              "abbr": "QLD",
+              "alon": 144.5,
+              "alat": -22.5
+            },
+            {
+              "state": "New South Wales",
+              "abbr": "NSW",
+              "alon": 146.5,
+              "alat": -31.8
+            },
+            {
+              "state": "Victoria",
+              "abbr": "VIC",
+              "alon": 144.2,
+              "alat": -37.4
+            },
+            {
+              "state": "Tasmania",
+              "abbr": "TAS",
+              "alon": 146.6,
+              "alat": -42.3
+            },
+            {
+              "state": "Australian Capital Territory",
+              "abbr": "ACT",
+              "alon": 156.0,
+              "alat": -36.0
+            }
+          ]
+        },
+        "key": "state",
+        "fields": [
+          "abbr",
+          "alon",
+          "alat"
+        ]
+      }
+    },
+    {
+      "calculate": "3.2 * cos(datum.alat * PI / 180)",
+      "as": "h"
+    },
+    {
+      "calculate": "datum.alon - 3.0 + (datum.year-2018)/7*6",
+      "as": "sx"
+    },
+    {
+      "calculate": "datum.alat - datum.h/2 + (datum.level-35)/50*datum.h",
+      "as": "sy"
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {
+          "calculate": "'level_' + datum.year",
+          "as": "year_key"
+        },
+        {
+          "pivot": "year_key",
+          "value": "level",
+          "groupby": [
+            "state",
+            "abbr",
+            "alon",
+            "alat",
+            "h"
+          ]
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "australian_states.geojson",
+              "format": {
+                "type": "json",
+                "property": "features"
+              }
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "geo"
+        },
+        {
+          "calculate": "datum.alon - 3.0",
+          "as": "lx"
+        },
+        {
+          "calculate": "datum.alon + 3.0",
+          "as": "rx"
+        },
+        {
+          "calculate": "datum.alat + datum.h/2 + 0.4",
+          "as": "ty"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "geoshape",
+            "fill": "#efeee9",
+            "stroke": "#fcfcfb",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "shape": {
+              "field": "geo",
+              "type": "geojson"
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "type": "nominal",
+                "title": "State"
+              },
+              {
+                "field": "level_2019",
+                "type": "quantitative",
+                "title": "2019 (%)",
+                "format": ".1f"
+              },
+              {
+                "field": "level_2022",
+                "type": "quantitative",
+                "title": "2022 (%)",
+                "format": ".1f"
+              },
+              {
+                "field": "level_2025",
+                "type": "quantitative",
+                "title": "2025 (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "fontSize": 14,
+            "fontWeight": 700
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lx",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "abbr"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "bottom",
+            "fontSize": 19,
+            "fontWeight": 700,
+            "color": "#2a78d6"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "rx",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "level_2025",
+              "type": "quantitative",
+              "format": ".0f"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.1,
+            "lat": -35.4,
+            "lon2": 152.7,
+            "lat2": -36.0
+          }
+        ]
+      },
+      "transform": [],
+      "mark": {
+        "type": "rule",
+        "color": "#c3c2b7",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.level != null"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#2a78d6",
+        "strokeWidth": 2.5,
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "sx",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "sy",
+          "type": "quantitative"
+        },
+        "detail": {
+          "field": "state",
+          "type": "nominal"
+        },
+        "order": {
+          "field": "year"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2022"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#eb6834",
+        "size": 55,
+        "stroke": "#efeee9",
+        "strokeWidth": 1.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "sx",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "sy",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2025"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#2a78d6",
+        "size": 55,
+        "stroke": "#efeee9",
+        "strokeWidth": 1.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "sx",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "sy",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}
