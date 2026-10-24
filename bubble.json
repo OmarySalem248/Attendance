@@ -74,7 +74,7 @@
     },
     {
       "data": {
-        "url": "attendance_full.csv",
+        "url": "data/attendance_full.csv",
         "format": {"type": "csv", "parse": {"year": "number", "rate": "number", "level": "number"}}
       },
       "transform": [

@@ -21,7 +21,7 @@
   ],
 
   "data": {
-    "url": "sex_data.csv",
+    "url": "data/sex_data.csv",
     "format": {
       "type": "csv",
       "parse": {"year": "number", "rate": "number", "level": "number"}
@@ -42,7 +42,7 @@
     "x": {
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"domain": [85, 100]}
+      "scale": {"domain": [85, 95]}
     }
   },
 
@@ -72,7 +72,7 @@
           "field": "sex",
           "type": "nominal",
           "title": "Sex",
-          "scale": {"domain": ["Female", "Male"], "range": ["#C91A3C", "#0C71AB"]},
+          "scale": {"domain": ["Female", "Male"], "range": ["#800080", "#008000"]},
           "legend": {"orient": "bottom"}
         },
         "tooltip": [

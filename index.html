@@ -61,6 +61,7 @@
     }
     h2 { font-size: 22px; margin: 0 0 12px; line-height: 1.2; }
     .annotation { font-size: 15px; color: var(--muted); margin: 0; max-width: 60ch; }
+    .annotation + .annotation { margin-top: 12px; }
 
     footer {
       padding: 8px 16px 40px;
@@ -138,15 +139,29 @@
       <div class="chart" id="indigenous"></div>
       <div class="text">
         <p class="eyebrow">By Indigenous status</p>
-        <h2>Indigenous vs non-Indigenous attendance</h2>
+        <h2>The gap is widening, fastest in remote areas</h2>
         <p class="annotation">
-          Students of Aboriginal and Torres Strait Islander descent have lower attendance rates than their non-Indigenous peers with a steep drop off in very remote areas.
+          Since 2016, attendance has fallen in every remoteness area for both groups, but far more steeply for Aboriginal and Torres Strait Islander students. In very remote areas, their attendance dropped 12.2 percentage points to 54%, compared with a 4.2-point fall for non-Indigenous students.
         </p>
       </div>
     </section>
 
     <section>
-      <div class="chart" id="tilemap"></div>
+      <div class="chart" id="cartogram"></div>
+      <div class="text">
+        <p class="eyebrow">Indigenous students by state</p>
+        <h2>The Northern Territory stands apart</h2>
+        <p class="annotation">
+          Each circle is a state or territory, moved apart so none overlap. In the Northern Territory, nearly 4 in 10 students are Aboriginal or Torres Strait Islander, and those students attend only 58% of school days. A large Indigenous population does not always mean low attendance: Tasmania has the second-highest share, yet its Aboriginal and Torres Strait Islander students attend more often than in any other state.
+        </p>
+        <p class="annotation">
+          Choose a remoteness area to compare like with like. In very remote areas, attendance falls to 46% in the Northern Territory and around 53% in South Australia and Western Australia.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="chart" id="remoteness"></div>
       <div class="text">
         <p class="eyebrow">By remoteness</p>
         <h2>Where attendance is highest within each state</h2>
@@ -159,6 +174,7 @@
 
   <footer>
     <p>Data: Australian Curriculum, Assessment and Reporting Authority (ACARA), student attendance data, 2014&ndash;2025. No data was collected in 2020.</p>
+    <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release">Schools, 2025</a>, proportion of Aboriginal and Torres Strait Islander student enrolments by state and territory (Table 42b).</p>
   </footer>
 
   <script>
@@ -169,7 +185,8 @@
     vegaEmbed("#bubble", "bubble.json", opts);
     vegaEmbed("#gender", "gender_split.json", opts);
     vegaEmbed("#indigenous", "indigenous_graph.json", opts);
-    vegaEmbed("#tilemap", "remoteness_map.json", opts);
+    vegaEmbed("#cartogram", "indigenous_cartogram.json", opts);
+    vegaEmbed("#remoteness", "remoteness_map.json", opts);
   </script>
 </body>
 </html>

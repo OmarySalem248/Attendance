@@ -1,0 +1,505 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Dorling cartogram of Australian states and territories in 2025. Circle area shows the attendance rate of Aboriginal and Torres Strait Islander students (Years 1-10) in the chosen remoteness area; shading shows the share of all school enrolments in each state who are Aboriginal and Torres Strait Islander. Circles start at each state's centre and are pushed apart so they do not overlap; positions stay fixed when the area changes.",
+  "width": 600,
+  "height": 500,
+  "padding": {
+    "left": 6,
+    "right": 10,
+    "top": 6,
+    "bottom": 6
+  },
+  "autosize": "pad",
+  "background": "#fcfcfb",
+  "title": {
+    "text": {
+      "signal": "'Aboriginal and Torres Strait Islander attendance by state, 2025' + (area === 'All areas' ? '' : ': ' + area)"
+    },
+    "subtitle": [
+      "Circle size: attendance rate of Aboriginal and Torres Strait Islander students (Years 1-10, all sectors)",
+      "Shading: share of all school students in the state who are Aboriginal and Torres Strait Islander"
+    ],
+    "anchor": "start",
+    "frame": "bounds",
+    "font": "Bricolage Grotesque",
+    "fontSize": 15,
+    "subtitleFont": "Bricolage Grotesque",
+    "subtitleColor": "#52514e",
+    "offset": 12
+  },
+  "signals": [
+    {
+      "name": "rMax",
+      "value": 68,
+      "description": "Radius in pixels of a circle for a 100% attendance rate"
+    },
+    {
+      "name": "area",
+      "value": "All areas",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All areas",
+          "Major Cities",
+          "Inner Regional",
+          "Outer Regional",
+          "Remote",
+          "Very Remote"
+        ],
+        "name": "Remoteness area: "
+      }
+    }
+  ],
+  "data": [
+    {
+      "name": "states",
+      "url": "australian_states.geojson",
+      "format": {
+        "type": "json",
+        "property": "features"
+      }
+    },
+    {
+      "name": "share",
+      "url": "data/ind_enrolment_share_2025.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "share": "number"
+        }
+      }
+    },
+    {
+      "name": "allAreas",
+      "url": "data/ind_state_2025.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "rate": "number",
+          "level": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "formula",
+          "as": "geo",
+          "expr": "'All areas'"
+        }
+      ]
+    },
+    {
+      "name": "byArea",
+      "url": "data/ind_data.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "year": "number",
+          "rate": "number",
+          "level": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.year === 2025 && datum.indigenous === 'Aboriginal and Torres Strait Islander'"
+        }
+      ]
+    },
+    {
+      "name": "rates",
+      "source": [
+        "allAreas",
+        "byArea"
+      ],
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.geo === area"
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "source": "share",
+      "description": "Circle positions, worked out once with every circle at full size so they never move or overlap when the area changes",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "states",
+          "key": "properties.STATE_NAME",
+          "fields": [
+            "state"
+          ],
+          "as": [
+            "feature"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "cx",
+          "expr": "geoCentroid('projection', datum.feature)[0]"
+        },
+        {
+          "type": "formula",
+          "as": "cy",
+          "expr": "geoCentroid('projection', datum.feature)[1]"
+        },
+        {
+          "type": "formula",
+          "as": "x",
+          "expr": "datum.cx"
+        },
+        {
+          "type": "formula",
+          "as": "y",
+          "expr": "datum.cy"
+        },
+        {
+          "type": "force",
+          "static": true,
+          "iterations": 400,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "signal": "rMax + 3"
+              },
+              "iterations": 4
+            },
+            {
+              "force": "x",
+              "x": "cx",
+              "strength": 0.2
+            },
+            {
+              "force": "y",
+              "y": "cy",
+              "strength": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "source": "layout",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "rates",
+          "key": "state",
+          "fields": [
+            "state"
+          ],
+          "values": [
+            "rate"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "r",
+          "expr": "datum.rate == null ? rMax * 0.5 : sqrt(scale('size', datum.rate) / PI)"
+        }
+      ]
+    },
+    {
+      "name": "callout",
+      "source": "nodes",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "area === 'All areas' && datum.abbrev === 'NT'"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "conicEqualArea",
+      "parallels": [
+        -18,
+        -36
+      ],
+      "rotate": [
+        -134,
+        0
+      ],
+      "size": {
+        "signal": "[width, height]"
+      },
+      "fit": {
+        "signal": "data('states')"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": [
+        0,
+        100
+      ],
+      "zero": true,
+      "range": [
+        0,
+        {
+          "signal": "PI * rMax * rMax"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "type": "threshold",
+      "domain": [
+        5,
+        10,
+        20
+      ],
+      "range": [
+        "#dbe8f6",
+        "#9cc1ea",
+        "#4f8fd8",
+        "#1d4f91"
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "type": "symbol",
+      "symbolType": "square",
+      "symbolSize": 140,
+      "title": "Share of enrolments",
+      "orient": "none",
+      "legendX": 0,
+      "legendY": 330,
+      "titleFont": "Bricolage Grotesque",
+      "labelFont": "Bricolage Grotesque",
+      "titleColor": "#52514e",
+      "labelColor": "#52514e",
+      "titleFontSize": 12,
+      "labelFontSize": 12,
+      "titleFontWeight": 600,
+      "direction": "vertical",
+      "encode": {
+        "labels": {
+          "update": {
+            "text": {
+              "signal": "datum.index === 0 ? 'Under 5%' : datum.index === 3 ? '20% or more' : datum.label + '%'"
+            }
+          }
+        }
+      },
+      "labelLimit": 0,
+      "titleLimit": 300,
+      "columnPadding": 14,
+      "columns": 1
+    },
+    {
+      "size": "size",
+      "type": "symbol",
+      "symbolType": "circle",
+      "values": [
+        60,
+        80
+      ],
+      "title": "Attendance rate",
+      "symbolFillColor": "transparent",
+      "symbolStrokeColor": "#52514e",
+      "symbolStrokeWidth": 1,
+      "orient": "none",
+      "legendX": 0,
+      "legendY": 445,
+      "titleFont": "Bricolage Grotesque",
+      "labelFont": "Bricolage Grotesque",
+      "titleColor": "#52514e",
+      "labelColor": "#52514e",
+      "titleFontSize": 12,
+      "labelFontSize": 12,
+      "titleFontWeight": 600,
+      "direction": "horizontal",
+      "encode": {
+        "labels": {
+          "update": {
+            "text": {
+              "signal": "datum.label + '%'"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "size": {
+            "signal": "PI * datum.r * datum.r"
+          },
+          "fill": {
+            "signal": "datum.rate != null ? scale('color', datum.share) : 'transparent'"
+          },
+          "stroke": {
+            "signal": "datum.rate != null ? '#fcfcfb' : '#c3c2b7'"
+          },
+          "strokeWidth": {
+            "value": 1.5
+          },
+          "tooltip": {
+            "signal": "datum.rate != null ? {'State': datum.state, 'Area': area, 'Aboriginal and Torres Strait Islander attendance rate': format(datum.rate, '.1f') + '%', 'Share of school enrolments (whole state)': format(datum.share, '.1f') + '%'} : {'State': datum.state, 'Area': area, 'Attendance rate': 'No data: no ' + area + ' areas in this state'}"
+          },
+          "strokeDash": {
+            "signal": "datum.rate != null ? [] : [4, 3]"
+          }
+        },
+        "hover": {
+          "stroke": {
+            "value": "#0b0b0b"
+          }
+        },
+        "leave": {
+          "stroke": {
+            "signal": "datum.rate != null ? '#fcfcfb' : '#c3c2b7'"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dy": {
+            "value": -8
+          },
+          "text": {
+            "field": "abbrev"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Bricolage Grotesque"
+          },
+          "fontSize": {
+            "value": 14
+          },
+          "fontWeight": {
+            "value": 700
+          },
+          "fill": {
+            "signal": "datum.rate != null ? (datum.share >= 10 ? '#fcfcfb' : '#0b0b0b') : '#8a8981'"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "dy": {
+            "value": 10
+          },
+          "text": {
+            "signal": "datum.rate != null ? format(datum.rate, '.0f') + '%' : 'No data'"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "Bricolage Grotesque"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fill": {
+            "signal": "datum.rate != null ? (datum.share >= 10 ? '#fcfcfb' : '#0b0b0b') : '#8a8981'"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "description": "Annotation for the Northern Territory",
+      "from": {
+        "data": "callout"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "signal": "datum.y - datum.r - 54"
+          },
+          "text": {
+            "value": [
+              "4 in 10 NT students are Aboriginal or",
+              "Torres Strait Islander, and they attend",
+              "the fewest school days of any state"
+            ]
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "lineHeight": {
+            "value": 15
+          },
+          "font": {
+            "value": "Bricolage Grotesque"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#52514e"
+          }
+        }
+      }
+    }
+  ]
+}

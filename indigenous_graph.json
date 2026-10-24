@@ -1,27 +1,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Two slope charts, one for Aboriginal and Torres Strait Islander students and one for non-Indigenous students, showing how attendance changed from 2016 to 2025 in each remoteness area. Both panels share the same vertical scale.",
   "title": {
-    "text": {"expr": "'Indigenous vs non-Indigenous attendance by remoteness, Australia, ' + year_select"},
-    "subtitle": "All sectors, Years 1-10 (2014-15 use the older Metropolitan/Provincial/Remote areas; no data collected in 2020)",
+    "text": "Change in attendance by remoteness, 2016 to 2025",
+    "subtitle": [
+      "Australia, all sectors, Years 1-10",
+      "Starts in 2016, the first year using today's remoteness areas"
+    ],
+    "anchor": "start",
     "frame": "bounds"
   },
-  "width": 550,
-  "height": 400,
-
-  "params": [
-    {
-      "name": "year_select",
-      "value": 2025,
-      "bind": {
-        "input": "select",
-        "options": [2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014],
-        "name": "Year: "
-      }
-    }
-  ],
 
   "data": {
-    "url": "ind_data.csv",
+    "url": "data/ind_data.csv",
     "format": {
       "type": "csv",
       "parse": {"year": "number", "rate": "number", "level": "number"}
@@ -29,43 +20,93 @@
   },
 
   "transform": [
-    {"filter": "datum.year === year_select && datum.state === 'Australia'"}
+    {"filter": "datum.state === 'Australia' && (datum.year === 2016 || datum.year === 2025)"},
+    {
+      "calculate": "datum.indigenous === 'Non-Indigenous' ? 'Non-Indigenous students' : 'Aboriginal and Torres Strait Islander students'",
+      "as": "group"
+    },
+    {
+      "window": [{"op": "first_value", "field": "rate", "as": "rate_2016"}],
+      "sort": [{"field": "year", "order": "ascending"}],
+      "groupby": ["group", "geo"],
+      "frame": [null, null]
+    },
+    {"calculate": "datum.rate - datum.rate_2016", "as": "change"}
   ],
 
-  "mark": "bar",
-  "encoding": {
-    "x": {
-      "field": "indigenous",
+  "facet": {
+    "column": {
+      "field": "group",
       "type": "nominal",
+      "sort": ["Aboriginal and Torres Strait Islander students", "Non-Indigenous students"],
       "title": null,
-      "sort": ["Aboriginal and Torres Strait Islander", "Non-Indigenous"],
-      "axis": {"labelAngle": 0, "labelLimit": 300}
-    },
-    "y": {
-      "field": "rate",
-      "type": "quantitative",
-      "title": "Attendance rate (%)",
-      "scale": {"domain": [0, 100]}
-    },
-    "xOffset": {
-      "field": "geo",
-      "sort": ["Metropolitan", "Major Cities", "Inner Regional", "Provincial", "Outer Regional", "Remote", "Very Remote"]
-    },
-    "color": {
-      "field": "geo",
-      "type": "nominal",
-      "title": "Remoteness",
-      "scale": {
-        "domain": ["Metropolitan", "Major Cities", "Inner Regional", "Provincial", "Outer Regional", "Remote", "Very Remote"],
-        "range": ["#CC79A7", "#0072B2", "#56B4E9", "#8C564B", "#009E73", "#E69F00", "#D55E00"]
+      "header": {"labelFontSize": 13, "labelFontWeight": 600, "labelLimit": 0, "labelAnchor": "start", "labelBaseline": "bottom", "labelLineHeight": 16,
+                 "labelExpr": "datum.value === 'Non-Indigenous students' ? datum.value : ['Aboriginal and Torres Strait', 'Islander students']"}
+    }
+  },
+  "spacing": 32,
+
+  "spec": {
+    "width": 240,
+    "height": 360,
+
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "title": null,
+        "scale": {"padding": 0.6},
+        "axis": {"labelAngle": 0, "labelFontSize": 12, "labelFontWeight": 600, "domain": false, "ticks": false}
       },
-      "legend": {"orient": "bottom", "columns": 4}
+      "y": {
+        "field": "rate",
+        "type": "quantitative",
+        "title": "Attendance rate (%)",
+        "scale": {"domain": [50, 95]}
+      },
+      "color": {
+        "field": "geo",
+        "type": "nominal",
+        "title": "Remoteness",
+        "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"],
+        "scale": {
+          "domain": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"],
+          "range": ["#0072B2", "#56B4E9", "#009E73", "#E69F00", "#D55E00"]
+        },
+        "legend": {"orient": "bottom", "direction": "horizontal", "columns": 5, "symbolType": "stroke", "symbolStrokeWidth": 3}
+      }
     },
-    "tooltip": [
-      {"field": "indigenous", "type": "nominal", "title": "Group"},
-      {"field": "geo", "type": "nominal", "title": "Remoteness"},
-      {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
-      {"field": "level", "type": "quantitative", "title": "Attending 90%+ of days (%)", "format": ".1f"}
+
+    "layer": [
+      {
+        "mark": {"type": "line", "strokeWidth": 2.5},
+        "encoding": {"detail": {"field": "geo"}}
+      },
+      {
+        "mark": {"type": "point", "filled": true, "size": 70, "opacity": 1},
+        "encoding": {
+          "tooltip": [
+            {"field": "group", "type": "nominal", "title": "Students"},
+            {"field": "geo", "type": "nominal", "title": "Remoteness"},
+            {"field": "year", "type": "ordinal", "title": "Year"},
+            {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
+            {"field": "change", "type": "quantitative", "title": "Change since 2016 (points)", "format": "+.1f"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.year === 2025 && datum.geo === 'Very Remote'"}],
+        "mark": {"type": "text", "align": "left", "dx": 8, "fontSize": 12, "fontWeight": 600},
+        "encoding": {
+          "text": {"field": "change", "type": "quantitative", "format": "+.1f"},
+          "color": {"value": "#D55E00"}
+        }
+      },
+      {
+        "transform": [{"filter": "datum.year === 2025 && datum.geo === 'Very Remote'"}],
+        "mark": {"type": "text", "align": "left", "dx": 8, "dy": 14, "fontSize": 11},
+        "encoding": {"text": {"value": "points"}, "color": {"value": "#52514e"}}
+      }
     ]
   }
 }

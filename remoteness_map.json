@@ -24,7 +24,7 @@
   ],
 
   "data": {
-    "url": "geo_data.csv",
+    "url": "data/geo_data.csv",
     "format": {
       "type": "csv",
       "parse": {"year": "number", "rate": "number", "level": "number"}
