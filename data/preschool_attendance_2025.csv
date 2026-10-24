@@ -1,0 +1,613 @@
+table,group,state,service_type,hours_band,children
+Table 1,All children,New South Wales,Preschool,1-359 hours,234
+Table 1,All children,New South Wales,Preschool,360-419 hours,203
+Table 1,All children,New South Wales,Preschool,420-479 hours,244
+Table 1,All children,New South Wales,Preschool,480-539 hours,566
+Table 1,All children,New South Wales,Preschool,540-599 hours,552
+Table 1,All children,New South Wales,Preschool,600+ hours,1568
+Table 1,All children,New South Wales,Preschool,total,3373
+Table 1,All children,New South Wales,Preschool program within a centre based day care,1-359 hours,4596
+Table 1,All children,New South Wales,Preschool program within a centre based day care,360-419 hours,1576
+Table 1,All children,New South Wales,Preschool program within a centre based day care,420-479 hours,1633
+Table 1,All children,New South Wales,Preschool program within a centre based day care,480-539 hours,2231
+Table 1,All children,New South Wales,Preschool program within a centre based day care,540-599 hours,2467
+Table 1,All children,New South Wales,Preschool program within a centre based day care,600+ hours,57232
+Table 1,All children,New South Wales,Preschool program within a centre based day care,total,69740
+Table 1,All children,New South Wales,Children across more than one service type,1-359 hours,6
+Table 1,All children,New South Wales,Children across more than one service type,360-419 hours,9
+Table 1,All children,New South Wales,Children across more than one service type,420-479 hours,4
+Table 1,All children,New South Wales,Children across more than one service type,480-539 hours,10
+Table 1,All children,New South Wales,Children across more than one service type,540-599 hours,17
+Table 1,All children,New South Wales,Children across more than one service type,600+ hours,1705
+Table 1,All children,New South Wales,Children across more than one service type,total,1747
+Table 1,All children,New South Wales,Total children in a preschool program,1-359 hours,4843
+Table 1,All children,New South Wales,Total children in a preschool program,360-419 hours,1794
+Table 1,All children,New South Wales,Total children in a preschool program,420-479 hours,1881
+Table 1,All children,New South Wales,Total children in a preschool program,480-539 hours,2806
+Table 1,All children,New South Wales,Total children in a preschool program,540-599 hours,3035
+Table 1,All children,New South Wales,Total children in a preschool program,600+ hours,60501
+Table 1,All children,New South Wales,Total children in a preschool program,total,74856
+Table 1,All children,Victoria,Preschool,1-359 hours,2233
+Table 1,All children,Victoria,Preschool,360-419 hours,1316
+Table 1,All children,Victoria,Preschool,420-479 hours,1763
+Table 1,All children,Victoria,Preschool,480-539 hours,2173
+Table 1,All children,Victoria,Preschool,540-599 hours,1855
+Table 1,All children,Victoria,Preschool,600+ hours,1767
+Table 1,All children,Victoria,Preschool,total,11113
+Table 1,All children,Victoria,Preschool program within a centre based day care,1-359 hours,4029
+Table 1,All children,Victoria,Preschool program within a centre based day care,360-419 hours,1384
+Table 1,All children,Victoria,Preschool program within a centre based day care,420-479 hours,1125
+Table 1,All children,Victoria,Preschool program within a centre based day care,480-539 hours,1532
+Table 1,All children,Victoria,Preschool program within a centre based day care,540-599 hours,1579
+Table 1,All children,Victoria,Preschool program within a centre based day care,600+ hours,33825
+Table 1,All children,Victoria,Preschool program within a centre based day care,total,43476
+Table 1,All children,Victoria,Children across more than one service type,1-359 hours,19
+Table 1,All children,Victoria,Children across more than one service type,360-419 hours,17
+Table 1,All children,Victoria,Children across more than one service type,420-479 hours,29
+Table 1,All children,Victoria,Children across more than one service type,480-539 hours,57
+Table 1,All children,Victoria,Children across more than one service type,540-599 hours,86
+Table 1,All children,Victoria,Children across more than one service type,600+ hours,5226
+Table 1,All children,Victoria,Children across more than one service type,total,5439
+Table 1,All children,Victoria,Total children in a preschool program,1-359 hours,6283
+Table 1,All children,Victoria,Total children in a preschool program,360-419 hours,2719
+Table 1,All children,Victoria,Total children in a preschool program,420-479 hours,2917
+Table 1,All children,Victoria,Total children in a preschool program,480-539 hours,3764
+Table 1,All children,Victoria,Total children in a preschool program,540-599 hours,3514
+Table 1,All children,Victoria,Total children in a preschool program,600+ hours,40816
+Table 1,All children,Victoria,Total children in a preschool program,total,60023
+Table 1,All children,Queensland,Preschool,1-359 hours,912
+Table 1,All children,Queensland,Preschool,360-419 hours,703
+Table 1,All children,Queensland,Preschool,420-479 hours,1068
+Table 1,All children,Queensland,Preschool,480-539 hours,2227
+Table 1,All children,Queensland,Preschool,540-599 hours,3809
+Table 1,All children,Queensland,Preschool,600+ hours,3622
+Table 1,All children,Queensland,Preschool,total,12339
+Table 1,All children,Queensland,Preschool program within a centre based day care,1-359 hours,2160
+Table 1,All children,Queensland,Preschool program within a centre based day care,360-419 hours,674
+Table 1,All children,Queensland,Preschool program within a centre based day care,420-479 hours,753
+Table 1,All children,Queensland,Preschool program within a centre based day care,480-539 hours,1052
+Table 1,All children,Queensland,Preschool program within a centre based day care,540-599 hours,1056
+Table 1,All children,Queensland,Preschool program within a centre based day care,600+ hours,38726
+Table 1,All children,Queensland,Preschool program within a centre based day care,total,44421
+Table 1,All children,Queensland,Children across more than one service type,1-359 hours,20
+Table 1,All children,Queensland,Children across more than one service type,360-419 hours,12
+Table 1,All children,Queensland,Children across more than one service type,420-479 hours,16
+Table 1,All children,Queensland,Children across more than one service type,480-539 hours,35
+Table 1,All children,Queensland,Children across more than one service type,540-599 hours,55
+Table 1,All children,Queensland,Children across more than one service type,600+ hours,3396
+Table 1,All children,Queensland,Children across more than one service type,total,3540
+Table 1,All children,Queensland,Total children in a preschool program,1-359 hours,3090
+Table 1,All children,Queensland,Total children in a preschool program,360-419 hours,1395
+Table 1,All children,Queensland,Total children in a preschool program,420-479 hours,1841
+Table 1,All children,Queensland,Total children in a preschool program,480-539 hours,3314
+Table 1,All children,Queensland,Total children in a preschool program,540-599 hours,4921
+Table 1,All children,Queensland,Total children in a preschool program,600+ hours,45746
+Table 1,All children,Queensland,Total children in a preschool program,total,60298
+Table 1,All children,South Australia,Preschool,1-359 hours,763
+Table 1,All children,South Australia,Preschool,360-419 hours,562
+Table 1,All children,South Australia,Preschool,420-479 hours,1044
+Table 1,All children,South Australia,Preschool,480-539 hours,1966
+Table 1,All children,South Australia,Preschool,540-599 hours,2290
+Table 1,All children,South Australia,Preschool,600+ hours,820
+Table 1,All children,South Australia,Preschool,total,7447
+Table 1,All children,South Australia,Preschool program within a centre based day care,1-359 hours,366
+Table 1,All children,South Australia,Preschool program within a centre based day care,360-419 hours,177
+Table 1,All children,South Australia,Preschool program within a centre based day care,420-479 hours,212
+Table 1,All children,South Australia,Preschool program within a centre based day care,480-539 hours,372
+Table 1,All children,South Australia,Preschool program within a centre based day care,540-599 hours,364
+Table 1,All children,South Australia,Preschool program within a centre based day care,600+ hours,5097
+Table 1,All children,South Australia,Preschool program within a centre based day care,total,6593
+Table 1,All children,South Australia,Children across more than one service type,1-359 hours,11
+Table 1,All children,South Australia,Children across more than one service type,360-419 hours,16
+Table 1,All children,South Australia,Children across more than one service type,420-479 hours,24
+Table 1,All children,South Australia,Children across more than one service type,480-539 hours,42
+Table 1,All children,South Australia,Children across more than one service type,540-599 hours,74
+Table 1,All children,South Australia,Children across more than one service type,600+ hours,4951
+Table 1,All children,South Australia,Children across more than one service type,total,5115
+Table 1,All children,South Australia,Total children in a preschool program,1-359 hours,1141
+Table 1,All children,South Australia,Total children in a preschool program,360-419 hours,752
+Table 1,All children,South Australia,Total children in a preschool program,420-479 hours,1280
+Table 1,All children,South Australia,Total children in a preschool program,480-539 hours,2383
+Table 1,All children,South Australia,Total children in a preschool program,540-599 hours,2731
+Table 1,All children,South Australia,Total children in a preschool program,600+ hours,10866
+Table 1,All children,South Australia,Total children in a preschool program,total,19157
+Table 1,All children,Western Australia,Preschool,1-359 hours,1277
+Table 1,All children,Western Australia,Preschool,360-419 hours,849
+Table 1,All children,Western Australia,Preschool,420-479 hours,1520
+Table 1,All children,Western Australia,Preschool,480-539 hours,3488
+Table 1,All children,Western Australia,Preschool,540-599 hours,5414
+Table 1,All children,Western Australia,Preschool,600+ hours,7856
+Table 1,All children,Western Australia,Preschool,total,20406
+Table 1,All children,Western Australia,Preschool program within a centre based day care,1-359 hours,862
+Table 1,All children,Western Australia,Preschool program within a centre based day care,360-419 hours,103
+Table 1,All children,Western Australia,Preschool program within a centre based day care,420-479 hours,93
+Table 1,All children,Western Australia,Preschool program within a centre based day care,480-539 hours,67
+Table 1,All children,Western Australia,Preschool program within a centre based day care,540-599 hours,64
+Table 1,All children,Western Australia,Preschool program within a centre based day care,600+ hours,1093
+Table 1,All children,Western Australia,Preschool program within a centre based day care,total,2278
+Table 1,All children,Western Australia,Children across more than one service type,1-359 hours,30
+Table 1,All children,Western Australia,Children across more than one service type,360-419 hours,21
+Table 1,All children,Western Australia,Children across more than one service type,420-479 hours,46
+Table 1,All children,Western Australia,Children across more than one service type,480-539 hours,98
+Table 1,All children,Western Australia,Children across more than one service type,540-599 hours,190
+Table 1,All children,Western Australia,Children across more than one service type,600+ hours,12065
+Table 1,All children,Western Australia,Children across more than one service type,total,12451
+Table 1,All children,Western Australia,Total children in a preschool program,1-359 hours,2168
+Table 1,All children,Western Australia,Total children in a preschool program,360-419 hours,978
+Table 1,All children,Western Australia,Total children in a preschool program,420-479 hours,1663
+Table 1,All children,Western Australia,Total children in a preschool program,480-539 hours,3649
+Table 1,All children,Western Australia,Total children in a preschool program,540-599 hours,5665
+Table 1,All children,Western Australia,Total children in a preschool program,600+ hours,21005
+Table 1,All children,Western Australia,Total children in a preschool program,total,35131
+Table 1,All children,Tasmania,Preschool,1-359 hours,82
+Table 1,All children,Tasmania,Preschool,360-419 hours,72
+Table 1,All children,Tasmania,Preschool,420-479 hours,112
+Table 1,All children,Tasmania,Preschool,480-539 hours,227
+Table 1,All children,Tasmania,Preschool,540-599 hours,359
+Table 1,All children,Tasmania,Preschool,600+ hours,2884
+Table 1,All children,Tasmania,Preschool,total,3735
+Table 1,All children,Tasmania,Preschool program within a centre based day care,1-359 hours,131
+Table 1,All children,Tasmania,Preschool program within a centre based day care,360-419 hours,20
+Table 1,All children,Tasmania,Preschool program within a centre based day care,420-479 hours,9
+Table 1,All children,Tasmania,Preschool program within a centre based day care,480-539 hours,16
+Table 1,All children,Tasmania,Preschool program within a centre based day care,540-599 hours,18
+Table 1,All children,Tasmania,Preschool program within a centre based day care,600+ hours,342
+Table 1,All children,Tasmania,Preschool program within a centre based day care,total,539
+Table 1,All children,Tasmania,Children across more than one service type,1-359 hours,3
+Table 1,All children,Tasmania,Children across more than one service type,360-419 hours,5
+Table 1,All children,Tasmania,Children across more than one service type,420-479 hours,0
+Table 1,All children,Tasmania,Children across more than one service type,480-539 hours,3
+Table 1,All children,Tasmania,Children across more than one service type,540-599 hours,9
+Table 1,All children,Tasmania,Children across more than one service type,600+ hours,1344
+Table 1,All children,Tasmania,Children across more than one service type,total,1361
+Table 1,All children,Tasmania,Total children in a preschool program,1-359 hours,216
+Table 1,All children,Tasmania,Total children in a preschool program,360-419 hours,97
+Table 1,All children,Tasmania,Total children in a preschool program,420-479 hours,124
+Table 1,All children,Tasmania,Total children in a preschool program,480-539 hours,249
+Table 1,All children,Tasmania,Total children in a preschool program,540-599 hours,386
+Table 1,All children,Tasmania,Total children in a preschool program,600+ hours,4571
+Table 1,All children,Tasmania,Total children in a preschool program,total,5636
+Table 1,All children,Northern Territory,Preschool,1-359 hours,394
+Table 1,All children,Northern Territory,Preschool,360-419 hours,100
+Table 1,All children,Northern Territory,Preschool,420-479 hours,118
+Table 1,All children,Northern Territory,Preschool,480-539 hours,206
+Table 1,All children,Northern Territory,Preschool,540-599 hours,290
+Table 1,All children,Northern Territory,Preschool,600+ hours,309
+Table 1,All children,Northern Territory,Preschool,total,1426
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,1-359 hours,41
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,360-419 hours,4
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,420-479 hours,13
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,480-539 hours,9
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,540-599 hours,20
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,600+ hours,545
+Table 1,All children,Northern Territory,Preschool program within a centre based day care,total,634
+Table 1,All children,Northern Territory,Children across more than one service type,1-359 hours,4
+Table 1,All children,Northern Territory,Children across more than one service type,360-419 hours,0
+Table 1,All children,Northern Territory,Children across more than one service type,420-479 hours,9
+Table 1,All children,Northern Territory,Children across more than one service type,480-539 hours,0
+Table 1,All children,Northern Territory,Children across more than one service type,540-599 hours,4
+Table 1,All children,Northern Territory,Children across more than one service type,600+ hours,906
+Table 1,All children,Northern Territory,Children across more than one service type,total,937
+Table 1,All children,Northern Territory,Total children in a preschool program,1-359 hours,441
+Table 1,All children,Northern Territory,Total children in a preschool program,360-419 hours,108
+Table 1,All children,Northern Territory,Total children in a preschool program,420-479 hours,142
+Table 1,All children,Northern Territory,Total children in a preschool program,480-539 hours,223
+Table 1,All children,Northern Territory,Total children in a preschool program,540-599 hours,313
+Table 1,All children,Northern Territory,Total children in a preschool program,600+ hours,1764
+Table 1,All children,Northern Territory,Total children in a preschool program,total,2995
+Table 1,All children,Australian Capital Territory,Preschool,1-359 hours,111
+Table 1,All children,Australian Capital Territory,Preschool,360-419 hours,105
+Table 1,All children,Australian Capital Territory,Preschool,420-479 hours,187
+Table 1,All children,Australian Capital Territory,Preschool,480-539 hours,524
+Table 1,All children,Australian Capital Territory,Preschool,540-599 hours,610
+Table 1,All children,Australian Capital Territory,Preschool,600+ hours,283
+Table 1,All children,Australian Capital Territory,Preschool,total,1821
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,1-359 hours,88
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,360-419 hours,26
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,420-479 hours,32
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,480-539 hours,77
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,540-599 hours,73
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,600+ hours,1494
+Table 1,All children,Australian Capital Territory,Preschool program within a centre based day care,total,1801
+Table 1,All children,Australian Capital Territory,Children across more than one service type,1-359 hours,3
+Table 1,All children,Australian Capital Territory,Children across more than one service type,360-419 hours,4
+Table 1,All children,Australian Capital Territory,Children across more than one service type,420-479 hours,0
+Table 1,All children,Australian Capital Territory,Children across more than one service type,480-539 hours,13
+Table 1,All children,Australian Capital Territory,Children across more than one service type,540-599 hours,16
+Table 1,All children,Australian Capital Territory,Children across more than one service type,600+ hours,1753
+Table 1,All children,Australian Capital Territory,Children across more than one service type,total,1799
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,1-359 hours,206
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,360-419 hours,142
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,420-479 hours,226
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,480-539 hours,612
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,540-599 hours,698
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,600+ hours,3541
+Table 1,All children,Australian Capital Territory,Total children in a preschool program,total,5421
+Table 1,All children,Australia,Preschool,1-359 hours,6012
+Table 1,All children,Australia,Preschool,360-419 hours,3925
+Table 1,All children,Australia,Preschool,420-479 hours,6061
+Table 1,All children,Australia,Preschool,480-539 hours,11377
+Table 1,All children,Australia,Preschool,540-599 hours,15177
+Table 1,All children,Australia,Preschool,600+ hours,19109
+Table 1,All children,Australia,Preschool,total,61658
+Table 1,All children,Australia,Preschool program within a centre based day care,1-359 hours,12279
+Table 1,All children,Australia,Preschool program within a centre based day care,360-419 hours,3978
+Table 1,All children,Australia,Preschool program within a centre based day care,420-479 hours,3877
+Table 1,All children,Australia,Preschool program within a centre based day care,480-539 hours,5351
+Table 1,All children,Australia,Preschool program within a centre based day care,540-599 hours,5638
+Table 1,All children,Australia,Preschool program within a centre based day care,600+ hours,138352
+Table 1,All children,Australia,Preschool program within a centre based day care,total,169477
+Table 1,All children,Australia,Children across more than one service type,1-359 hours,99
+Table 1,All children,Australia,Children across more than one service type,360-419 hours,84
+Table 1,All children,Australia,Children across more than one service type,420-479 hours,128
+Table 1,All children,Australia,Children across more than one service type,480-539 hours,267
+Table 1,All children,Australia,Children across more than one service type,540-599 hours,454
+Table 1,All children,Australia,Children across more than one service type,600+ hours,31347
+Table 1,All children,Australia,Children across more than one service type,total,32383
+Table 1,All children,Australia,Total children in a preschool program,1-359 hours,18386
+Table 1,All children,Australia,Total children in a preschool program,360-419 hours,7986
+Table 1,All children,Australia,Total children in a preschool program,420-479 hours,10068
+Table 1,All children,Australia,Total children in a preschool program,480-539 hours,16998
+Table 1,All children,Australia,Total children in a preschool program,540-599 hours,21273
+Table 1,All children,Australia,Total children in a preschool program,600+ hours,188808
+Table 1,All children,Australia,Total children in a preschool program,total,263519
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool,1-359 hours,86
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool,360-479 hours,113
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool,480-599 hours,160
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool,600+ hours,200
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool,total,560
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool program within a centre based day care,1-359 hours,446
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool program within a centre based day care,360-479 hours,283
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool program within a centre based day care,480-599 hours,380
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool program within a centre based day care,600+ hours,3164
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Preschool program within a centre based day care,total,4280
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Children across more than one service type,1-359 hours,0
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Children across more than one service type,360-479 hours,4
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Children across more than one service type,480-599 hours,4
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Children across more than one service type,600+ hours,148
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Children across more than one service type,total,158
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Total children in a preschool program,1-359 hours,536
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Total children in a preschool program,360-479 hours,403
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Total children in a preschool program,480-599 hours,547
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Total children in a preschool program,600+ hours,3514
+Table 2,Aboriginal and Torres Strait Islander,New South Wales,Total children in a preschool program,total,5002
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool,1-359 hours,47
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool,360-479 hours,103
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool,480-599 hours,123
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool,600+ hours,33
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool,total,307
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool program within a centre based day care,1-359 hours,100
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool program within a centre based day care,360-479 hours,51
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool program within a centre based day care,480-599 hours,83
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool program within a centre based day care,600+ hours,725
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Preschool program within a centre based day care,total,962
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Children across more than one service type,1-359 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Children across more than one service type,360-479 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Children across more than one service type,480-599 hours,4
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Children across more than one service type,600+ hours,100
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Children across more than one service type,total,108
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Total children in a preschool program,1-359 hours,146
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Total children in a preschool program,360-479 hours,151
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Total children in a preschool program,480-599 hours,210
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Total children in a preschool program,600+ hours,866
+Table 2,Aboriginal and Torres Strait Islander,Victoria,Total children in a preschool program,total,1374
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool,1-359 hours,394
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool,360-479 hours,372
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool,480-599 hours,698
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool,600+ hours,299
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool,total,1763
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool program within a centre based day care,1-359 hours,293
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool program within a centre based day care,360-479 hours,152
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool program within a centre based day care,480-599 hours,190
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool program within a centre based day care,600+ hours,2671
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Preschool program within a centre based day care,total,3306
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Children across more than one service type,1-359 hours,9
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Children across more than one service type,360-479 hours,9
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Children across more than one service type,480-599 hours,14
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Children across more than one service type,600+ hours,311
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Children across more than one service type,total,343
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Total children in a preschool program,1-359 hours,696
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Total children in a preschool program,360-479 hours,538
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Total children in a preschool program,480-599 hours,901
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Total children in a preschool program,600+ hours,3279
+Table 2,Aboriginal and Torres Strait Islander,Queensland,Total children in a preschool program,total,5416
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool,1-359 hours,187
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool,360-479 hours,157
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool,480-599 hours,241
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool,600+ hours,48
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool,total,628
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool program within a centre based day care,1-359 hours,43
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool program within a centre based day care,360-479 hours,30
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool program within a centre based day care,480-599 hours,50
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool program within a centre based day care,600+ hours,194
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Preschool program within a centre based day care,total,315
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Children across more than one service type,1-359 hours,7
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Children across more than one service type,360-479 hours,3
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Children across more than one service type,480-599 hours,5
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Children across more than one service type,600+ hours,260
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Children across more than one service type,total,272
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Total children in a preschool program,1-359 hours,234
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Total children in a preschool program,360-479 hours,190
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Total children in a preschool program,480-599 hours,296
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Total children in a preschool program,600+ hours,499
+Table 2,Aboriginal and Torres Strait Islander,South Australia,Total children in a preschool program,total,1222
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool,1-359 hours,509
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool,360-479 hours,363
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool,480-599 hours,559
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool,600+ hours,306
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool,total,1732
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool program within a centre based day care,1-359 hours,62
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool program within a centre based day care,360-479 hours,13
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool program within a centre based day care,480-599 hours,10
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool program within a centre based day care,600+ hours,87
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Preschool program within a centre based day care,total,173
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Children across more than one service type,1-359 hours,3
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Children across more than one service type,360-479 hours,7
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Children across more than one service type,480-599 hours,24
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Children across more than one service type,600+ hours,684
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Children across more than one service type,total,725
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Total children in a preschool program,1-359 hours,577
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Total children in a preschool program,360-479 hours,379
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Total children in a preschool program,480-599 hours,597
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Total children in a preschool program,600+ hours,1075
+Table 2,Aboriginal and Torres Strait Islander,Western Australia,Total children in a preschool program,total,2630
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool,1-359 hours,18
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool,360-479 hours,38
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool,480-599 hours,99
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool,600+ hours,359
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool,total,520
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool program within a centre based day care,1-359 hours,11
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool program within a centre based day care,360-479 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool program within a centre based day care,480-599 hours,3
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool program within a centre based day care,600+ hours,24
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Preschool program within a centre based day care,total,40
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Children across more than one service type,1-359 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Children across more than one service type,360-479 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Children across more than one service type,480-599 hours,5
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Children across more than one service type,600+ hours,172
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Children across more than one service type,total,177
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Total children in a preschool program,1-359 hours,30
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Total children in a preschool program,360-479 hours,40
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Total children in a preschool program,480-599 hours,106
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Total children in a preschool program,600+ hours,557
+Table 2,Aboriginal and Torres Strait Islander,Tasmania,Total children in a preschool program,total,736
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool,1-359 hours,355
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool,360-479 hours,133
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool,480-599 hours,151
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool,600+ hours,79
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool,total,719
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool program within a centre based day care,1-359 hours,22
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool program within a centre based day care,360-479 hours,3
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool program within a centre based day care,480-599 hours,7
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool program within a centre based day care,600+ hours,88
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Preschool program within a centre based day care,total,117
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Children across more than one service type,1-359 hours,4
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Children across more than one service type,360-479 hours,5
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Children across more than one service type,480-599 hours,3
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Children across more than one service type,600+ hours,189
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Children across more than one service type,total,203
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Total children in a preschool program,1-359 hours,385
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Total children in a preschool program,360-479 hours,141
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Total children in a preschool program,480-599 hours,158
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Total children in a preschool program,600+ hours,360
+Table 2,Aboriginal and Torres Strait Islander,Northern Territory,Total children in a preschool program,total,1045
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool,1-359 hours,19
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool,360-479 hours,15
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool,480-599 hours,33
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool,600+ hours,47
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool,total,117
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool program within a centre based day care,1-359 hours,3
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool program within a centre based day care,360-479 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool program within a centre based day care,480-599 hours,5
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool program within a centre based day care,600+ hours,34
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Preschool program within a centre based day care,total,41
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Children across more than one service type,1-359 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Children across more than one service type,360-479 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Children across more than one service type,480-599 hours,0
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Children across more than one service type,600+ hours,66
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Children across more than one service type,total,68
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Total children in a preschool program,1-359 hours,28
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Total children in a preschool program,360-479 hours,15
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Total children in a preschool program,480-599 hours,40
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Total children in a preschool program,600+ hours,146
+Table 2,Aboriginal and Torres Strait Islander,Australian Capital Territory,Total children in a preschool program,total,228
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool,1-359 hours,1621
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool,360-479 hours,1290
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool,480-599 hours,2057
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool,600+ hours,1371
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool,total,6343
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool program within a centre based day care,1-359 hours,983
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool program within a centre based day care,360-479 hours,539
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool program within a centre based day care,480-599 hours,728
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool program within a centre based day care,600+ hours,6986
+Table 2,Aboriginal and Torres Strait Islander,Australia,Preschool program within a centre based day care,total,9234
+Table 2,Aboriginal and Torres Strait Islander,Australia,Children across more than one service type,1-359 hours,28
+Table 2,Aboriginal and Torres Strait Islander,Australia,Children across more than one service type,360-479 hours,32
+Table 2,Aboriginal and Torres Strait Islander,Australia,Children across more than one service type,480-599 hours,69
+Table 2,Aboriginal and Torres Strait Islander,Australia,Children across more than one service type,600+ hours,1929
+Table 2,Aboriginal and Torres Strait Islander,Australia,Children across more than one service type,total,2058
+Table 2,Aboriginal and Torres Strait Islander,Australia,Total children in a preschool program,1-359 hours,2632
+Table 2,Aboriginal and Torres Strait Islander,Australia,Total children in a preschool program,360-479 hours,1862
+Table 2,Aboriginal and Torres Strait Islander,Australia,Total children in a preschool program,480-599 hours,2851
+Table 2,Aboriginal and Torres Strait Islander,Australia,Total children in a preschool program,600+ hours,10291
+Table 2,Aboriginal and Torres Strait Islander,Australia,Total children in a preschool program,total,17642
+Table 3,Disadvantaged,New South Wales,Preschool,1-359 hours,139
+Table 3,Disadvantaged,New South Wales,Preschool,360-479 hours,254
+Table 3,Disadvantaged,New South Wales,Preschool,480-599 hours,504
+Table 3,Disadvantaged,New South Wales,Preschool,600+ hours,607
+Table 3,Disadvantaged,New South Wales,Preschool,total,1503
+Table 3,Disadvantaged,New South Wales,Preschool program within a centre based day care,1-359 hours,1127
+Table 3,Disadvantaged,New South Wales,Preschool program within a centre based day care,360-479 hours,750
+Table 3,Disadvantaged,New South Wales,Preschool program within a centre based day care,480-599 hours,1031
+Table 3,Disadvantaged,New South Wales,Preschool program within a centre based day care,600+ hours,9916
+Table 3,Disadvantaged,New South Wales,Preschool program within a centre based day care,total,12825
+Table 3,Disadvantaged,New South Wales,Children across more than one service type,1-359 hours,7
+Table 3,Disadvantaged,New South Wales,Children across more than one service type,360-479 hours,6
+Table 3,Disadvantaged,New South Wales,Children across more than one service type,480-599 hours,11
+Table 3,Disadvantaged,New South Wales,Children across more than one service type,600+ hours,490
+Table 3,Disadvantaged,New South Wales,Children across more than one service type,total,516
+Table 3,Disadvantaged,New South Wales,Total children in a preschool program,1-359 hours,1274
+Table 3,Disadvantaged,New South Wales,Total children in a preschool program,360-479 hours,1010
+Table 3,Disadvantaged,New South Wales,Total children in a preschool program,480-599 hours,1547
+Table 3,Disadvantaged,New South Wales,Total children in a preschool program,600+ hours,11013
+Table 3,Disadvantaged,New South Wales,Total children in a preschool program,total,14850
+Table 3,Disadvantaged,Victoria,Preschool,1-359 hours,464
+Table 3,Disadvantaged,Victoria,Preschool,360-479 hours,523
+Table 3,Disadvantaged,Victoria,Preschool,480-599 hours,737
+Table 3,Disadvantaged,Victoria,Preschool,600+ hours,219
+Table 3,Disadvantaged,Victoria,Preschool,total,1946
+Table 3,Disadvantaged,Victoria,Preschool program within a centre based day care,1-359 hours,543
+Table 3,Disadvantaged,Victoria,Preschool program within a centre based day care,360-479 hours,336
+Table 3,Disadvantaged,Victoria,Preschool program within a centre based day care,480-599 hours,494
+Table 3,Disadvantaged,Victoria,Preschool program within a centre based day care,600+ hours,4305
+Table 3,Disadvantaged,Victoria,Preschool program within a centre based day care,total,5675
+Table 3,Disadvantaged,Victoria,Children across more than one service type,1-359 hours,4
+Table 3,Disadvantaged,Victoria,Children across more than one service type,360-479 hours,0
+Table 3,Disadvantaged,Victoria,Children across more than one service type,480-599 hours,29
+Table 3,Disadvantaged,Victoria,Children across more than one service type,600+ hours,359
+Table 3,Disadvantaged,Victoria,Children across more than one service type,total,391
+Table 3,Disadvantaged,Victoria,Total children in a preschool program,1-359 hours,1009
+Table 3,Disadvantaged,Victoria,Total children in a preschool program,360-479 hours,860
+Table 3,Disadvantaged,Victoria,Total children in a preschool program,480-599 hours,1256
+Table 3,Disadvantaged,Victoria,Total children in a preschool program,600+ hours,4883
+Table 3,Disadvantaged,Victoria,Total children in a preschool program,total,8009
+Table 3,Disadvantaged,Queensland,Preschool,1-359 hours,441
+Table 3,Disadvantaged,Queensland,Preschool,360-479 hours,584
+Table 3,Disadvantaged,Queensland,Preschool,480-599 hours,1463
+Table 3,Disadvantaged,Queensland,Preschool,600+ hours,621
+Table 3,Disadvantaged,Queensland,Preschool,total,3107
+Table 3,Disadvantaged,Queensland,Preschool program within a centre based day care,1-359 hours,658
+Table 3,Disadvantaged,Queensland,Preschool program within a centre based day care,360-479 hours,406
+Table 3,Disadvantaged,Queensland,Preschool program within a centre based day care,480-599 hours,518
+Table 3,Disadvantaged,Queensland,Preschool program within a centre based day care,600+ hours,6840
+Table 3,Disadvantaged,Queensland,Preschool program within a centre based day care,total,8426
+Table 3,Disadvantaged,Queensland,Children across more than one service type,1-359 hours,11
+Table 3,Disadvantaged,Queensland,Children across more than one service type,360-479 hours,7
+Table 3,Disadvantaged,Queensland,Children across more than one service type,480-599 hours,23
+Table 3,Disadvantaged,Queensland,Children across more than one service type,600+ hours,487
+Table 3,Disadvantaged,Queensland,Children across more than one service type,total,531
+Table 3,Disadvantaged,Queensland,Total children in a preschool program,1-359 hours,1106
+Table 3,Disadvantaged,Queensland,Total children in a preschool program,360-479 hours,997
+Table 3,Disadvantaged,Queensland,Total children in a preschool program,480-599 hours,2012
+Table 3,Disadvantaged,Queensland,Total children in a preschool program,600+ hours,7953
+Table 3,Disadvantaged,Queensland,Total children in a preschool program,total,12062
+Table 3,Disadvantaged,South Australia,Preschool,1-359 hours,406
+Table 3,Disadvantaged,South Australia,Preschool,360-479 hours,626
+Table 3,Disadvantaged,South Australia,Preschool,480-599 hours,1257
+Table 3,Disadvantaged,South Australia,Preschool,600+ hours,200
+Table 3,Disadvantaged,South Australia,Preschool,total,2489
+Table 3,Disadvantaged,South Australia,Preschool program within a centre based day care,1-359 hours,134
+Table 3,Disadvantaged,South Australia,Preschool program within a centre based day care,360-479 hours,128
+Table 3,Disadvantaged,South Australia,Preschool program within a centre based day care,480-599 hours,201
+Table 3,Disadvantaged,South Australia,Preschool program within a centre based day care,600+ hours,1050
+Table 3,Disadvantaged,South Australia,Preschool program within a centre based day care,total,1519
+Table 3,Disadvantaged,South Australia,Children across more than one service type,1-359 hours,6
+Table 3,Disadvantaged,South Australia,Children across more than one service type,360-479 hours,12
+Table 3,Disadvantaged,South Australia,Children across more than one service type,480-599 hours,30
+Table 3,Disadvantaged,South Australia,Children across more than one service type,600+ hours,919
+Table 3,Disadvantaged,South Australia,Children across more than one service type,total,968
+Table 3,Disadvantaged,South Australia,Total children in a preschool program,1-359 hours,542
+Table 3,Disadvantaged,South Australia,Total children in a preschool program,360-479 hours,766
+Table 3,Disadvantaged,South Australia,Total children in a preschool program,480-599 hours,1492
+Table 3,Disadvantaged,South Australia,Total children in a preschool program,600+ hours,2171
+Table 3,Disadvantaged,South Australia,Total children in a preschool program,total,4973
+Table 3,Disadvantaged,Western Australia,Preschool,1-359 hours,448
+Table 3,Disadvantaged,Western Australia,Preschool,360-479 hours,483
+Table 3,Disadvantaged,Western Australia,Preschool,480-599 hours,1217
+Table 3,Disadvantaged,Western Australia,Preschool,600+ hours,904
+Table 3,Disadvantaged,Western Australia,Preschool,total,3045
+Table 3,Disadvantaged,Western Australia,Preschool program within a centre based day care,1-359 hours,170
+Table 3,Disadvantaged,Western Australia,Preschool program within a centre based day care,360-479 hours,36
+Table 3,Disadvantaged,Western Australia,Preschool program within a centre based day care,480-599 hours,21
+Table 3,Disadvantaged,Western Australia,Preschool program within a centre based day care,600+ hours,196
+Table 3,Disadvantaged,Western Australia,Preschool program within a centre based day care,total,429
+Table 3,Disadvantaged,Western Australia,Children across more than one service type,1-359 hours,0
+Table 3,Disadvantaged,Western Australia,Children across more than one service type,360-479 hours,8
+Table 3,Disadvantaged,Western Australia,Children across more than one service type,480-599 hours,40
+Table 3,Disadvantaged,Western Australia,Children across more than one service type,600+ hours,1255
+Table 3,Disadvantaged,Western Australia,Children across more than one service type,total,1308
+Table 3,Disadvantaged,Western Australia,Total children in a preschool program,1-359 hours,622
+Table 3,Disadvantaged,Western Australia,Total children in a preschool program,360-479 hours,523
+Table 3,Disadvantaged,Western Australia,Total children in a preschool program,480-599 hours,1283
+Table 3,Disadvantaged,Western Australia,Total children in a preschool program,600+ hours,2351
+Table 3,Disadvantaged,Western Australia,Total children in a preschool program,total,4780
+Table 3,Disadvantaged,Tasmania,Preschool,1-359 hours,55
+Table 3,Disadvantaged,Tasmania,Preschool,360-479 hours,83
+Table 3,Disadvantaged,Tasmania,Preschool,480-599 hours,230
+Table 3,Disadvantaged,Tasmania,Preschool,600+ hours,900
+Table 3,Disadvantaged,Tasmania,Preschool,total,1265
+Table 3,Disadvantaged,Tasmania,Preschool program within a centre based day care,1-359 hours,34
+Table 3,Disadvantaged,Tasmania,Preschool program within a centre based day care,360-479 hours,9
+Table 3,Disadvantaged,Tasmania,Preschool program within a centre based day care,480-599 hours,9
+Table 3,Disadvantaged,Tasmania,Preschool program within a centre based day care,600+ hours,51
+Table 3,Disadvantaged,Tasmania,Preschool program within a centre based day care,total,109
+Table 3,Disadvantaged,Tasmania,Children across more than one service type,1-359 hours,0
+Table 3,Disadvantaged,Tasmania,Children across more than one service type,360-479 hours,0
+Table 3,Disadvantaged,Tasmania,Children across more than one service type,480-599 hours,0
+Table 3,Disadvantaged,Tasmania,Children across more than one service type,600+ hours,346
+Table 3,Disadvantaged,Tasmania,Children across more than one service type,total,351
+Table 3,Disadvantaged,Tasmania,Total children in a preschool program,1-359 hours,92
+Table 3,Disadvantaged,Tasmania,Total children in a preschool program,360-479 hours,94
+Table 3,Disadvantaged,Tasmania,Total children in a preschool program,480-599 hours,241
+Table 3,Disadvantaged,Tasmania,Total children in a preschool program,600+ hours,1304
+Table 3,Disadvantaged,Tasmania,Total children in a preschool program,total,1728
+Table 3,Disadvantaged,Northern Territory,Preschool,1-359 hours,311
+Table 3,Disadvantaged,Northern Territory,Preschool,360-479 hours,104
+Table 3,Disadvantaged,Northern Territory,Preschool,480-599 hours,113
+Table 3,Disadvantaged,Northern Territory,Preschool,600+ hours,77
+Table 3,Disadvantaged,Northern Territory,Preschool,total,602
+Table 3,Disadvantaged,Northern Territory,Preschool program within a centre based day care,1-359 hours,21
+Table 3,Disadvantaged,Northern Territory,Preschool program within a centre based day care,360-479 hours,7
+Table 3,Disadvantaged,Northern Territory,Preschool program within a centre based day care,480-599 hours,0
+Table 3,Disadvantaged,Northern Territory,Preschool program within a centre based day care,600+ hours,57
+Table 3,Disadvantaged,Northern Territory,Preschool program within a centre based day care,total,90
+Table 3,Disadvantaged,Northern Territory,Children across more than one service type,1-359 hours,4
+Table 3,Disadvantaged,Northern Territory,Children across more than one service type,360-479 hours,5
+Table 3,Disadvantaged,Northern Territory,Children across more than one service type,480-599 hours,0
+Table 3,Disadvantaged,Northern Territory,Children across more than one service type,600+ hours,119
+Table 3,Disadvantaged,Northern Territory,Children across more than one service type,total,129
+Table 3,Disadvantaged,Northern Territory,Total children in a preschool program,1-359 hours,333
+Table 3,Disadvantaged,Northern Territory,Total children in a preschool program,360-479 hours,121
+Table 3,Disadvantaged,Northern Territory,Total children in a preschool program,480-599 hours,115
+Table 3,Disadvantaged,Northern Territory,Total children in a preschool program,600+ hours,253
+Table 3,Disadvantaged,Northern Territory,Total children in a preschool program,total,823
+Table 3,Disadvantaged,Australian Capital Territory,Preschool,1-359 hours,5
+Table 3,Disadvantaged,Australian Capital Territory,Preschool,360-479 hours,3
+Table 3,Disadvantaged,Australian Capital Territory,Preschool,480-599 hours,19
+Table 3,Disadvantaged,Australian Capital Territory,Preschool,600+ hours,8
+Table 3,Disadvantaged,Australian Capital Territory,Preschool,total,26
+Table 3,Disadvantaged,Australian Capital Territory,Preschool program within a centre based day care,1-359 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Preschool program within a centre based day care,360-479 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Preschool program within a centre based day care,480-599 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Preschool program within a centre based day care,600+ hours,12
+Table 3,Disadvantaged,Australian Capital Territory,Preschool program within a centre based day care,total,15
+Table 3,Disadvantaged,Australian Capital Territory,Children across more than one service type,1-359 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Children across more than one service type,360-479 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Children across more than one service type,480-599 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Children across more than one service type,600+ hours,14
+Table 3,Disadvantaged,Australian Capital Territory,Children across more than one service type,total,14
+Table 3,Disadvantaged,Australian Capital Territory,Total children in a preschool program,1-359 hours,0
+Table 3,Disadvantaged,Australian Capital Territory,Total children in a preschool program,360-479 hours,3
+Table 3,Disadvantaged,Australian Capital Territory,Total children in a preschool program,480-599 hours,19
+Table 3,Disadvantaged,Australian Capital Territory,Total children in a preschool program,600+ hours,32
+Table 3,Disadvantaged,Australian Capital Territory,Total children in a preschool program,total,51
+Table 3,Disadvantaged,Australia,Preschool,1-359 hours,2266
+Table 3,Disadvantaged,Australia,Preschool,360-479 hours,2659
+Table 3,Disadvantaged,Australia,Preschool,480-599 hours,5532
+Table 3,Disadvantaged,Australia,Preschool,600+ hours,3525
+Table 3,Disadvantaged,Australia,Preschool,total,13988
+Table 3,Disadvantaged,Australia,Preschool program within a centre based day care,1-359 hours,2689
+Table 3,Disadvantaged,Australia,Preschool program within a centre based day care,360-479 hours,1671
+Table 3,Disadvantaged,Australia,Preschool program within a centre based day care,480-599 hours,2283
+Table 3,Disadvantaged,Australia,Preschool program within a centre based day care,600+ hours,22435
+Table 3,Disadvantaged,Australia,Preschool program within a centre based day care,total,29082
+Table 3,Disadvantaged,Australia,Children across more than one service type,1-359 hours,30
+Table 3,Disadvantaged,Australia,Children across more than one service type,360-479 hours,43
+Table 3,Disadvantaged,Australia,Children across more than one service type,480-599 hours,138
+Table 3,Disadvantaged,Australia,Children across more than one service type,600+ hours,3997
+Table 3,Disadvantaged,Australia,Children across more than one service type,total,4207
+Table 3,Disadvantaged,Australia,Total children in a preschool program,1-359 hours,4979
+Table 3,Disadvantaged,Australia,Total children in a preschool program,360-479 hours,4380
+Table 3,Disadvantaged,Australia,Total children in a preschool program,480-599 hours,7958
+Table 3,Disadvantaged,Australia,Total children in a preschool program,600+ hours,29961
+Table 3,Disadvantaged,Australia,Total children in a preschool program,total,47278

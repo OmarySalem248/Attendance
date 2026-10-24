@@ -161,6 +161,20 @@
     </section>
 
     <section>
+      <div class="chart" id="preschool"></div>
+      <div class="text">
+        <p class="eyebrow">Preschool attendance</p>
+        <h2>Most preschoolers attend 600 hours or more, but not everywhere</h2>
+        <p class="annotation">
+          Each pie is a state or territory, sized by how many children are in the chosen group and moved apart so none overlap. Slices show how many hours those children attended in the year before school. Nationally, 72% of children attended 600 hours or more.
+        </p>
+        <p class="annotation">
+          Switch the group to see the gap widen. Only 34% of Aboriginal and Torres Strait Islander children in the Northern Territory reached 600 hours, and 31% of disadvantaged children there, compared with more than 70% in New South Wales and Tasmania. South Australia and Western Australia also sit near 40% for Aboriginal and Torres Strait Islander children.
+        </p>
+      </div>
+    </section>
+
+    <section>
       <div class="chart" id="remoteness"></div>
       <div class="text">
         <p class="eyebrow">By remoteness</p>
@@ -175,6 +189,7 @@
   <footer>
     <p>Data: Australian Curriculum, Assessment and Reporting Authority (ACARA), student attendance data, 2014&ndash;2025. No data was collected in 2020.</p>
     <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release">Schools, 2025</a>, proportion of Aboriginal and Torres Strait Islander student enrolments by state and territory (Table 42b).</p>
+    <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/preschool-attendance/latest-release">Preschool Attendance, 2025</a> (experimental statistics), Tables 1&ndash;3. Disadvantaged children live in the most disadvantaged fifth of areas on the ABS Index of Relative Socio-economic Disadvantage.</p>
   </footer>
 
   <script>
@@ -186,6 +201,7 @@
     vegaEmbed("#gender", "gender_split.json", opts);
     vegaEmbed("#indigenous", "indigenous_graph.json", opts);
     vegaEmbed("#cartogram", "indigenous_cartogram.json", opts);
+    vegaEmbed("#preschool", "preschool_cartogram.json", opts);
     vegaEmbed("#remoteness", "remoteness_map.json", opts);
   </script>
 </body>

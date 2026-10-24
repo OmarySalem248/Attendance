@@ -59,7 +59,7 @@
       "field": "rate",
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"scheme": "blues", "domain": [75, 85]}
+      "scale": {"scheme": "blues", "domain": [75, 93]}
     },
     "tooltip": [
       {"field": "state", "type": "nominal", "title": "State"},

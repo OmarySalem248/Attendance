@@ -1,0 +1,686 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Dorling cartogram of pie charts for preschool attendance in 2025. Each pie is a state or territory, placed near its centre and pushed apart so none overlap. Pie area shows the number of children in the chosen group (scaled so the largest state in that group is the biggest pie); slices show the share of children in each band of hours attended. Positions stay fixed when the group changes.",
+  "width": 600,
+  "height": 500,
+  "padding": {
+    "left": 6,
+    "right": 10,
+    "top": 6,
+    "bottom": 6
+  },
+  "autosize": "pad",
+  "background": "#fcfcfb",
+  "title": {
+    "text": {
+      "signal": "'Hours attended at preschool by state, 2025: ' + grp"
+    },
+    "subtitle": {
+      "signal": "['Children in the year before school, in programs offering 600+ hours a year. Pie size: number of children', 'Australia: ' + format(national, '.0%') + ' attended 600 hours or more']"
+    },
+    "anchor": "start",
+    "frame": "bounds",
+    "font": "Bricolage Grotesque",
+    "fontSize": 15,
+    "subtitleFont": "Bricolage Grotesque",
+    "subtitleColor": "#52514e",
+    "offset": 12
+  },
+  "signals": [
+    {
+      "name": "rMax",
+      "value": 70,
+      "description": "Radius in pixels of the pie for the state with the most children in the chosen group"
+    },
+    {
+      "name": "rMin",
+      "value": 8,
+      "description": "Smallest radius drawn, so tiny counts (ACT disadvantaged) stay visible"
+    },
+    {
+      "name": "grp",
+      "value": "All children",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All children",
+          "Aboriginal and Torres Strait Islander",
+          "Disadvantaged"
+        ],
+        "name": "Group: "
+      }
+    },
+    {
+      "name": "national",
+      "update": "length(data('nationalTop')) ? data('nationalTop')[0].share : 0"
+    },
+    {
+      "name": "maxN",
+      "description": "Most children in any one state for the chosen group; that state gets the rMax pie",
+      "update": "length(data('current')) ? data('current')[0].maxN : 1"
+    }
+  ],
+  "data": [
+    {
+      "name": "states",
+      "url": "australian_states.geojson",
+      "format": {
+        "type": "json",
+        "property": "features"
+      }
+    },
+    {
+      "name": "names",
+      "values": [
+        {
+          "state": "New South Wales",
+          "abbrev": "NSW"
+        },
+        {
+          "state": "Victoria",
+          "abbrev": "VIC"
+        },
+        {
+          "state": "Queensland",
+          "abbrev": "QLD"
+        },
+        {
+          "state": "South Australia",
+          "abbrev": "SA"
+        },
+        {
+          "state": "Western Australia",
+          "abbrev": "WA"
+        },
+        {
+          "state": "Tasmania",
+          "abbrev": "TAS"
+        },
+        {
+          "state": "Northern Territory",
+          "abbrev": "NT"
+        },
+        {
+          "state": "Australian Capital Territory",
+          "abbrev": "ACT"
+        }
+      ]
+    },
+    {
+      "name": "raw",
+      "url": "data/preschool_attendance_2025.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "children": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.service_type === 'Total children in a preschool program' && datum.hours_band !== 'total'"
+        },
+        {
+          "type": "formula",
+          "as": "band",
+          "description": "Table 1 has six bands; merge them into the four used by Tables 2 and 3",
+          "expr": "datum.hours_band === '360-419 hours' || datum.hours_band === '420-479 hours' ? '360-479 hours' : datum.hours_band === '480-539 hours' || datum.hours_band === '540-599 hours' ? '480-599 hours' : datum.hours_band"
+        },
+        {
+          "type": "aggregate",
+          "groupby": [
+            "group",
+            "state",
+            "band"
+          ],
+          "fields": [
+            "children"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "value"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "order",
+          "expr": "indexof(['600+ hours', '480-599 hours', '360-479 hours', '1-359 hours'], datum.band)"
+        }
+      ]
+    },
+    {
+      "name": "totals",
+      "source": "raw",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.state !== 'Australia'"
+        },
+        {
+          "type": "aggregate",
+          "groupby": [
+            "group",
+            "state"
+          ],
+          "fields": [
+            "value"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "n"
+          ]
+        },
+        {
+          "type": "joinaggregate",
+          "groupby": [
+            "group"
+          ],
+          "fields": [
+            "n"
+          ],
+          "ops": [
+            "max"
+          ],
+          "as": [
+            "maxN"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "r",
+          "expr": "max(rMin, rMax * sqrt(datum.n / datum.maxN))"
+        }
+      ]
+    },
+    {
+      "name": "topShare",
+      "source": "raw",
+      "description": "Share of each state's children (and Australia's) who attended 600+ hours, in the chosen group",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.group === grp"
+        },
+        {
+          "type": "joinaggregate",
+          "groupby": [
+            "state"
+          ],
+          "fields": [
+            "value"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "n"
+          ]
+        },
+        {
+          "type": "filter",
+          "expr": "datum.band === '600+ hours'"
+        },
+        {
+          "type": "formula",
+          "as": "share",
+          "expr": "datum.value / datum.n"
+        }
+      ]
+    },
+    {
+      "name": "nationalTop",
+      "source": "topShare",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.state === 'Australia'"
+        }
+      ]
+    },
+    {
+      "name": "current",
+      "source": "totals",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.group === grp"
+        },
+        {
+          "type": "lookup",
+          "from": "topShare",
+          "key": "state",
+          "fields": [
+            "state"
+          ],
+          "values": [
+            "share"
+          ],
+          "as": [
+            "top"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "source": "totals",
+      "description": "Positions worked out once, using each state's largest pie across all three groups, so pies never move or overlap when the group changes",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "state"
+          ],
+          "fields": [
+            "r"
+          ],
+          "ops": [
+            "max"
+          ],
+          "as": [
+            "layoutR"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "states",
+          "key": "properties.STATE_NAME",
+          "fields": [
+            "state"
+          ],
+          "as": [
+            "feature"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "names",
+          "key": "state",
+          "fields": [
+            "state"
+          ],
+          "values": [
+            "abbrev"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "cx",
+          "expr": "geoCentroid('projection', datum.feature)[0]"
+        },
+        {
+          "type": "formula",
+          "as": "cy",
+          "expr": "geoCentroid('projection', datum.feature)[1]"
+        },
+        {
+          "type": "formula",
+          "as": "x",
+          "expr": "datum.cx"
+        },
+        {
+          "type": "formula",
+          "as": "y",
+          "expr": "datum.cy"
+        },
+        {
+          "type": "force",
+          "static": true,
+          "iterations": 400,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "expr": "datum.layoutR + 22"
+              },
+              "iterations": 4
+            },
+            {
+              "force": "x",
+              "x": "cx",
+              "strength": 0.2
+            },
+            {
+              "force": "y",
+              "y": "cy",
+              "strength": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "source": "layout",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "current",
+          "key": "state",
+          "fields": [
+            "state"
+          ],
+          "values": [
+            "r",
+            "n",
+            "top"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "slices",
+      "source": "raw",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.group === grp && datum.state !== 'Australia'"
+        },
+        {
+          "type": "joinaggregate",
+          "groupby": [
+            "state"
+          ],
+          "fields": [
+            "value"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "n"
+          ]
+        },
+        {
+          "type": "window",
+          "groupby": [
+            "state"
+          ],
+          "sort": {
+            "field": "order"
+          },
+          "ops": [
+            "sum"
+          ],
+          "fields": [
+            "value"
+          ],
+          "as": [
+            "cum"
+          ],
+          "frame": [
+            null,
+            0
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "share",
+          "expr": "datum.value / datum.n"
+        },
+        {
+          "type": "formula",
+          "as": "a0",
+          "expr": "2 * PI * (datum.cum - datum.value) / datum.n"
+        },
+        {
+          "type": "formula",
+          "as": "a1",
+          "expr": "2 * PI * datum.cum / datum.n"
+        },
+        {
+          "type": "lookup",
+          "from": "nodes",
+          "key": "state",
+          "fields": [
+            "state"
+          ],
+          "values": [
+            "x",
+            "y",
+            "r",
+            "abbrev"
+          ]
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "conicEqualArea",
+      "parallels": [
+        -18,
+        -36
+      ],
+      "rotate": [
+        -134,
+        0
+      ],
+      "size": {
+        "signal": "[width, height]"
+      },
+      "fit": {
+        "signal": "data('states')"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "1-359 hours",
+        "360-479 hours",
+        "480-599 hours",
+        "600+ hours"
+      ],
+      "range": [
+        "#b7d0ee",
+        "#7eabe2",
+        "#3f7fd0",
+        "#1d4f91"
+      ]
+    },
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": {
+        "signal": "[0, maxN]"
+      },
+      "zero": true,
+      "range": [
+        0,
+        {
+          "signal": "PI * rMax * rMax"
+        }
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "type": "symbol",
+      "symbolType": "square",
+      "symbolSize": 140,
+      "title": "Hours attended in the year",
+      "orient": "none",
+      "legendX": 0,
+      "legendY": 380,
+      "titleFont": "Bricolage Grotesque",
+      "labelFont": "Bricolage Grotesque",
+      "titleColor": "#52514e",
+      "labelColor": "#52514e",
+      "titleFontSize": 12,
+      "labelFontSize": 12,
+      "titleFontWeight": 600,
+      "titleLimit": 300,
+      "labelLimit": 0,
+      "direction": "vertical"
+    },
+    {
+      "size": "size",
+      "type": "symbol",
+      "symbolType": "circle",
+      "values": {
+        "signal": "grp === 'All children' ? [10000, 40000] : grp === 'Disadvantaged' ? [1000, 5000] : [500, 2500]"
+      },
+      "title": "Number of children",
+      "symbolFillColor": "transparent",
+      "symbolStrokeColor": "#52514e",
+      "symbolStrokeWidth": 1,
+      "orient": "none",
+      "legendX": 0,
+      "legendY": 0,
+      "direction": "horizontal",
+      "labelLimit": 0,
+      "titleLimit": 300,
+      "titleFont": "Bricolage Grotesque",
+      "labelFont": "Bricolage Grotesque",
+      "titleColor": "#52514e",
+      "labelColor": "#52514e",
+      "titleFontSize": 12,
+      "labelFontSize": 12,
+      "titleFontWeight": 600,
+      "encode": {
+        "labels": {
+          "update": {
+            "text": {
+              "signal": "format(datum.value, ',')"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "marks": [
+    {
+      "type": "arc",
+      "from": {
+        "data": "slices"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "outerRadius": {
+            "field": "r"
+          },
+          "innerRadius": {
+            "value": 0
+          },
+          "startAngle": {
+            "field": "a0"
+          },
+          "endAngle": {
+            "field": "a1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "band"
+          },
+          "stroke": {
+            "value": "#fcfcfb"
+          },
+          "strokeWidth": {
+            "value": 1.5
+          },
+          "tooltip": {
+            "signal": "{'State': datum.state, 'Group': grp, 'Hours attended': datum.band, 'Children': format(datum.value, ','), 'Share of state': format(datum.share, '.1%')}"
+          }
+        },
+        "hover": {
+          "stroke": {
+            "value": "#0b0b0b"
+          }
+        },
+        "leave": {
+          "stroke": {
+            "value": "#fcfcfb"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "signal": "datum.y + datum.r + 4"
+          },
+          "text": {
+            "field": "abbrev"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "font": {
+            "value": "Bricolage Grotesque"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": 700
+          },
+          "fill": {
+            "value": "#0b0b0b"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "signal": "datum.y + datum.r + 19"
+          },
+          "text": {
+            "signal": "format(datum.top, '.0%') + ' at 600+'"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "font": {
+            "value": "Bricolage Grotesque"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#52514e"
+          }
+        }
+      }
+    }
+  ]
+}
