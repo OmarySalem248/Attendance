@@ -55,7 +55,7 @@
   },
   "title": {
     "text": {
-      "expr": "'Remoteness area with the highest attendance, ' + year_select"
+      "expr": "'Remoteness area with the highest attendance, ' + year_select + (year_select === 2020 ? ' (no data collected)' : '')"
     },
     "subtitle": [
       "All students, Years 1-10, all sectors (no data collected in 2020)",
@@ -70,186 +70,350 @@
       "name": "year_select",
       "value": 2025,
       "bind": {
-        "input": "select",
-        "options": [
-          2025,
-          2024,
-          2023,
-          2022,
-          2021,
-          2019,
-          2018,
-          2017,
-          2016,
-          2015,
-          2014
-        ],
+        "input": "range",
+        "min": 2014,
+        "max": 2025,
+        "step": 1,
         "name": "Year: "
       }
     }
   ],
-  "data": {
-    "url": "data/geo_data.csv",
-    "format": {
-      "type": "csv",
-      "parse": {
-        "year": "number",
-        "rate": "number",
-        "level": "number"
-      }
-    }
-  },
   "projection": {
     "type": "mercator"
   },
-  "transform": [
+  "layer": [
     {
-      "filter": "datum.year === year_select"
-    },
-    {
-      "calculate": "indexof(['Metropolitan', 'Major Cities', 'Inner Regional', 'Provincial', 'Outer Regional', 'Remote', 'Very Remote'], datum.geo)",
-      "as": "geo_order"
-    },
-    {
-      "window": [
+      "data": {
+        "url": "data/geo_data.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "rate": "number",
+            "level": "number"
+          }
+        }
+      },
+      "transform": [
         {
-          "op": "row_number",
-          "as": "rank"
+          "filter": "datum.year === year_select"
         },
         {
-          "op": "count",
-          "as": "n_areas"
+          "calculate": "indexof(['Metropolitan', 'Major Cities', 'Inner Regional', 'Provincial', 'Outer Regional', 'Remote', 'Very Remote'], datum.geo)",
+          "as": "geo_order"
         },
         {
-          "op": "lead",
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rank"
+            },
+            {
+              "op": "count",
+              "as": "n_areas"
+            },
+            {
+              "op": "lead",
+              "field": "geo",
+              "as": "second_geo"
+            },
+            {
+              "op": "lead",
+              "field": "rate",
+              "as": "second_rate"
+            }
+          ],
+          "sort": [
+            {
+              "field": "rate",
+              "order": "descending"
+            },
+            {
+              "field": "geo_order",
+              "order": "ascending"
+            }
+          ],
+          "groupby": [
+            "state"
+          ],
+          "frame": [
+            null,
+            null
+          ]
+        },
+        {
+          "filter": "datum.rank === 1"
+        },
+        {
+          "calculate": "datum.second_rate == null ? null : datum.rate - datum.second_rate",
+          "as": "lead_pp"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "australian_states.geojson",
+              "format": {
+                "type": "json",
+                "property": "features"
+              }
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "shape"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.75
+      },
+      "encoding": {
+        "shape": {
+          "field": "shape",
+          "type": "geojson"
+        },
+        "color": {
           "field": "geo",
-          "as": "second_geo"
-        },
-        {
-          "op": "lead",
-          "field": "rate",
-          "as": "second_rate"
-        }
-      ],
-      "sort": [
-        {
-          "field": "rate",
-          "order": "descending"
-        },
-        {
-          "field": "geo_order",
-          "order": "ascending"
-        }
-      ],
-      "groupby": [
-        "state"
-      ],
-      "frame": [
-        null,
-        null
-      ]
-    },
-    {
-      "filter": "datum.rank === 1"
-    },
-    {
-      "calculate": "datum.second_rate == null ? null : datum.rate - datum.second_rate",
-      "as": "lead_pp"
-    },
-    {
-      "lookup": "state",
-      "from": {
-        "data": {
-          "url": "australian_states.geojson",
-          "format": {
-            "type": "json",
-            "property": "features"
+          "type": "nominal",
+          "title": "Highest-attending area",
+          "scale": {
+            "domain": [
+              "Metropolitan",
+              "Major Cities",
+              "Inner Regional",
+              "Provincial",
+              "Outer Regional",
+              "Remote",
+              "Very Remote"
+            ],
+            "range": [
+              "#CC79A7",
+              "#0072B2",
+              "#56B4E9",
+              "#8C564B",
+              "#009E73",
+              "#E69F00",
+              "#D55E00"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "columns": 4,
+            "titleLimit": 300
           }
         },
-        "key": "properties.STATE_NAME"
-      },
-      "as": "shape"
-    }
-  ],
-  "mark": {
-    "type": "geoshape",
-    "stroke": "white",
-    "strokeWidth": 0.75
-  },
-  "encoding": {
-    "shape": {
-      "field": "shape",
-      "type": "geojson"
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "geo",
+            "type": "nominal",
+            "title": "Highest-attending area"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Attendance rate (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "second_geo",
+            "type": "nominal",
+            "title": "Next highest area"
+          },
+          {
+            "field": "second_rate",
+            "type": "quantitative",
+            "title": "Next highest rate (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "lead_pp",
+            "type": "quantitative",
+            "title": "Lead (pp)",
+            "format": ".1f"
+          },
+          {
+            "field": "n_areas",
+            "type": "quantitative",
+            "title": "Areas reported"
+          }
+        ]
+      }
     },
-    "color": {
-      "field": "geo",
-      "type": "nominal",
-      "title": "Highest-attending area",
-      "scale": {
-        "domain": [
-          "Metropolitan",
-          "Major Cities",
-          "Inner Regional",
-          "Provincial",
-          "Outer Regional",
-          "Remote",
-          "Very Remote"
-        ],
-        "range": [
-          "#CC79A7",
-          "#0072B2",
-          "#56B4E9",
-          "#8C564B",
-          "#009E73",
-          "#E69F00",
-          "#D55E00"
+    {
+      "description": "2019 only: outline Victoria, the one state other than NT and Tas where a non-metro area led",
+      "data": {
+        "url": "data/geo_data.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "rate": "number",
+            "level": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year === year_select"
+        },
+        {
+          "calculate": "indexof(['Metropolitan', 'Major Cities', 'Inner Regional', 'Provincial', 'Outer Regional', 'Remote', 'Very Remote'], datum.geo)",
+          "as": "geo_order"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rank"
+            },
+            {
+              "op": "count",
+              "as": "n_areas"
+            },
+            {
+              "op": "lead",
+              "field": "geo",
+              "as": "second_geo"
+            },
+            {
+              "op": "lead",
+              "field": "rate",
+              "as": "second_rate"
+            }
+          ],
+          "sort": [
+            {
+              "field": "rate",
+              "order": "descending"
+            },
+            {
+              "field": "geo_order",
+              "order": "ascending"
+            }
+          ],
+          "groupby": [
+            "state"
+          ],
+          "frame": [
+            null,
+            null
+          ]
+        },
+        {
+          "filter": "datum.rank === 1"
+        },
+        {
+          "calculate": "datum.second_rate == null ? null : datum.rate - datum.second_rate",
+          "as": "lead_pp"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "australian_states.geojson",
+              "format": {
+                "type": "json",
+                "property": "features"
+              }
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "shape"
+        },
+        {
+          "filter": "year_select === 2019 && datum.state === 'Victoria'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#0b0b0b",
+        "strokeWidth": 1.2,
+        "strokeJoin": "round"
+      },
+      "encoding": {
+        "shape": {
+          "field": "shape",
+          "type": "geojson"
+        }
+      }
+    },
+    {
+      "description": "2019 only: leader line and callout text in the ocean south of South Australia",
+      "data": {
+        "values": [
+          {
+            "lon": 143.2,
+            "lat": -38.0,
+            "lon2": 141.0,
+            "lat2": -40.3
+          }
         ]
       },
-      "legend": {
-        "orient": "bottom",
-        "columns": 4,
-        "titleLimit": 300
-      }
-    },
-    "tooltip": [
-      {
-        "field": "state",
-        "type": "nominal",
-        "title": "State"
-      },
-      {
-        "field": "geo",
-        "type": "nominal",
-        "title": "Highest-attending area"
-      },
-      {
-        "field": "rate",
-        "type": "quantitative",
-        "title": "Attendance rate (%)",
-        "format": ".1f"
-      },
-      {
-        "field": "second_geo",
-        "type": "nominal",
-        "title": "Next highest area"
-      },
-      {
-        "field": "second_rate",
-        "type": "quantitative",
-        "title": "Next highest rate (%)",
-        "format": ".1f"
-      },
-      {
-        "field": "lead_pp",
-        "type": "quantitative",
-        "title": "Lead (pp)",
-        "format": ".1f"
-      },
-      {
-        "field": "n_areas",
-        "type": "quantitative",
-        "title": "Areas reported"
-      }
-    ]
-  }
+      "transform": [
+        {
+          "filter": "year_select === 2019"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#0b0b0b",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "lon2"
+            },
+            "latitude2": {
+              "field": "lat2"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "top",
+            "fontSize": 11,
+            "lineHeight": 14,
+            "color": "#0b0b0b",
+            "dx": 2,
+            "dy": 2,
+            "text": [
+              "Victoria, 2019: the only time a state",
+              "other than NT or Tasmania had a",
+              "non-metro area on top. Remote areas",
+              "edged Major Cities, 92.4% to 92.3%"
+            ]
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon2",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat2",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }

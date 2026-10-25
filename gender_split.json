@@ -55,7 +55,7 @@
   },
   "title": {
     "text": {
-      "expr": "'Female vs male attendance by sector, Australia, ' + year_select"
+      "expr": "'Female vs male attendance by sector, Australia, ' + year_select + (year_select === 2020 ? ' (no data collected)' : '')"
     },
     "subtitle": "All students, Years 1-10 (no data collected in 2020)",
     "frame": "bounds"
@@ -67,20 +67,10 @@
       "name": "year_select",
       "value": 2025,
       "bind": {
-        "input": "select",
-        "options": [
-          2025,
-          2024,
-          2023,
-          2022,
-          2021,
-          2019,
-          2018,
-          2017,
-          2016,
-          2015,
-          2014
-        ],
+        "input": "range",
+        "min": 2014,
+        "max": 2025,
+        "step": 1,
         "name": "Year: "
       }
     }
@@ -198,8 +188,8 @@
               "Male"
             ],
             "range": [
-              "#800080",
-              "#008000"
+              "#5b3a8e",
+              "#c8650b"
             ]
           },
           "legend": {

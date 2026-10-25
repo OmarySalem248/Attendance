@@ -57,7 +57,7 @@
   "description": "Proportional symbol map: circle area shows the share of students in each state who attend on fewer than 90 percent of school days.",
   "title": {
     "text": {
-      "expr": "'Students attending fewer than 90% of school days, ' + year_select"
+      "expr": "'Students attending fewer than 90% of school days, ' + year_select + (year_select === 2020 ? ' (no data collected)' : '')"
     },
     "subtitle": "Share of all students, Years 1-10, all sectors"
   },
