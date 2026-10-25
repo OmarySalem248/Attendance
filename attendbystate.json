@@ -1,14 +1,66 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "header": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque"
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
   "title": {
     "text": {
       "expr": "'School attendance rate by state, ' + year_select + (year_select === 2020 ? ' (no data collected)' : '')"
     },
     "subtitle": "All students, Years 1-10, all sectors"
   },
-  "width": 600,
-  "height": 500,
-
+  "width": 440,
+  "height": 380,
   "params": [
     {
       "name": "year_select",
@@ -22,47 +74,90 @@
       }
     }
   ],
-
   "data": {
     "url": "data/state_data.csv",
     "format": {
       "type": "csv",
-      "parse": {"year": "number", "rate": "number", "level": "number"}
+      "parse": {
+        "year": "number",
+        "rate": "number",
+        "level": "number"
+      }
     }
   },
-
-  "projection": {"type": "mercator"},
-
+  "projection": {
+    "type": "mercator"
+  },
   "transform": [
-    {"filter": "datum.year === year_select"},
+    {
+      "filter": "datum.year === year_select"
+    },
     {
       "lookup": "state",
       "from": {
         "data": {
           "url": "australian_states.geojson",
-          "format": {"type": "json", "property": "features"}
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
         },
         "key": "properties.STATE_NAME"
       },
       "as": "geo"
     }
   ],
-
-  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
-
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.75
+  },
   "encoding": {
-    "shape": {"field": "geo", "type": "geojson"},
+    "shape": {
+      "field": "geo",
+      "type": "geojson"
+    },
     "color": {
       "field": "rate",
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"scheme": "blues", "domain": [75, 93]}
+      "scale": {
+        "scheme": "blues",
+        "domain": [
+          75,
+          93
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "gradientLength": 220,
+        "titleOrient": "left"
+      }
     },
     "tooltip": [
-      {"field": "state", "type": "nominal", "title": "State"},
-      {"field": "year", "type": "ordinal", "title": "Year"},
-      {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
-      {"field": "level", "type": "quantitative", "title": "Attending 90%+ of days (%)", "format": ".1f"}
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "rate",
+        "type": "quantitative",
+        "title": "Attendance rate (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "level",
+        "type": "quantitative",
+        "title": "Attending 90%+ of days (%)",
+        "format": ".1f"
+      }
     ]
   }
 }

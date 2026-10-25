@@ -14,6 +14,9 @@
       "labelFontSize": 12,
       "titleFontSize": 12,
       "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7",
       "domain": false,
       "ticks": false
     },
@@ -35,6 +38,21 @@
       "right": 10,
       "top": 6,
       "bottom": 6
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "header": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque"
     }
   },
   "description": "Heatmap of school attendance rate by year level (rows) and calendar year (columns), 2014-2025, for a chosen state or territory. Darker cells mean higher attendance. No data was collected in 2020.",
@@ -45,11 +63,7 @@
     "subtitle": [
       "All students, all sectors",
       "Darker cells mean students attended more school days"
-    ],
-    "anchor": "start",
-    "subtitleColor": "#52514e",
-    "fontSize": 15,
-    "offset": 12
+    ]
   },
   "params": [
     {

@@ -96,6 +96,9 @@
     .byline { color: var(--text); font-weight: 600; }
     .annotation { font-size: 15px; color: var(--muted); margin: 0; max-width: 60ch; }
     .annotation + .annotation { margin-top: 12px; }
+    .photo { margin: 20px 0 0; max-width: 60ch; }
+    .photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    .photo figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
     footer {
       padding: 8px 16px 40px;
@@ -116,8 +119,8 @@
   <main>
 
     <div class="intro">
-      <p class="intro-lead">While attendce numbers are far from the only tell of a childs academic success, it is still deeply important to maintain the younger generation presense in education.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus, nulla gravida orci a odio.</p>
+      <p class="intro-lead">While attendce numbers are far from the only tell of a childs academic success, it is still deeply important to maintain the younger generation participation in education.</p>
+      <p>We wish to explore the trends and patterns in student attendance across different regions and demographics in Australia, and even look into the futre to see trends within preschools.</p>
       <dl class="terms">
         <div>
           <dt>Attendance rate</dt>
@@ -140,27 +143,20 @@
       <p class="chapter-intro">Australian students in Years 1&ndash;10 attended 92.7% of school days in 2014. By 2025 that had fallen to 88.8%, and the decline has not been even across the country.</p>
     </div>
 
-    <section>
-      <div class="chart" id="map"></div>
+    <section class="pair">
       <div class="text">
-        <p class="eyebrow">By state</p>
+        <p class="eyebrow">By state and remoteness</p>
         <h3>Where students attend most</h3>
         <p class="annotation">
-          Use the slider to move through the years. The Northern Territory has the lowest attendance rate of any state or territory in every year.
+          Use the sliders to move through the years. On the left, darker states have higher attendance. The Northern Territory has the lowest attendance rate of any state or territory in every year.
         </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="chart" id="remoteness"></div>
-      <div class="text">
-        <p class="eyebrow">By remoteness</p>
-        <h3>Where attendance is highest within each state</h3>
         <p class="annotation">
-           Metropolitan areas have the highest attendance rates, with some states making exceptions in certain years. The Northern Territory and Tasmania seem to be the only territories and states where attendance is consistently higher in remote areas than in metropolitan areas. 
+           On the right, each state is coloured by its highest-attending area. Metropolitan areas usually have the highest attendance rates, with some states making exceptions in certain years. The Northern Territory and Tasmania seem to be the only territories and states where attendance is consistently higher in remote areas than in metropolitan areas. 
            This could be due to the fact that Darwin and Hobart are the only metropolitan areas in their respective states, and they are much smaller compared to other metropolitan areas such as Sydney or Melbourne.
         </p>
       </div>
+      <div class="chart" id="map"></div>
+      <div class="chart" id="remoteness"></div>
     </section>
 
     <section>
@@ -231,6 +227,10 @@
         <p class="annotation">
           Since 2016, attendance has fallen in every remoteness area for both groups, but far more steeply for Aboriginal and Torres Strait Islander students. In very remote areas, their attendance dropped 12.2 percentage points to 54%, compared with a 4.2-point fall for non-Indigenous students.
         </p>
+        <figure class="photo">
+          <img src="images/school1.png" alt="A group of Aboriginal students in blue and yellow school uniforms walking across red dirt towards a school building in remote Australia." loading="lazy">
+          <figcaption>Photo: ABC News, <a href="https://www.abc.net.au/news/2022-11-16/nt-remote-education-funding-effective-enrolment/101517962">[source]</a>.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -252,32 +252,25 @@
     <div class="chapter">
       <p class="chapter-num">Part 5</p>
       <h2>The very beginning: preschool</h2>
-      <p class="chapter-intro">Attendance habits begin before Year 1. In the year before school, most children are enrolled in a preschool program offering at least 600 hours, about 15 hours a week, but not all of them attend that much.</p>
+      <p class="chapter-intro">Attendance habits begin before Year 1 and preschools may be the best view one has into the next generation of students. In the year before school, most children are enrolled in a preschool program offering at least 600 hours, about 15 hours a week, but not all of them attend that much.</p>
     </div>
 
-    <section>
-      <div class="chart" id="preschool"></div>
+    <section class="pair">
       <div class="text">
         <p class="eyebrow">Preschool attendance</p>
         <h3>Most preschoolers attend 600 hours or more, but not everywhere</h3>
         <p class="annotation">
-          Each pie is a state or territory, sized by how many children are in the chosen group and moved apart so none overlap. Slices show how many hours those children attended in the year before school. Nationally, 72% of children attended 600 hours or more.
+          On the left, each pie is a state or territory, sized by how many children are in the chosen group and moved apart so none overlap. Slices show how many hours those children attended in the year before school. Nationally, 72% of children attended 600 hours or more.
         </p>
         <p class="annotation">
           Switch the group to see the gap widen. Only 34% of Aboriginal and Torres Strait Islander children in the Northern Territory reached 600 hours, and 31% of disadvantaged children there, compared with more than 70% in New South Wales and Tasmania. South Australia and Western Australia also sit near 40% for Aboriginal and Torres Strait Islander children.
         </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="chart" id="servicetype"></div>
-      <div class="text">
-        <p class="eyebrow">Preschool by service type</p>
-        <h3>Standalone preschools rarely reach 600 hours</h3>
         <p class="annotation">
-          Nationally, children whose preschool program is run inside centre-based day care almost all attend 600 hours or more (82%), as do children who use more than one service type (97%). In standalone preschools, only 31% reach 600 hours, and attendance is spread across every band.
+          On the right: nationally, children whose preschool program is run inside centre-based day care almost all attend 600 hours or more (82%), as do children who use more than one service type (97%). In standalone preschools, only 31% reach 600 hours, and attendance is spread across every band.
         </p>
       </div>
+      <div class="chart" id="preschool"></div>
+      <div class="chart" id="servicetype"></div>
     </section>
 
     <div class="chapter conclusion">
@@ -294,8 +287,8 @@
     <p>Data: Australian Curriculum, Assessment and Reporting Authority (ACARA), <a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance">National Report on Schooling in Australia: student attendance</a>, 2014&ndash;2025. No data was collected in 2020.</p>
     <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release">Schools, 2025</a>, proportion of Aboriginal and Torres Strait Islander student enrolments by state and territory (Table 42b).</p>
     <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/preschool-attendance/latest-release">Preschool Attendance, 2025</a> (experimental statistics), Tables 1&ndash;3. Disadvantaged children live in the most disadvantaged fifth of areas on the ABS Index of Relative Socio-economic Disadvantage.</p>
-    <p>Map boundaries: [source of australian_states.geojson and its URL].</p>
-    <p>Use of AI: [describe which AI tools you used and what for, e.g. help with Vega-Lite code, data conversion and proofreading text].</p>
+    <p>Map boundaries: GitHub <a href="https://github.com/rowanhogan/australian-states/blob/master/states.geojson?short_path=7e3fe8e">states.geojson</a>.</p>
+    <p>Use of AI: Claude code was used to assist with code generation while keeping track of framing and progress..</p>
   </footer>
 
   <script>

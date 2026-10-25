@@ -37,13 +37,29 @@
       "right": 10,
       "top": 6,
       "bottom": 6
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "header": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque"
     }
   },
   "description": "Pictogram of 100 school days showing how many the average Australian student attends, for a chosen year level, averaged over 2014-2025.",
   "title": {
-    "text": {"expr": "'Out of 100 school days, how many does the average ' + (year_select === 'Years 1-10' ? 'student' : year_select + ' student') + ' attend?'"},
-    "subtitle": "Australia, all sectors, averaged over 2014-2025 (no data for 2020)",
-    "anchor": "start"
+    "text": {
+      "expr": "'Out of 100 school days, how many does the average ' + (year_select === 'Years 1-10' ? 'student' : year_select + ' student') + ' attend?'"
+    },
+    "subtitle": "Australia, all sectors, averaged over 2014-2025 (no data for 2020)"
   },
   "params": [
     {
@@ -51,8 +67,32 @@
       "value": "Years 1-10",
       "bind": {
         "input": "select",
-        "options": ["Years 1-10", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7", "Year 8", "Year 9", "Year 10"],
-        "labels": ["All (Years 1-10)", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7", "Year 8", "Year 9", "Year 10"],
+        "options": [
+          "Years 1-10",
+          "Year 1",
+          "Year 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Year 10"
+        ],
+        "labels": [
+          "All (Years 1-10)",
+          "Year 1",
+          "Year 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Year 10"
+        ],
         "name": "Year level: "
       }
     }
@@ -61,19 +101,51 @@
   "height": 300,
   "data": {
     "url": "data/year_data.csv",
-    "format": {"type": "csv", "parse": {"year": "number", "rate": "number"}}
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "rate": "number"
+      }
+    }
   },
   "transform": [
-    {"filter": "datum.state === 'Australia' && datum.year_level === year_select"},
     {
-      "aggregate": [{"op": "mean", "field": "rate", "as": "avg_rate"}],
-      "groupby": ["year_level"]
+      "filter": "datum.state === 'Australia' && datum.year_level === year_select"
     },
-    {"calculate": "round(datum.avg_rate)", "as": "days_attended"},
-    {"calculate": "sequence(0, 100)", "as": "i"},
-    {"flatten": ["i"]},
-    {"calculate": "datum.i % 10", "as": "col"},
-    {"calculate": "floor(datum.i / 10)", "as": "row"},
+    {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "rate",
+          "as": "avg_rate"
+        }
+      ],
+      "groupby": [
+        "year_level"
+      ]
+    },
+    {
+      "calculate": "round(datum.avg_rate)",
+      "as": "days_attended"
+    },
+    {
+      "calculate": "sequence(0, 100)",
+      "as": "i"
+    },
+    {
+      "flatten": [
+        "i"
+      ]
+    },
+    {
+      "calculate": "datum.i % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.i / 10)",
+      "as": "row"
+    },
     {
       "calculate": "datum.i < datum.days_attended ? 'Days attended' : 'Days missed'",
       "as": "group"
@@ -86,14 +158,28 @@
     "strokeWidth": 2
   },
   "encoding": {
-    "x": {"field": "col", "type": "ordinal", "axis": null},
-    "y": {"field": "row", "type": "ordinal", "axis": null},
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
     "color": {
       "field": "group",
       "type": "nominal",
       "scale": {
-        "domain": ["Days attended", "Days missed"],
-        "range": ["#2a78d6", "#eb6834"]
+        "domain": [
+          "Days attended",
+          "Days missed"
+        ],
+        "range": [
+          "#2a78d6",
+          "#eb6834"
+        ]
       },
       "legend": {
         "title": null,
@@ -102,9 +188,22 @@
       }
     },
     "tooltip": [
-      {"field": "year_level", "type": "nominal", "title": "Year level"},
-      {"field": "group", "type": "nominal", "title": "Dot"},
-      {"field": "avg_rate", "type": "quantitative", "title": "Average attendance rate (%)", "format": ".1f"}
+      {
+        "field": "year_level",
+        "type": "nominal",
+        "title": "Year level"
+      },
+      {
+        "field": "group",
+        "type": "nominal",
+        "title": "Dot"
+      },
+      {
+        "field": "avg_rate",
+        "type": "quantitative",
+        "title": "Average attendance rate (%)",
+        "format": ".1f"
+      }
     ]
   }
 }

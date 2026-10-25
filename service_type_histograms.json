@@ -3,7 +3,9 @@
   "config": {
     "background": "#fcfcfb",
     "font": "Bricolage Grotesque",
-    "view": {"stroke": null},
+    "view": {
+      "stroke": null
+    },
     "axis": {
       "labelFont": "Bricolage Grotesque",
       "titleFont": "Bricolage Grotesque",
@@ -18,25 +20,57 @@
     },
     "header": {
       "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
       "labelFontSize": 13,
       "labelFontWeight": 600,
       "labelColor": "#0b0b0b",
       "labelAnchor": "start",
       "labelLimit": 0
     },
-    "text": {"font": "Bricolage Grotesque", "color": "#0b0b0b"},
-    "padding": {"left": 6, "right": 10, "top": 6, "bottom": 6}
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    }
   },
   "description": "Three histograms, one per preschool service type, showing the share of children in the year before school (Australia, 2025, all children) who attended each band of hours.",
   "title": {
-    "text": {"expr": "'Hours attended at preschool by service type, ' + state_select + ', 2025'"},
-    "subtitle": "Share of each service type's children in the year before school, in programs offering 600+ hours a year",
-    "anchor": "start",
-    "subtitleColor": "#52514e",
-    "fontSize": 15,
-    "offset": 12
+    "text": {
+      "expr": "'Hours attended at preschool by service type, ' + state_select + ', 2025'"
+    },
+    "subtitle": [
+      "Share of each service type's children in the year before school,",
+      "in programs offering 600+ hours a year"
+    ]
   },
-  "data": {"url": "data/preschool_attendance_2025.csv"},
+  "data": {
+    "url": "data/preschool_attendance_2025.csv"
+  },
   "params": [
     {
       "name": "state_select",
@@ -62,35 +96,60 @@
     {
       "filter": "datum.table === 'Table 1' && datum.state === state_select && datum.hours_band !== 'total' && datum.service_type !== 'Total children in a preschool program'"
     },
-    {"calculate": "toNumber(datum.children)", "as": "children"},
     {
-      "joinaggregate": [{"op": "sum", "field": "children", "as": "n"}],
-      "groupby": ["service_type"]
+      "calculate": "toNumber(datum.children)",
+      "as": "children"
     },
-    {"calculate": "datum.children / datum.n", "as": "share"},
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "children",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "service_type"
+      ]
+    },
+    {
+      "calculate": "datum.children / datum.n",
+      "as": "share"
+    },
     {
       "calculate": "datum.service_type === 'Preschool' ? 1 : datum.service_type === 'Preschool program within a centre based day care' ? 2 : 3",
       "as": "order"
     },
     {
-      "calculate": "(datum.service_type === 'Preschool' ? 'Preschool' : datum.service_type === 'Preschool program within a centre based day care' ? 'Within centre-based day care' : 'Across more than one service type') + '|' + format(datum.n, ',') + ' children'",
+      "calculate": "(datum.service_type === 'Preschool' ? 'Preschool' : datum.service_type === 'Preschool program within a centre based day care' ? 'Within centre-|based day care' : 'Across more than|one service type') + '|' + format(datum.n, ',') + ' children'",
       "as": "panel"
     },
-    {"calculate": "replace(datum.hours_band, ' hours', '')", "as": "band"},
-    {"calculate": "datum.share < 0.005 ? '<1%' : format(datum.share, '.0%')", "as": "label"}
+    {
+      "calculate": "replace(datum.hours_band, ' hours', '')",
+      "as": "band"
+    },
+    {
+      "calculate": "datum.share < 0.005 ? '' : format(datum.share, '.0%')",
+      "as": "label"
+    }
   ],
   "facet": {
     "column": {
       "field": "panel",
       "type": "nominal",
-      "sort": {"field": "order"},
+      "sort": {
+        "field": "order"
+      },
       "title": null,
-      "header": {"labelExpr": "split(datum.value, '|')", "labelLineHeight": 17}
+      "header": {
+        "labelExpr": "split(datum.value, '|')",
+        "labelLineHeight": 17
+      }
     }
   },
-  "spacing": 24,
+  "spacing": 16,
   "spec": {
-    "width": 200,
+    "width": 130,
     "height": 240,
     "layer": [
       {
@@ -102,17 +161,40 @@
         },
         "encoding": {
           "tooltip": [
-            {"field": "service_type", "title": "Service type"},
-            {"field": "hours_band", "title": "Hours attended"},
-            {"field": "children", "type": "quantitative", "title": "Children", "format": ","},
-            {"field": "share", "type": "quantitative", "title": "Share of service type", "format": ".1%"}
+            {
+              "field": "service_type",
+              "title": "Service type"
+            },
+            {
+              "field": "hours_band",
+              "title": "Hours attended"
+            },
+            {
+              "field": "children",
+              "type": "quantitative",
+              "title": "Children",
+              "format": ","
+            },
+            {
+              "field": "share",
+              "type": "quantitative",
+              "title": "Share of service type",
+              "format": ".1%"
+            }
           ]
         }
       },
       {
-        "mark": {"type": "text", "dy": -7, "fontSize": 11, "color": "#52514e"},
+        "mark": {
+          "type": "text",
+          "dy": -7,
+          "fontSize": 10,
+          "color": "#52514e"
+        },
         "encoding": {
-          "text": {"field": "label"}
+          "text": {
+            "field": "label"
+          }
         }
       }
     ],
@@ -120,17 +202,37 @@
       "x": {
         "field": "band",
         "type": "ordinal",
-        "sort": ["1-359", "360-419", "420-479", "480-539", "540-599", "600+"],
-        "title": "Hours attended in the year",
-        "axis": {"labelAngle": -40, "ticks": false},
-        "scale": {"paddingInner": 0.08}
+        "sort": [
+          "1-359",
+          "360-419",
+          "420-479",
+          "480-539",
+          "540-599",
+          "600+"
+        ],
+        "title": "Hours attended",
+        "axis": {
+          "labelAngle": -40,
+          "ticks": false
+        },
+        "scale": {
+          "paddingInner": 0.08
+        }
       },
       "y": {
         "field": "share",
         "type": "quantitative",
         "title": "Share of children",
-        "scale": {"domain": [0, 1]},
-        "axis": {"format": "%", "tickCount": 5}
+        "scale": {
+          "domain": [
+            0,
+            1
+          ]
+        },
+        "axis": {
+          "format": "%",
+          "tickCount": 5
+        }
       }
     }
   }

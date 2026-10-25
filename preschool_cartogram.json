@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "Dorling cartogram of pie charts for preschool attendance in 2025. Each pie is a state or territory, placed near its centre and pushed apart so none overlap. Pie area shows the number of children in the chosen group (scaled so the largest state in that group is the biggest pie); slices show the share of children in each band of hours attended. Positions stay fixed when the group changes.",
-  "width": 600,
-  "height": 500,
+  "width": 440,
+  "height": 380,
   "padding": {
     "left": 6,
     "right": 10,
@@ -13,10 +13,10 @@
   "background": "#fcfcfb",
   "title": {
     "text": {
-      "signal": "'Hours attended at preschool by state, 2025: ' + grp"
+      "signal": "['Hours attended at preschool by state, 2025', grp]"
     },
     "subtitle": {
-      "signal": "['Children in the year before school, in programs offering 600+ hours a year. Pie size: number of children', 'Australia: ' + format(national, '.0%') + ' attended 600 hours or more']"
+      "signal": "['Children in the year before school, in programs offering', '600+ hours a year. Pie size: number of children', 'Australia: ' + format(national, '.0%') + ' attended 600 hours or more']"
     },
     "anchor": "start",
     "frame": "bounds",
@@ -29,7 +29,7 @@
   "signals": [
     {
       "name": "rMax",
-      "value": 70,
+      "value": 52,
       "description": "Radius in pixels of the pie for the state with the most children in the chosen group"
     },
     {
@@ -510,7 +510,7 @@
       "title": "Hours attended in the year",
       "orient": "none",
       "legendX": 0,
-      "legendY": 380,
+      "legendY": 300,
       "titleFont": "Bricolage Grotesque",
       "labelFont": "Bricolage Grotesque",
       "titleColor": "#52514e",

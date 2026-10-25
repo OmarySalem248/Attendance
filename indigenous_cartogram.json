@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "Dorling cartogram of Australian states and territories in 2025. Circle area shows the attendance rate of Aboriginal and Torres Strait Islander students (Years 1-10) in the chosen remoteness area; shading shows the share of all school enrolments in each state who are Aboriginal and Torres Strait Islander. Circles start at each state's centre and are pushed apart so they do not overlap; positions stay fixed when the area changes.",
-  "width": 600,
-  "height": 500,
+  "width": 440,
+  "height": 380,
   "padding": {
     "left": 6,
     "right": 10,
@@ -13,11 +13,13 @@
   "background": "#fcfcfb",
   "title": {
     "text": {
-      "signal": "'Aboriginal and Torres Strait Islander attendance by state, 2025' + (area === 'All areas' ? '' : ': ' + area)"
+      "signal": "['Aboriginal and Torres Strait Islander attendance', 'by state, 2025' + (area === 'All areas' ? '' : ': ' + area)]"
     },
     "subtitle": [
-      "Circle size: attendance rate of Aboriginal and Torres Strait Islander students (Years 1-10, all sectors)",
-      "Shading: share of all school students in the state who are Aboriginal and Torres Strait Islander"
+      "Circle size: attendance rate of Aboriginal and Torres Strait",
+      "Islander students (Years 1-10, all sectors)",
+      "Shading: share of all school students in the state",
+      "who are Aboriginal and Torres Strait Islander"
     ],
     "anchor": "start",
     "frame": "bounds",
@@ -30,7 +32,7 @@
   "signals": [
     {
       "name": "rMax",
-      "value": 68,
+      "value": 50,
       "description": "Radius in pixels of a circle for a 100% attendance rate"
     },
     {
@@ -274,7 +276,7 @@
       "title": "Share of enrolments",
       "orient": "none",
       "legendX": 0,
-      "legendY": 330,
+      "legendY": 230,
       "titleFont": "Bricolage Grotesque",
       "labelFont": "Bricolage Grotesque",
       "titleColor": "#52514e",
@@ -311,7 +313,7 @@
       "symbolStrokeWidth": 1,
       "orient": "none",
       "legendX": 0,
-      "legendY": 445,
+      "legendY": 330,
       "titleFont": "Bricolage Grotesque",
       "labelFont": "Bricolage Grotesque",
       "titleColor": "#52514e",

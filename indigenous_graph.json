@@ -1,5 +1,58 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "header": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque"
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
   "description": "Two slope charts, one for Aboriginal and Torres Strait Islander students and one for non-Indigenous students, showing how attendance changed from 2016 to 2025 in each remoteness area. Both panels share the same vertical scale.",
   "title": {
     "text": "Change in attendance by remoteness, 2016 to 2025",
@@ -7,105 +60,238 @@
       "Australia, all sectors, Years 1-10",
       "Starts in 2016, the first year using today's remoteness areas"
     ],
-    "anchor": "start",
     "frame": "bounds"
   },
-
   "data": {
     "url": "data/ind_data.csv",
     "format": {
       "type": "csv",
-      "parse": {"year": "number", "rate": "number", "level": "number"}
+      "parse": {
+        "year": "number",
+        "rate": "number",
+        "level": "number"
+      }
     }
   },
-
   "transform": [
-    {"filter": "datum.state === 'Australia' && (datum.year === 2016 || datum.year === 2025)"},
+    {
+      "filter": "datum.state === 'Australia' && (datum.year === 2016 || datum.year === 2025)"
+    },
     {
       "calculate": "datum.indigenous === 'Non-Indigenous' ? 'Non-Indigenous students' : 'Aboriginal and Torres Strait Islander students'",
       "as": "group"
     },
     {
-      "window": [{"op": "first_value", "field": "rate", "as": "rate_2016"}],
-      "sort": [{"field": "year", "order": "ascending"}],
-      "groupby": ["group", "geo"],
-      "frame": [null, null]
+      "window": [
+        {
+          "op": "first_value",
+          "field": "rate",
+          "as": "rate_2016"
+        }
+      ],
+      "sort": [
+        {
+          "field": "year",
+          "order": "ascending"
+        }
+      ],
+      "groupby": [
+        "group",
+        "geo"
+      ],
+      "frame": [
+        null,
+        null
+      ]
     },
-    {"calculate": "datum.rate - datum.rate_2016", "as": "change"}
+    {
+      "calculate": "datum.rate - datum.rate_2016",
+      "as": "change"
+    }
   ],
-
   "facet": {
     "column": {
       "field": "group",
       "type": "nominal",
-      "sort": ["Aboriginal and Torres Strait Islander students", "Non-Indigenous students"],
+      "sort": [
+        "Aboriginal and Torres Strait Islander students",
+        "Non-Indigenous students"
+      ],
       "title": null,
-      "header": {"labelFontSize": 13, "labelFontWeight": 600, "labelLimit": 0, "labelAnchor": "start", "labelBaseline": "bottom", "labelLineHeight": 16,
-                 "labelExpr": "datum.value === 'Non-Indigenous students' ? datum.value : ['Aboriginal and Torres Strait', 'Islander students']"}
+      "header": {
+        "labelFontSize": 13,
+        "labelFontWeight": 600,
+        "labelLimit": 0,
+        "labelAnchor": "start",
+        "labelBaseline": "bottom",
+        "labelLineHeight": 16,
+        "labelExpr": "datum.value === 'Non-Indigenous students' ? datum.value : ['Aboriginal and Torres Strait', 'Islander students']"
+      }
     }
   },
-  "spacing": 32,
-
+  "spacing": 24,
   "spec": {
-    "width": 240,
+    "width": 170,
     "height": 360,
-
     "encoding": {
       "x": {
         "field": "year",
         "type": "ordinal",
         "title": null,
-        "scale": {"padding": 0.6},
-        "axis": {"labelAngle": 0, "labelFontSize": 12, "labelFontWeight": 600, "domain": false, "ticks": false}
+        "scale": {
+          "padding": 0.6
+        },
+        "axis": {
+          "labelAngle": 0,
+          "labelFontSize": 12,
+          "labelFontWeight": 600,
+          "domain": false,
+          "ticks": false
+        }
       },
       "y": {
         "field": "rate",
         "type": "quantitative",
         "title": "Attendance rate (%)",
-        "scale": {"domain": [50, 95]}
+        "scale": {
+          "domain": [
+            50,
+            95
+          ]
+        }
       },
       "color": {
         "field": "geo",
         "type": "nominal",
         "title": "Remoteness",
-        "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"],
+        "sort": [
+          "Major Cities",
+          "Inner Regional",
+          "Outer Regional",
+          "Remote",
+          "Very Remote"
+        ],
         "scale": {
-          "domain": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"],
-          "range": ["#0072B2", "#56B4E9", "#009E73", "#E69F00", "#D55E00"]
+          "domain": [
+            "Major Cities",
+            "Inner Regional",
+            "Outer Regional",
+            "Remote",
+            "Very Remote"
+          ],
+          "range": [
+            "#0072B2",
+            "#56B4E9",
+            "#009E73",
+            "#E69F00",
+            "#D55E00"
+          ]
         },
-        "legend": {"orient": "bottom", "direction": "horizontal", "columns": 5, "symbolType": "stroke", "symbolStrokeWidth": 3}
+        "legend": {
+          "orient": "bottom",
+          "direction": "horizontal",
+          "columns": 3,
+          "symbolType": "stroke",
+          "symbolStrokeWidth": 3
+        }
       }
     },
-
     "layer": [
       {
-        "mark": {"type": "line", "strokeWidth": 2.5},
-        "encoding": {"detail": {"field": "geo"}}
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2.5
+        },
+        "encoding": {
+          "detail": {
+            "field": "geo"
+          }
+        }
       },
       {
-        "mark": {"type": "point", "filled": true, "size": 70, "opacity": 1},
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 70,
+          "opacity": 1
+        },
         "encoding": {
           "tooltip": [
-            {"field": "group", "type": "nominal", "title": "Students"},
-            {"field": "geo", "type": "nominal", "title": "Remoteness"},
-            {"field": "year", "type": "ordinal", "title": "Year"},
-            {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
-            {"field": "change", "type": "quantitative", "title": "Change since 2016 (points)", "format": "+.1f"}
+            {
+              "field": "group",
+              "type": "nominal",
+              "title": "Students"
+            },
+            {
+              "field": "geo",
+              "type": "nominal",
+              "title": "Remoteness"
+            },
+            {
+              "field": "year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            {
+              "field": "rate",
+              "type": "quantitative",
+              "title": "Attendance rate (%)",
+              "format": ".1f"
+            },
+            {
+              "field": "change",
+              "type": "quantitative",
+              "title": "Change since 2016 (points)",
+              "format": "+.1f"
+            }
           ]
         }
       },
       {
-        "transform": [{"filter": "datum.year === 2025 && datum.geo === 'Very Remote'"}],
-        "mark": {"type": "text", "align": "left", "dx": 8, "fontSize": 12, "fontWeight": 600},
+        "transform": [
+          {
+            "filter": "datum.year === 2025 && datum.geo === 'Very Remote'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 8,
+          "fontSize": 12,
+          "fontWeight": 600
+        },
         "encoding": {
-          "text": {"field": "change", "type": "quantitative", "format": "+.1f"},
-          "color": {"value": "#D55E00"}
+          "text": {
+            "field": "change",
+            "type": "quantitative",
+            "format": "+.1f"
+          },
+          "color": {
+            "value": "#D55E00"
+          }
         }
       },
       {
-        "transform": [{"filter": "datum.year === 2025 && datum.geo === 'Very Remote'"}],
-        "mark": {"type": "text", "align": "left", "dx": 8, "dy": 14, "fontSize": 11},
-        "encoding": {"text": {"value": "points"}, "color": {"value": "#52514e"}}
+        "transform": [
+          {
+            "filter": "datum.year === 2025 && datum.geo === 'Very Remote'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 8,
+          "dy": 14,
+          "fontSize": 11
+        },
+        "encoding": {
+          "text": {
+            "value": "points"
+          },
+          "color": {
+            "value": "#52514e"
+          }
+        }
       }
     ]
   }

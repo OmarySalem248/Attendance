@@ -1,84 +1,228 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fcfcfb",
+    "font": "Bricolage Grotesque",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Bricolage Grotesque",
+      "fontSize": 15,
+      "fontWeight": 700,
+      "color": "#0b0b0b",
+      "anchor": "start",
+      "subtitleFont": "Bricolage Grotesque",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#52514e",
+      "offset": 12
+    },
+    "axis": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "gridColor": "#e1e0d9",
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7"
+    },
+    "legend": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque",
+      "labelColor": "#52514e",
+      "titleColor": "#52514e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 600
+    },
+    "header": {
+      "labelFont": "Bricolage Grotesque",
+      "titleFont": "Bricolage Grotesque"
+    },
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
+  },
   "title": {
-    "text": {"expr": "'Female vs male attendance by sector, Australia, ' + year_select"},
+    "text": {
+      "expr": "'Female vs male attendance by sector, Australia, ' + year_select"
+    },
     "subtitle": "All students, Years 1-10 (no data collected in 2020)",
     "frame": "bounds"
   },
   "width": 380,
   "height": 300,
-
   "params": [
     {
       "name": "year_select",
       "value": 2025,
       "bind": {
         "input": "select",
-        "options": [2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014],
+        "options": [
+          2025,
+          2024,
+          2023,
+          2022,
+          2021,
+          2019,
+          2018,
+          2017,
+          2016,
+          2015,
+          2014
+        ],
         "name": "Year: "
       }
     }
   ],
-
   "data": {
     "url": "data/sex_data.csv",
     "format": {
       "type": "csv",
-      "parse": {"year": "number", "rate": "number", "level": "number"}
+      "parse": {
+        "year": "number",
+        "rate": "number",
+        "level": "number"
+      }
     }
   },
-
   "transform": [
-    {"filter": "datum.year === year_select && datum.state === 'Australia'"}
+    {
+      "filter": "datum.year === year_select && datum.state === 'Australia'"
+    }
   ],
-
   "encoding": {
     "y": {
       "field": "sector",
       "type": "nominal",
       "title": "Sector",
-      "sort": ["Government", "Catholic", "Independent"]
+      "sort": [
+        "Government",
+        "Catholic",
+        "Independent"
+      ]
     },
     "x": {
       "type": "quantitative",
       "title": "Attendance rate (%)",
-      "scale": {"domain": [85, 95]}
+      "scale": {
+        "domain": [
+          85,
+          95
+        ]
+      }
     }
   },
-
   "layer": [
     {
       "transform": [
-        {"pivot": "sex", "value": "rate", "groupby": ["sector"]},
-        {"calculate": "datum.Female - datum.Male", "as": "gap"}
+        {
+          "pivot": "sex",
+          "value": "rate",
+          "groupby": [
+            "sector"
+          ]
+        },
+        {
+          "calculate": "datum.Female - datum.Male",
+          "as": "gap"
+        }
       ],
-      "mark": {"type": "rule", "strokeWidth": 3, "color": "#BBBBBB"},
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#BBBBBB"
+      },
       "encoding": {
-        "x": {"field": "Male"},
-        "x2": {"field": "Female"},
+        "x": {
+          "field": "Male"
+        },
+        "x2": {
+          "field": "Female"
+        },
         "tooltip": [
-          {"field": "sector", "type": "nominal", "title": "Sector"},
-          {"field": "Female", "type": "quantitative", "title": "Female rate (%)", "format": ".1f"},
-          {"field": "Male", "type": "quantitative", "title": "Male rate (%)", "format": ".1f"},
-          {"field": "gap", "type": "quantitative", "title": "Female minus male (pp)", "format": "+.1f"}
+          {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "Female",
+            "type": "quantitative",
+            "title": "Female rate (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "Male",
+            "type": "quantitative",
+            "title": "Male rate (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "gap",
+            "type": "quantitative",
+            "title": "Female minus male (pp)",
+            "format": "+.1f"
+          }
         ]
       }
     },
     {
-      "mark": {"type": "point", "filled": true, "size": 120, "opacity": 1},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 120,
+        "opacity": 1
+      },
       "encoding": {
-        "x": {"field": "rate"},
+        "x": {
+          "field": "rate"
+        },
         "color": {
           "field": "sex",
           "type": "nominal",
           "title": "Sex",
-          "scale": {"domain": ["Female", "Male"], "range": ["#800080", "#008000"]},
-          "legend": {"orient": "bottom"}
+          "scale": {
+            "domain": [
+              "Female",
+              "Male"
+            ],
+            "range": [
+              "#800080",
+              "#008000"
+            ]
+          },
+          "legend": {
+            "orient": "bottom"
+          }
         },
         "tooltip": [
-          {"field": "sector", "type": "nominal", "title": "Sector"},
-          {"field": "sex", "type": "nominal", "title": "Sex"},
-          {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"}
+          {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "sex",
+            "type": "nominal",
+            "title": "Sex"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Attendance rate (%)",
+            "format": ".1f"
+          }
         ]
       }
     }
