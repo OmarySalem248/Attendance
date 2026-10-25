@@ -20,11 +20,12 @@
     },
     "anchor": "start",
     "frame": "bounds",
-    "font": "Bricolage Grotesque",
+    "font": "Fraunces",
     "fontSize": 15,
     "subtitleFont": "Bricolage Grotesque",
     "subtitleColor": "#52514e",
-    "offset": 12
+    "offset": 12,
+    "fontWeight": 600
   },
   "signals": [
     {
