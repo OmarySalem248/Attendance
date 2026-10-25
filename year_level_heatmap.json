@@ -29,8 +29,8 @@
   },
   "description": "Heatmap of school attendance rate by year level (rows) and calendar year (columns), 2014-2025, for a chosen state or territory. Darker cells mean higher attendance. No data was collected in 2020.",
   "title": {
-    "text": {"expr": "'Attendance rate by year level and year, ' + state_select"},
-    "subtitle": "All students, all sectors. Darker cells mean students attended more school days",
+    "text": {"expr": "'Attendance rate by year level, ' + state_select"},
+    "subtitle": ["All students, all sectors", "Darker cells mean students attended more school days"],
     "anchor": "start",
     "subtitleColor": "#52514e",
     "fontSize": 15,
@@ -57,7 +57,7 @@
       }
     }
   ],
-  "width": 540,
+  "width": 420,
   "height": 320,
   "encoding": {
     "x": {
@@ -107,7 +107,7 @@
               "type": "quantitative",
               "title": "Attendance rate (%)",
               "scale": {"scheme": "blues", "zero": false},
-              "legend": {"orient": "bottom", "direction": "horizontal", "gradientLength": 240, "titleOrient": "left"}
+              "legend": {"orient": "bottom", "direction": "horizontal", "gradientLength": 200, "titleOrient": "left"}
             },
             "tooltip": [
               {"field": "state", "title": "State"},

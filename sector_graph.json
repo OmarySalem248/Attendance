@@ -7,7 +7,7 @@
     "subtitle": "All students, Years 1-10 (no data collected in 2020)",
     "frame": "bounds"
   },
-  "width": 550,
+  "width": 420,
   "height": 400,
   "params": [
     {
@@ -59,7 +59,29 @@
                   2025.4
                 ],
                 "nice": false
-              }
+              },
+              "axis": {
+                "values": [
+                  2014,
+                  2015,
+                  2016,
+                  2017,
+                  2018,
+                  2019,
+                  2020,
+                  2021,
+                  2022,
+                  2023,
+                  2024,
+                  2025
+                ],
+                "format": "d",
+                "labelOverlap": false,
+                "labelFontSize": 10,
+                "labelAngle": 0,
+                "grid": false
+              },
+              "title": "Year"
             },
             "x2": {
               "field": "end"
@@ -86,7 +108,29 @@
                   2025.4
                 ],
                 "nice": false
-              }
+              },
+              "axis": {
+                "values": [
+                  2014,
+                  2015,
+                  2016,
+                  2017,
+                  2018,
+                  2019,
+                  2020,
+                  2021,
+                  2022,
+                  2023,
+                  2024,
+                  2025
+                ],
+                "format": "d",
+                "labelOverlap": false,
+                "labelFontSize": 10,
+                "labelAngle": 0,
+                "grid": false
+              },
+              "title": "Year"
             },
             "y": {
               "value": 8
@@ -164,6 +208,8 @@
               2025
             ],
             "format": "d",
+            "labelOverlap": false,
+            "labelFontSize": 10,
             "labelAngle": 0,
             "grid": false
           }

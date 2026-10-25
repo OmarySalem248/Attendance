@@ -51,6 +51,9 @@
     }
     .chart { flex: 0 1 auto; max-width: 100%; overflow-x: auto; }
     .text { flex: 1 1 260px; min-width: 0; }
+    /* Two charts side by side, with the heading and notes above them */
+    section.pair { justify-content: space-between; }
+    section.pair .text { flex-basis: 100%; }
     .eyebrow {
       font-size: 12px;
       font-weight: 600;
@@ -91,40 +94,34 @@
       </div>
     </section>
 
-    <section>
-      <div class="chart" id="sector"></div>
+    <section class="pair">
       <div class="text">
-        <p class="eyebrow">By sector</p>
-        <h2>Government, Catholic and Independent</h2>
+        <p class="eyebrow">By sector and gender</p>
+        <h2>Private schools attend more, and the gender gap flips with the sector</h2>
         <p class="annotation">
-          Attendance rates are higher in private schools than government schools. However, across all sectors, attendance has yet to fully recover from COVID-19.
+          Attendance rates are higher in Catholic and Independent schools than in government schools. However, across all sectors, attendance has yet to fully recover from COVID-19.
+        </p>
+        <p class="annotation">
+          The gap between female and male students is small, and its direction depends on the sector. In general, female students attend more than male students in government schools, while male students attend more in private schools.
         </p>
       </div>
+      <div class="chart" id="sector"></div>
+      <div class="chart" id="gender"></div>
     </section>
 
-    <section>
-      <div class="chart" id="year"></div>
+    <section class="pair">
       <div class="text">
         <p class="eyebrow">By year level</p>
-        <h2>Older students attend less</h2>
+        <h2>Older students attend less, and the drop starts in Year 8</h2>
         <p class="annotation">
-          Higher year levels have lower attendance rates.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="chart" id="yearheat"></div>
-      <div class="text">
-        <p class="eyebrow">By year level, over time</p>
-        <h2>The drop starts in Year 8</h2>
-        <p class="annotation">
-          Each row is a year level and each column a school year. Attendance holds steady from Year 1 to Year 7, then falls sharply once students reach Year 8, the second year of high school in most states.
+          On the left, each dot is one school day for the average student. On the right, each row is a year level and each column a school year. Attendance holds steady from Year 1 to Year 7, then falls sharply once students reach Year 8, the second year of high school in most states.
         </p>
         <p class="annotation">
           Every year level dipped in 2022, when Year 10 attendance fell to 82.9%. None has climbed back to its pre-COVID level: Year 10 reached 84.5% in 2025, still below 88.4% in 2019.
         </p>
       </div>
+      <div class="chart" id="year"></div>
+      <div class="chart" id="yearheat"></div>
     </section>
 
     <section>
@@ -134,17 +131,6 @@
         <h2>Students missing more than one day in ten</h2>
         <p class="annotation">
           Each circle shows the share of students who attend fewer than 90% of school days. The Northern Territory has the largest share.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="chart" id="gender"></div>
-      <div class="text">
-        <p class="eyebrow">By gender</p>
-        <h2>Female vs male attendance</h2>
-        <p class="annotation">
-          There is a difference in attendance rates between genders, and its direction depends on the sector. In general, female students have higher attendance than male students in government schools, while male students have higher attendance in private schools.
         </p>
       </div>
     </section>
