@@ -33,7 +33,7 @@
       color: #fcfcfb;
       padding: 32px 16px 28px;
     }
-    header .inner, main, footer { max-width: 1100px; margin: 0 auto; }
+    header .inner, main, footer { max-width: 1500px; margin: 0 auto; }
     /* Title on the left, photo on the right; stacks on narrow screens */
     header .inner { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
     .header-text { flex: 1 1 420px; min-width: 0; }
@@ -63,6 +63,12 @@
     /* Two charts side by side, with the heading and notes above them */
     section.pair { justify-content: space-evenly; row-gap: 10px; }
     section.pair .text { flex-basis: 100%; }
+    /* On wide screens (or zoomed out), put a pair's text beside its two charts to save height */
+    @media (min-width: 1360px) {
+      section.pair { flex-wrap: nowrap; justify-content: flex-start; }
+      section.pair .text { flex: 0 1 300px; }
+      section.pair .chart { flex: 0 0 auto; }
+    }
     .eyebrow {
       font-size: 11px;
       font-weight: 600;
@@ -136,20 +142,6 @@
     <div class="intro">
       <p class="intro-lead">While attendance is far from the only sign of a child's academic success, keeping the younger generation engaged in education still matters deeply.</p>
       <p>We wish to explore the trends and patterns in student attendance across different regions and demographics in Australia, and look back to where attendance habits begin, in preschool.</p>
-      <dl class="terms">
-        <div>
-          <dt>Attendance rate</dt>
-          <dd>The share of school days students actually attended. A rate of 90% means students attended 9 days in every 10.</dd>
-        </div>
-        <div>
-          <dt>Attending 90% or more</dt>
-          <dd>The share of students who attended at least 9 days in 10. Students below this line miss about four weeks of school a year.</dd>
-        </div>
-        <div>
-          <dt>Year before school</dt>
-          <dd>The year a child is eligible for preschool, before they start full-time school. Programs should offer 600 hours, about 15 hours a week.</dd>
-        </div>
-      </dl>
     </div>
 
     <div class="chapter">
