@@ -74,13 +74,10 @@
     },
     {
       "data": {
-        "url": "data/attendance_full.csv",
+        "url": "data/state_data.csv",
         "format": {"type": "csv", "parse": {"year": "number", "rate": "number", "level": "number"}}
       },
       "transform": [
-        {
-          "filter": "datum.sector === 'All' && datum.sex === 'All' && datum.geo === 'All' && datum.indigenous === 'All' && datum.year_level === 'Years 1-10' && datum.is_quarter_row === 'False' && datum.state !== 'Australia'"
-        },
         {"filter": "datum.year === year_select && isValid(datum.level)"},
         {
           "lookup": "state",

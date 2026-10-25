@@ -1,78 +1,248 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": {"expr": "'Attendance rate by sector, ' + state_select"},
+    "text": {
+      "expr": "'Attendance rate by sector, ' + state_select"
+    },
     "subtitle": "All students, Years 1-10 (no data collected in 2020)",
     "frame": "bounds"
   },
   "width": 550,
   "height": 400,
-
   "params": [
     {
       "name": "state_select",
       "value": "Australia",
       "bind": {
         "input": "select",
-        "options": ["Australia", "New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", "Tasmania", "Northern Territory", "Australian Capital Territory"],
+        "options": [
+          "Australia",
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ],
         "name": "State: "
       }
     }
   ],
-
-  "data": {
-    "url": "data/attendance_full.csv",
-    "format": {
-      "type": "csv",
-      "parse": {"year": "number", "rate": "number", "level": "number"}
-    }
-  },
-
-  "transform": [
-    {
-      "filter": "datum.sex === 'All' && datum.geo === 'All' && datum.indigenous === 'All' && datum.year_level === 'Years 1-10' && datum.is_quarter_row === 'False'"
-    },
-    {"filter": {"field": "sector", "oneOf": ["Government", "Catholic", "Independent"]}},
-    {"filter": "datum.state === state_select"},
-    {
-      "sort": [{"field": "rate", "order": "descending"}],
-      "window": [{"op": "rank", "as": "rank"}],
-      "groupby": ["year"]
-    }
-  ],
-
-  "encoding": {
-    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}},
-    "y": {
-      "field": "rate",
-      "type": "quantitative",
-      "title": "Attendance rate (%)",
-      "scale": {"zero": false}
-    },
-    "color": {
-      "field": "sector",
-      "type": "nominal",
-      "title": "Sector",
-      "scale": {
-        "domain": ["Independent", "Catholic", "Government"],
-        "range": ["#0C71AB", "#C91A3C", "#127153"]
-      },
-      "legend": {"orient": "bottom"}
-    }
-  },
-
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2.5}},
     {
-      "mark": {"type": "point", "filled": true, "size": 70},
-      "encoding": {
-        "tooltip": [
-          {"field": "sector", "type": "nominal", "title": "Sector"},
-          {"field": "year", "type": "ordinal", "title": "Year"},
-          {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"},
-          {"field": "rank", "type": "ordinal", "title": "Rank among sectors"}
+      "data": {
+        "values": [
+          {
+            "start": 2019.5,
+            "end": 2020.5,
+            "label": "No data collected",
+            "mid": 2020
+          }
         ]
-      }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "color": "#e1e0d9",
+            "opacity": 0.6
+          },
+          "encoding": {
+            "x": {
+              "field": "start",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  2013.6,
+                  2025.4
+                ],
+                "nice": false
+              }
+            },
+            "x2": {
+              "field": "end"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "angle": 270,
+            "align": "right",
+            "baseline": "middle",
+            "fontSize": 12,
+            "color": "#52514e",
+            "dy": 0
+          },
+          "encoding": {
+            "x": {
+              "field": "mid",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  2013.6,
+                  2025.4
+                ],
+                "nice": false
+              }
+            },
+            "y": {
+              "value": 8
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "data/sector_data.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "rate": "number",
+            "level": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.state === state_select"
+        },
+        {
+          "sort": [
+            {
+              "field": "rate",
+              "order": "descending"
+            }
+          ],
+          "window": [
+            {
+              "op": "rank",
+              "as": "rank"
+            }
+          ],
+          "groupby": [
+            "year"
+          ]
+        },
+        {
+          "calculate": "datum.year < 2020 ? 'before' : 'after'",
+          "as": "period"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": "Year",
+          "scale": {
+            "domain": [
+              2013.6,
+              2025.4
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024,
+              2025
+            ],
+            "format": "d",
+            "labelAngle": 0,
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "title": "Attendance rate (%)",
+          "scale": {
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "title": "Sector",
+          "scale": {
+            "domain": [
+              "Independent",
+              "Catholic",
+              "Government"
+            ],
+            "range": [
+              "#0C71AB",
+              "#C91A3C",
+              "#127153"
+            ]
+          },
+          "legend": {
+            "orient": "bottom"
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2.5
+          },
+          "encoding": {
+            "detail": {
+              "field": "period",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 70
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "sector",
+                "type": "nominal",
+                "title": "Sector"
+              },
+              {
+                "field": "year",
+                "type": "ordinal",
+                "title": "Year"
+              },
+              {
+                "field": "rate",
+                "type": "quantitative",
+                "title": "Attendance rate (%)",
+                "format": ".1f"
+              },
+              {
+                "field": "rank",
+                "type": "ordinal",
+                "title": "Rank among sectors"
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

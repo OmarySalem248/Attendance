@@ -114,6 +114,20 @@
     </section>
 
     <section>
+      <div class="chart" id="yearheat"></div>
+      <div class="text">
+        <p class="eyebrow">By year level, over time</p>
+        <h2>The drop starts in Year 8</h2>
+        <p class="annotation">
+          Each row is a year level and each column a school year. Attendance holds steady from Year 1 to Year 7, then falls sharply once students reach Year 8, the second year of high school in most states.
+        </p>
+        <p class="annotation">
+          Every year level dipped in 2022, when Year 10 attendance fell to 82.9%. None has climbed back to its pre-COVID level: Year 10 reached 84.5% in 2025, still below 88.4% in 2019.
+        </p>
+      </div>
+    </section>
+
+    <section>
       <div class="chart" id="bubble"></div>
       <div class="text">
         <p class="eyebrow">Below 90%</p>
@@ -175,6 +189,17 @@
     </section>
 
     <section>
+      <div class="chart" id="servicetype"></div>
+      <div class="text">
+        <p class="eyebrow">Preschool by service type</p>
+        <h2>Standalone preschools rarely reach 600 hours</h2>
+        <p class="annotation">
+          Nationally, children whose preschool program is run inside centre-based day care almost all attend 600 hours or more (82%), as do children who use more than one service type (97%). In standalone preschools, only 31% reach 600 hours, and attendance is spread across every band.
+        </p>
+      </div>
+    </section>
+
+    <section>
       <div class="chart" id="remoteness"></div>
       <div class="text">
         <p class="eyebrow">By remoteness</p>
@@ -197,11 +222,13 @@
     vegaEmbed("#map", "attendbystate.json", opts);
     vegaEmbed("#sector", "sector_graph.json", opts);
     vegaEmbed("#year", "year_level.json", opts);
+    vegaEmbed("#yearheat", "year_level_heatmap.json", opts);
     vegaEmbed("#bubble", "bubble.json", opts);
     vegaEmbed("#gender", "gender_split.json", opts);
     vegaEmbed("#indigenous", "indigenous_graph.json", opts);
     vegaEmbed("#cartogram", "indigenous_cartogram.json", opts);
     vegaEmbed("#preschool", "preschool_cartogram.json", opts);
+    vegaEmbed("#servicetype", "service_type_histograms.json", opts);
     vegaEmbed("#remoteness", "remoteness_map.json", opts);
   </script>
 </body>
