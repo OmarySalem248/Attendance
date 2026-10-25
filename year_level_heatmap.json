@@ -3,7 +3,9 @@
   "config": {
     "background": "#fcfcfb",
     "font": "Bricolage Grotesque",
-    "view": {"stroke": null},
+    "view": {
+      "stroke": null
+    },
     "axis": {
       "labelFont": "Bricolage Grotesque",
       "titleFont": "Bricolage Grotesque",
@@ -24,13 +26,26 @@
       "titleFontSize": 12,
       "titleFontWeight": 600
     },
-    "text": {"font": "Bricolage Grotesque", "color": "#0b0b0b"},
-    "padding": {"left": 6, "right": 10, "top": 6, "bottom": 6}
+    "text": {
+      "font": "Bricolage Grotesque",
+      "color": "#0b0b0b"
+    },
+    "padding": {
+      "left": 6,
+      "right": 10,
+      "top": 6,
+      "bottom": 6
+    }
   },
   "description": "Heatmap of school attendance rate by year level (rows) and calendar year (columns), 2014-2025, for a chosen state or territory. Darker cells mean higher attendance. No data was collected in 2020.",
   "title": {
-    "text": {"expr": "'Attendance rate by year level, ' + state_select"},
-    "subtitle": ["All students, all sectors", "Darker cells mean students attended more school days"],
+    "text": {
+      "expr": "'Attendance rate by year level, ' + state_select"
+    },
+    "subtitle": [
+      "All students, all sectors",
+      "Darker cells mean students attended more school days"
+    ],
     "anchor": "start",
     "subtitleColor": "#52514e",
     "fontSize": 15,
@@ -64,57 +79,217 @@
       "field": "year",
       "type": "ordinal",
       "title": null,
-      "scale": {"domain": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "paddingInner": 0.06},
-      "axis": {"orient": "top", "labelAngle": 0}
+      "scale": {
+        "domain": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "paddingInner": 0.06
+      },
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0
+      }
     }
   },
   "layer": [
     {
       "description": "Grey column for 2020, when no data was collected",
-      "data": {"values": [{"year": 2020, "label": "No data collected"}]},
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "label": "No data collected"
+          }
+        ]
+      },
       "layer": [
-        {"mark": {"type": "rect", "color": "#e1e0d9", "opacity": 0.6}},
         {
-          "mark": {"type": "text", "angle": 270, "fontSize": 12, "color": "#52514e"},
-          "encoding": {"text": {"field": "label"}, "y": {"value": 160}}
+          "mark": {
+            "type": "rect",
+            "color": "#e1e0d9",
+            "opacity": 0.6
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "angle": 270,
+            "fontSize": 12,
+            "color": "#52514e"
+          },
+          "encoding": {
+            "text": {
+              "field": "label"
+            },
+            "y": {
+              "value": 160
+            }
+          }
         }
       ]
     },
     {
       "data": {
         "url": "data/year_data.csv",
-        "format": {"type": "csv", "parse": {"year": "number", "rate": "number"}}
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "rate": "number"
+          }
+        }
       },
       "transform": [
-        {"filter": "datum.state === state_select && datum.year_level !== 'Years 1-10' && isValid(datum.rate)"},
-        {"calculate": "toNumber(replace(datum.year_level, 'Year ', ''))", "as": "level_num"}
+        {
+          "filter": "datum.state === state_select && datum.year_level !== 'Years 1-10' && isValid(datum.rate)"
+        },
+        {
+          "calculate": "toNumber(replace(datum.year_level, 'Year ', ''))",
+          "as": "level_num"
+        }
       ],
       "encoding": {
         "y": {
           "field": "year_level",
           "type": "ordinal",
           "title": null,
-          "sort": {"field": "level_num"},
-          "scale": {"paddingInner": 0.06}
+          "sort": {
+            "field": "level_num"
+          },
+          "scale": {
+            "paddingInner": 0.06
+          }
         }
       },
       "layer": [
         {
-          "mark": {"type": "rect", "cornerRadius": 2},
+          "mark": {
+            "type": "rect",
+            "cornerRadius": 2
+          },
           "encoding": {
             "color": {
               "field": "rate",
               "type": "quantitative",
               "title": "Attendance rate (%)",
-              "scale": {"scheme": "blues", "zero": false},
-              "legend": {"orient": "bottom", "direction": "horizontal", "gradientLength": 200, "titleOrient": "left"}
+              "scale": {
+                "scheme": "blues",
+                "zero": false
+              },
+              "legend": {
+                "orient": "bottom",
+                "direction": "horizontal",
+                "gradientLength": 200,
+                "titleOrient": "left",
+                "offset": 44
+              }
             },
             "tooltip": [
-              {"field": "state", "title": "State"},
-              {"field": "year_level", "title": "Year level"},
-              {"field": "year", "type": "ordinal", "title": "Year"},
-              {"field": "rate", "type": "quantitative", "title": "Attendance rate (%)", "format": ".1f"}
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "year_level",
+                "title": "Year level"
+              },
+              {
+                "field": "year",
+                "type": "ordinal",
+                "title": "Year"
+              },
+              {
+                "field": "rate",
+                "type": "quantitative",
+                "title": "Attendance rate (%)",
+                "format": ".1f"
+              }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "description": "Annotation for 2022: outline the column and label the average drop from 2021, for the chosen state",
+      "data": {
+        "url": "data/year_data.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "rate": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.state === state_select && datum.year_level !== 'Years 1-10' && (datum.year === 2021 || datum.year === 2022)"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "mean",
+              "field": "rate",
+              "as": "mean_rate"
+            }
+          ],
+          "groupby": [
+            "year"
+          ]
+        },
+        {
+          "pivot": "year",
+          "value": "mean_rate"
+        },
+        {
+          "calculate": "datum['2021'] - datum['2022']",
+          "as": "drop"
+        },
+        {
+          "calculate": "2022",
+          "as": "year"
+        },
+        {
+          "calculate": "['2022: down ' + format(datum.drop, '.1f') + ' points', 'on 2021, on average']",
+          "as": "label"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "fill": null,
+            "stroke": "#0b0b0b",
+            "strokeWidth": 1.5,
+            "cornerRadius": 3
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "color": "#0b0b0b",
+            "baseline": "top",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "text": {
+              "field": "label"
+            },
+            "y": {
+              "value": 328
+            }
           }
         }
       ]
