@@ -31,30 +31,37 @@
     header {
       background: var(--text);
       color: #fcfcfb;
-      padding: 48px 16px 40px;
+      padding: 32px 16px 28px;
     }
     header .inner, main, footer { max-width: 1100px; margin: 0 auto; }
+    /* Title on the left, photo on the right; stacks on narrow screens */
+    header .inner { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
+    .header-text { flex: 1 1 420px; min-width: 0; }
+    .header-photo { flex: 0 1 360px; margin: 0; }
+    .header-photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    .header-photo figcaption { font-size: 11px; color: #a9a89e; margin-top: 6px; }
+    .header-photo a { color: inherit; }
     /* Serif for all headings; body text stays in Bricolage Grotesque */
     h1, h2, h3, .chapter h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
     h1 { font-size: clamp(28px, 5vw, 44px); margin: 0 0 8px; line-height: 1.1; }
     .lede { font-size: 18px; color: #c3c2b7; max-width: 680px; margin: 0; }
 
-    main { padding: 32px 16px; display: grid; gap: 24px; }
+    main { padding: 20px 16px; display: grid; gap: 14px; }
 
     section {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 24px;
+      padding: 18px;
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 18px;
       align-items: flex-start;
     }
     .chart { flex: 0 1 auto; max-width: 100%; overflow-x: auto; }
     .text { flex: 1 1 260px; min-width: 0; }
     /* Two charts side by side, with the heading and notes above them */
-    section.pair { justify-content: space-between; }
+    section.pair { justify-content: space-evenly; row-gap: 10px; }
     section.pair .text { flex-basis: 100%; }
     .eyebrow {
       font-size: 11px;
@@ -64,11 +71,11 @@
       color: var(--accent);
       margin: 0 0 4px;
     }
-    h3 { font-size: 22px; margin: 0 0 12px; line-height: 1.2; }
+    h3 { font-size: 22px; margin: 0 0 8px; line-height: 1.2; }
 
     /* Part headings that group the cards into sub-narratives */
-    .chapter { padding: 40px 0 0; max-width: 720px; }
-    .chapter:first-child { padding-top: 8px; }
+    .chapter { padding: 22px 0 0; max-width: 720px; }
+    .chapter:first-child { padding-top: 0; }
     .chapter-num {
       font-size: 12px;
       font-weight: 700;
@@ -77,33 +84,33 @@
       color: #1d4f91; /* darker than --accent so it stays readable on the tan background */
       margin: 0 0 4px;
     }
-    .chapter h2 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 8px; line-height: 1.15; }
+    .chapter h2 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 6px; line-height: 1.15; }
     .chapter-intro { font-size: 17px; color: var(--muted); margin: 0; max-width: 62ch; }
     /* Opening paragraphs and key terms */
-    .intro { max-width: 760px; padding: 8px 0 0; }
-    .intro p { font-size: 17px; color: var(--muted); margin: 0 0 12px; max-width: 65ch; }
+    .intro { max-width: 760px; padding: 0; }
+    .intro p { font-size: 17px; color: var(--muted); margin: 0 0 8px; max-width: 65ch; }
     .intro .intro-lead { font-size: 20px; color: var(--text); line-height: 1.45; }
     .terms {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin: 20px 0 0;
-      padding: 16px 0 0;
+      gap: 12px;
+      margin: 12px 0 0;
+      padding: 12px 0 0;
       border-top: 1px solid var(--border);
     }
     .terms dt { font-weight: 700; font-size: 14px; }
     .terms dd { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
-    .conclusion { padding-bottom: 16px; }
-    .conclusion .chapter-intro + .chapter-intro { margin-top: 12px; }
+    .conclusion { padding-bottom: 8px; }
+    .conclusion .chapter-intro + .chapter-intro { margin-top: 8px; }
     .byline { color: var(--text); font-weight: 600; }
     .annotation { font-size: 14px; color: var(--muted); margin: 0; max-width: 60ch; }
-    .annotation + .annotation { margin-top: 12px; }
-    .photo { margin: 20px 0 0; max-width: 60ch; }
+    .annotation + .annotation { margin-top: 8px; }
+    .photo { margin: 14px 0 0; max-width: 60ch; }
     .photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
     .photo figcaption { font-size: 11px; color: var(--muted); margin-top: 6px; }
 
     footer {
-      padding: 8px 16px 40px;
+      padding: 4px 16px 28px;
       font-size: 12px;
       color: var(--muted);
     }
@@ -113,16 +120,22 @@
 <body>
   <header>
     <div class="inner">
-      <h1>Attendance in Australian Schools</h1>
-      <p class="lede">How often students turn up to school, from preschool to Year 10, across states, sectors, year levels and Indigenous status, 2014&ndash;2025.</p>
+      <div class="header-text">
+        <h1>Attendance in Australian Schools</h1>
+        <p class="lede">How often students turn up to school, from preschool to Year 10, across states, sectors, year levels and Indigenous status, 2014&ndash;2025.</p>
+      </div>
+      <figure class="header-photo">
+        <img src="images/school2.jpg" alt="Rows of library shelves filled with books, receding into the distance.">
+        <figcaption>Photo: <a href="https://pixabay.com/users/jarmoluk-143740/">jarmoluk</a>, via <a href="https://pixabay.com/">Pixabay</a> (Pixabay Content Licence).</figcaption>
+      </figure>
     </div>
   </header>
 
   <main>
 
     <div class="intro">
-      <p class="intro-lead">While attendce numbers are far from the only tell of a childs academic success, it is still deeply important to maintain the younger generation participation in education.</p>
-      <p>We wish to explore the trends and patterns in student attendance across different regions and demographics in Australia, and even look into the futre to see trends within preschools.</p>
+      <p class="intro-lead">While attendance is far from the only sign of a child's academic success, keeping the younger generation engaged in education still matters deeply.</p>
+      <p>We wish to explore the trends and patterns in student attendance across different regions and demographics in Australia, and look back to where attendance habits begin, in preschool.</p>
       <dl class="terms">
         <div>
           <dt>Attendance rate</dt>
@@ -175,7 +188,7 @@
 
     <div class="chapter">
       <p class="chapter-num">Part 2</p>
-      <h2>Government schools lag behind, but everyone is recovering.</h2>
+      <h2>Government schools lag behind, but everyone is recovering</h2>
       <p class="chapter-intro">Government, Catholic and Independent schools all lost ground after COVID-19, but private schools started higher and have recovered further.</p>
     </div>
 
@@ -185,11 +198,11 @@
         <h3>Private schools attend more, and the gender gap flips with the sector</h3>
         <p class="annotation">
           Attendance rates are higher in Catholic and Independent schools than in government schools. However, across all sectors, attendance has yet to fully recover from COVID-19.
-           Switch between states and territories to see the differences. Independant schools in the Northern Territory interestingly seem to be the least effected by general trends, displaying a much less steep drop even compared to other sectors in the same state.
+           Switch between states and territories to see the differences. Interestingly, Independent schools in the Northern Territory were the least affected by the 2022 drop, falling 2.3 points compared with 4.6 for Catholic and 3.8 for government schools in the same territory.
         </p>
         <p class="annotation">
           The gap between female and male students is small, and its direction depends on the sector. In general, female students attend more than male students in government schools, while male students attend more in private schools. 
-          However, between 2017 and 2022, female students in Catholic and independent schools attended more than male students, but the gap has since flipped.
+          However, between 2019 and 2022, female students in Catholic and Independent schools attended more than male students, but the gap has since flipped back.
         </p>
       </div>
       <div class="chart" id="sector"></div>
@@ -232,8 +245,8 @@
           Since 2016, attendance has fallen in every remoteness area for both groups, but far more steeply for Aboriginal and Torres Strait Islander students. In very remote areas, their attendance dropped 12.2 percentage points to 54%, compared with a 4.2-point fall for non-Indigenous students.
         </p>
         <figure class="photo">
-          <img src="images/school1.png" alt="A group of Aboriginal students in blue and yellow school uniforms walking across red dirt towards a school building in remote Australia." loading="lazy">
-          <figcaption>Photo: ABC News, <a href="https://www.abc.net.au/news/2022-11-16/nt-remote-education-funding-effective-enrolment/101517962">[source]</a>.</figcaption>
+          <img src="images/school1.jpg" alt="A group of Aboriginal students, several in Oak Valley Anangu School uniforms, standing outdoors on stony ground in remote South Australia." loading="lazy">
+          <figcaption>Photo: <a href="https://pixabay.com/users/dj_mun-2337743/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1309321">Djapirri Mununggirritj</a>, via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1309321">Pixabay</a> (Pixabay Content Licence).</figcaption>
         </figure>
       </div>
     </section>
@@ -278,21 +291,21 @@
     </section>
 
     <div class="chapter conclusion">
-      <p class="chapter-num">What it means?</p>
+      <p class="chapter-num">What it means</p>
       <h2>Recovery is needed</h2>
-      <p class="chapter-intro">Even after the pandemic, attendance still lags behind pre-pandemic levels in most regions. On yop of that, many gaps still pressist in regional, sector and cultural contexts.</p>
-      <p class="chapter-intro">It is hard to draw any hard conclusions from the data on preschool attendance but it clearly displays that divisions in class and background start early in the schooling process. There is also alot to be optimisitc about as a slow upward recovery is displayed overall since 2022, unfortunatly similar recovery patterns are not observed across all regions and backgrounds.</p>
+      <p class="chapter-intro">Even after the pandemic, attendance still lags behind pre-pandemic levels in most regions. On top of that, many gaps persist between regions, sectors and cultural backgrounds.</p>
+      <p class="chapter-intro">It is hard to draw firm conclusions from the preschool data, but it clearly shows that divisions in class and background start early in the schooling process. There is also a lot to be optimistic about, as attendance has slowly recovered overall since 2022. Unfortunately, the same recovery is not seen across all regions and backgrounds.</p>
     </div>
 
   </main>
 
   <footer>
-    <p class="byline">Created by Omar Salem for FIT3179 Data Visualisation 2, Monash University. Published 25, October 2026.</p>
+    <p class="byline">Created by Omar Salem for FIT3179 Data Visualisation 2, Monash University. Published 25 October 2026.</p>
     <p>Data: Australian Curriculum, Assessment and Reporting Authority (ACARA), <a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance">National Report on Schooling in Australia: student attendance</a>, 2014&ndash;2025. No data was collected in 2020.</p>
     <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/schools/latest-release">Schools, 2025</a>, proportion of Aboriginal and Torres Strait Islander student enrolments by state and territory (Table 42b).</p>
     <p>Data: Australian Bureau of Statistics (ABS), <a href="https://www.abs.gov.au/statistics/people/education/preschool-attendance/latest-release">Preschool Attendance, 2025</a> (experimental statistics), Tables 1&ndash;3. Disadvantaged children live in the most disadvantaged fifth of areas on the ABS Index of Relative Socio-economic Disadvantage.</p>
     <p>Map boundaries: GitHub <a href="https://github.com/rowanhogan/australian-states/blob/master/states.geojson?short_path=7e3fe8e">states.geojson</a>.</p>
-    <p>Use of AI: Claude code was used to assist with code generation while keeping track of framing and progress..</p>
+    <p>Use of AI: Claude Code was used to assist with code generation while keeping track of framing and progress.</p>
   </footer>
 
   <script>
